@@ -1,53 +1,81 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export default function Hero() {
   const [scrollY, setScrollY] = useState(0);
+  const [loaded, setLoaded] = useState(false);
+  const heroRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    setLoaded(true);
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const cities = [
+    { name: "馬德里", emoji: "👑" },
+    { name: "哥多華", emoji: "🕌" },
+    { name: "塞維亞", emoji: "💃" },
+    { name: "格拉納達", emoji: "🏰" },
+    { name: "巴塞隆納", emoji: "🎨" },
+  ];
+
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background image with parallax */}
+    <section ref={heroRef} className="relative h-screen flex items-center justify-center overflow-hidden bg-black">
+      {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: `url(https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=1920&q=85)`,
-          transform: `translateY(${scrollY * 0.4}px)`,
+          transform: `translateY(${scrollY * 0.35}px)`,
+          transition: "opacity 1.5s ease",
+          opacity: loaded ? 1 : 0,
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-stone-950/70 via-stone-950/50 to-stone-950" />
+      <div className="absolute inset-0 hero-overlay" />
+
+      {/* Decorative gradient orbs */}
+      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-rose-500/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl" />
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-4xl">
-        <p className="text-amber-500 tracking-widest text-sm md:text-base font-medium mb-4 animate-fade-in-up">
-          JULIAN — 2026 年 10 月
-        </p>
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6">
-          <span className="gradient-text">西班牙·11 天</span>
-          <br />
-          <span className="text-stone-100 text-3xl md:text-5xl lg:text-6xl">
-            從馬德里到巴塞隆納
-          </span>
+      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
+        {/* Badge */}
+        <div className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 text-white/80 text-sm mb-8 transition-all duration-700 ${loaded ? 'opacity-100' : 'opacity-0 translate-y-4'}`}>
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+          Julian 的西班牙之旅 · 2026 年 10 月
+        </div>
+
+        {/* Headline */}
+        <h1 className={`text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white mb-4 transition-all duration-700 delay-200 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          西班牙·11 天
         </h1>
-        <p className="text-stone-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 animate-fade-in-up animate-delay-200">
-          🏙️ Madrid · 🕌 Córdoba · 💃 Sevilla · 🏰 Granada · 🎨 Barcelona
+        <p className={`text-xl md:text-2xl lg:text-3xl text-white/80 font-light mb-10 transition-all duration-700 delay-300 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          Madrid · Córdoba · Sevilla · Granada · Barcelona
         </p>
-        <div className="flex gap-4 justify-center animate-fade-in-up animate-delay-400">
+
+        {/* City pills */}
+        <div className={`flex flex-wrap justify-center gap-3 mb-12 transition-all duration-700 delay-400 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          {cities.map((city) => (
+            <span key={city.name} className="px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 text-white/90 text-sm hover:bg-white/20 transition-all">
+              {city.emoji} {city.name}
+            </span>
+          ))}
+        </div>
+
+        {/* CTAs */}
+        <div className={`flex flex-wrap gap-4 justify-center transition-all duration-700 delay-500 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <a
             href="#itinerary"
-            className="px-8 py-3 bg-amber-600 hover:bg-amber-500 text-white rounded-full font-medium transition-all duration-200 shadow-lg shadow-amber-600/30"
+            className="px-8 py-3.5 rounded-lg bg-white text-stone-900 font-semibold hover:bg-stone-100 transition-all shadow-lg shadow-black/10"
           >
-            📋 看完整行程
+            探索完整行程 →
           </a>
           <a
             href="#map"
-            className="px-8 py-3 bg-stone-800/80 hover:bg-stone-700/80 text-stone-200 rounded-full font-medium border border-stone-700 transition-all duration-200"
+            className="px-8 py-3.5 rounded-lg bg-white/10 backdrop-blur-sm text-white border border-white/20 hover:bg-white/20 transition-all"
           >
             🗺️ 路線地圖
           </a>
@@ -55,10 +83,13 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-        <svg className="w-6 h-6 text-stone-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-        </svg>
+      <div className={`absolute bottom-8 left-1/2 -translate-x-1/2 transition-all duration-1000 delay-1000 ${loaded ? 'opacity-100' : 'opacity-0'}`}>
+        <div className="flex flex-col items-center gap-2">
+          <span className="text-white/40 text-xs tracking-widest">SCROLL</span>
+          <svg className="w-4 h-4 text-white/40 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+        </div>
       </div>
     </section>
   );
