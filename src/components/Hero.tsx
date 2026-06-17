@@ -32,10 +32,6 @@ export default function Hero() {
       />
       <div className="absolute inset-0 hero-overlay" />
 
-      {/* Background gradient orbs */}
-      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-rose-500/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl" />
-
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
         {/* Badge */}
@@ -65,13 +61,14 @@ export default function Hero() {
         <div className={`flex flex-wrap gap-4 justify-center transition-all duration-700 delay-500 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <a
             href="#itinerary"
-            className="px-8 py-3.5 rounded-lg bg-white text-stone-900 font-semibold hover:bg-stone-100 transition-all shadow-lg shadow-black/10"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-white text-stone-900 font-semibold shadow-xl shadow-black/20 hover:bg-stone-100 hover:-translate-y-0.5 transition-all"
           >
-            探索完整行程 →
+            探索完整行程
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
           </a>
           <a
             href="#map"
-            className="px-8 py-3.5 rounded-lg bg-white/10 backdrop-blur-sm text-white border border-white/20 hover:bg-white/20 transition-all"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-white/15 backdrop-blur-md text-white border border-white/30 font-medium hover:bg-white/25 transition-all"
           >
             🗺️ 路線地圖
           </a>
