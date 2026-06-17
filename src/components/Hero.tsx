@@ -25,8 +25,8 @@ export default function Hero() {
     <section className="relative h-screen flex items-center justify-center overflow-hidden bg-black">
       {/* Hero image using img tag - always visible */}
       <img
-        src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=1920&q=85"
-        alt="西班牙風景"
+        src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=1920&q=85"
+        alt="西班牙 Granada Alhambra"
         className="absolute inset-0 w-full h-full object-cover"
         style={{ transform: `translateY(${scrollY * 0.35}px)` }}
       />
