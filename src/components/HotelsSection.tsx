@@ -27,9 +27,9 @@ export default function HotelsSection({
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 stagger-grid">
           {hotels.map((hotel, i) => (
-            <div key={i} className="card-editorial overflow-hidden">
+            <div key={i} className="card-editorial card-shine overflow-hidden hover-lift">
               <div className="md:flex">
                 {/* Image - 3:2 aspect ratio */}
                 <div className="md:w-2/5 relative overflow-hidden img-zoom" style={{ minHeight: "200px" }}>

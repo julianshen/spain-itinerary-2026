@@ -292,12 +292,18 @@ export default function Home() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   const plan = PLANS[activePlan];
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 80);
+      // Reading progress
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = docHeight > 0 ? (window.scrollY / docHeight) * 100 : 0;
+      setScrollProgress(Math.min(progress, 100));
+      // Active section
       const sections = ["hero", ...NAV_ITEMS.map((n) => n.id)];
       for (let i = sections.length - 1; i >= 0; i--) {
         const el = document.getElementById(sections[i]);
@@ -313,6 +319,9 @@ export default function Home() {
 
   return (
     <>
+      {/* Reading progress */}
+      <div className="reading-progress no-print" style={{ width: `${scrollProgress}%` }} />
+
       {/* Navigation */}
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -392,19 +401,16 @@ export default function Home() {
         {/* Plan Switcher */}
         <section className="py-8 px-5 md:px-8 bg-[#faf6ee] border-b border-[#e5e5e5]">
           <div className="max-w-5xl mx-auto">
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-              <div>
-                <span className="text-xs font-medium text-[#9a9a9a] uppercase tracking-wider">選擇行程方案</span>
-                <p className="text-sm text-[#6b6b6b] mt-1">不同路線、不同天數，點選切換</p>
-              </div>
-              <div className="flex bg-white rounded-xl p-1 shadow-sm border border-[#e5e5e5]">
+            <div className="flex flex-col items-center gap-4">
+              <span className="text-xs font-medium text-[#9a9a9a] uppercase tracking-[0.2em]">選擇行程方案</span>
+              <div className="flex bg-white rounded-xl p-1.5 shadow-sm border border-[#e5e5e5] gap-1">
                 {PLANS.map((p, i) => (
                   <button
                     key={p.key}
                     onClick={() => setActivePlan(i)}
-                    className={`px-5 py-2.5 rounded-lg text-sm font-medium transition-all whitespace-nowrap ${
+                    className={`px-4 py-2.5 rounded-lg text-sm font-medium transition-all whitespace-nowrap ${
                       activePlan === i
-                        ? "bg-[#1a1a1a] text-white shadow-sm"
+                        ? "bg-[#1a1a1a] text-white shadow-md"
                         : "text-[#6b6b6b] hover:text-[#1a1a1a] hover:bg-[#f8f7f5]"
                     }`}
                   >
@@ -412,6 +418,7 @@ export default function Home() {
                   </button>
                 ))}
               </div>
+              <p className="text-xs text-[#9a9a9a] text-center">{plan.itinerarySubtitle}</p>
             </div>
           </div>
         </section>

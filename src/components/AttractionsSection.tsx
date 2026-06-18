@@ -58,7 +58,7 @@ export default function AttractionsSection({
         </div>
 
         {/* Blog-style cards */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 stagger-grid">
           {attractions.map((a, i) => {
             const isExpanded = expandedCard === i;
             const richDesc = richDescriptions[a.name] || a.description;
@@ -66,7 +66,7 @@ export default function AttractionsSection({
             return (
               <article
                 key={i}
-                className={`card-editorial overflow-hidden group hover-lift ${isExpanded ? 'md:col-span-2' : ''}`}
+                className={`card-editorial card-shine overflow-hidden group hover-lift ${isExpanded ? 'md:col-span-2' : ''}`}
               >
                 {/* Image with overlay */}
                 <div className="relative aspect-[16/10] overflow-hidden img-zoom">

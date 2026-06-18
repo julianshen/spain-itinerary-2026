@@ -265,7 +265,9 @@ export default function ItinerarySection({
         </div>
 
         {/* Timeline */}
-        <div className="space-y-5">
+        <div className="space-y-5 relative">
+          {/* Timeline line */}
+          <div className="absolute left-[42px] top-0 bottom-0 w-px bg-gradient-to-b from-[#c9a84c] via-[#b8735a] to-[#2a6b7a] opacity-20 hidden md:block" />
           {days.map((day, i) => (
             <DayCard key={day.day} day={day} index={i} />
           ))}
