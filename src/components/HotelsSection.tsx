@@ -1,24 +1,34 @@
 "use client";
 
-import { HOTELS } from "../data";
+import { Hotel } from "../types";
 
-export default function HotelsSection() {
+interface HotelsSectionProps {
+  hotels: Hotel[];
+  title?: string;
+  subtitle?: string;
+}
+
+export default function HotelsSection({
+  hotels,
+  title = "住宿精選",
+  subtitle = "每間都是仔細挑選，點連結直接查價預訂",
+}: HotelsSectionProps) {
   return (
     <section id="hotels" className="py-20 md:py-28 px-5 md:px-8">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-14">
           <span className="tag-gold mb-4 inline-block">Accommodations</span>
           <h2 className="text-3xl md:text-5xl font-bold text-[#1a1a1a] mt-4 mb-4 tracking-tight" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
-            住宿精選
+            {title}
           </h2>
           <div className="divider-gold mx-auto mb-6" />
           <p className="text-[#6b6b6b] max-w-lg mx-auto text-lg leading-relaxed">
-            每間都是仔細挑選，點連結直接查價預訂
+            {subtitle}
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
-          {HOTELS.map((hotel, i) => (
+          {hotels.map((hotel, i) => (
             <div key={i} className="card-editorial overflow-hidden">
               <div className="md:flex">
                 {/* Image - 3:2 aspect ratio */}

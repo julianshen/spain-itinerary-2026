@@ -1,9 +1,19 @@
 "use client";
 
-import { CITY_VIDEOS } from "../data";
+import { CityVideo } from "../types";
 import { useState } from "react";
 
-export default function VideoSection() {
+interface VideoSectionProps {
+  videos: CityVideo[];
+  title?: string;
+  subtitle?: string;
+}
+
+export default function VideoSection({
+  videos,
+  title = "出發前先看",
+  subtitle = "用影片預習四大城市的精華",
+}: VideoSectionProps) {
   const [activeId, setActiveId] = useState<string | null>(null);
 
   return (
@@ -12,16 +22,16 @@ export default function VideoSection() {
         <div className="text-center mb-14">
           <span className="tag-gold mb-4 inline-block">Videos</span>
           <h2 className="text-3xl md:text-5xl font-bold text-[#1a1a1a] mt-4 mb-4 tracking-tight" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
-            出發前先看
+            {title}
           </h2>
           <div className="divider-gold mx-auto mb-6" />
           <p className="text-[#6b6b6b] max-w-lg mx-auto text-lg leading-relaxed">
-            用影片預習四大城市的精華
+            {subtitle}
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
-          {CITY_VIDEOS.map((video, i) => (
+          {videos.map((video, i) => (
             <div key={i} className="card-editorial overflow-hidden">
               <div className="relative aspect-video bg-stone-100 overflow-hidden">
                 {activeId === video.embedId ? (

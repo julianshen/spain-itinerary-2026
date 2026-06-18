@@ -1,11 +1,27 @@
 "use client";
 
 import { useEffect } from "react";
-import { CITY_INFO } from "../data";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
-export default function MapSection() {
+interface CityInfo {
+  name: string;
+  coords: [number, number];
+  emoji: string;
+  desc: string;
+}
+
+interface MapSectionProps {
+  cityInfo: CityInfo[];
+  title?: string;
+  subtitle?: string;
+}
+
+export default function MapSection({
+  cityInfo,
+  title = "路線地圖",
+  subtitle = "從馬德里一路向南，再到巴塞隆納",
+}: MapSectionProps) {
   useEffect(() => {
     const mapEl = document.getElementById("route-map");
     if (!mapEl) return;
@@ -30,7 +46,7 @@ export default function MapSection() {
       maxZoom: 19,
     }).addTo(map);
 
-    const coords: [number, number][] = CITY_INFO.map((c) => c.coords);
+    const coords: [number, number][] = cityInfo.map((c) => c.coords);
     L.polyline(coords, {
       color: "#b8954e",
       weight: 3,
@@ -38,7 +54,7 @@ export default function MapSection() {
       dashArray: "8, 12",
     }).addTo(map);
 
-    CITY_INFO.forEach((city) => {
+    cityInfo.forEach((city) => {
       const marker = L.marker(city.coords).addTo(map);
       marker.bindPopup(
         `<div style="text-align:center;font-family:system-ui,sans-serif;padding:4px 8px">
@@ -52,7 +68,7 @@ export default function MapSection() {
     return () => {
       map.remove();
     };
-  }, []);
+  }, [cityInfo]);
 
   return (
     <section id="map" className="py-20 md:py-28 px-5 md:px-8 section-alt">
@@ -60,11 +76,11 @@ export default function MapSection() {
         <div className="text-center mb-10">
           <span className="tag-gold mb-4 inline-block">Route Map</span>
           <h2 className="text-3xl md:text-5xl font-bold text-[#1a1a1a] mt-4 mb-4 tracking-tight" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
-            路線地圖
+            {title}
           </h2>
           <div className="divider-gold mx-auto mb-6" />
           <p className="text-[#6b6b6b] max-w-lg mx-auto text-lg leading-relaxed">
-            從馬德里一路向南，再到巴塞隆納
+            {subtitle}
           </p>
         </div>
 
@@ -73,13 +89,13 @@ export default function MapSection() {
         </div>
 
         <div className="mt-8 flex flex-wrap justify-center gap-3">
-          {CITY_INFO.map((city, i) => (
+          {cityInfo.map((city, i) => (
             <div key={i} className="flex items-center">
               <div className="flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm border border-[#e5e5e5]">
                 <span className="text-sm font-medium text-[#1a1a1a]">{city.name}</span>
                 <span className="text-xs text-[#9a9a9a]">{city.desc}</span>
               </div>
-              {i < CITY_INFO.length - 1 && (
+              {i < cityInfo.length - 1 && (
                 <span className="text-[#b8954e] mx-1 text-lg">→</span>
               )}
             </div>

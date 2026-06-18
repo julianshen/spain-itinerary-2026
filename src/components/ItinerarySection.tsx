@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { DayPlan } from "../types";
 import { DAYS } from "../data";
 
-function DayCard({ day, index }: { day: (typeof DAYS)[0]; index: number }) {
+function DayCard({ day, index }: { day: DayPlan; index: number }) {
   const [expanded, setExpanded] = useState(false);
 
   // Map emoji to simple icon or text
@@ -207,7 +208,26 @@ function DayCard({ day, index }: { day: (typeof DAYS)[0]; index: number }) {
   );
 }
 
-export default function ItinerarySection() {
+interface ItinerarySectionProps {
+  days: DayPlan[];
+  title?: string;
+  subtitle?: string;
+  transportSummary?: string[];
+}
+
+export default function ItinerarySection({
+  days,
+  title = "行程總覽",
+  subtitle = "經典路線一次玩透",
+  transportSummary = [
+    "TPE → BCN 18h55m",
+    "BCN → Madrid 2h30m",
+    "Madrid → Córdoba 1h45m",
+    "Córdoba → Sevilla 45m",
+    "Sevilla → Granada 2h30m",
+    "GRX → BCN 1h40m",
+  ],
+}: ItinerarySectionProps) {
   return (
     <section id="itinerary" className="py-20 md:py-28 px-5 md:px-8">
       <div className="max-w-3xl mx-auto">
@@ -215,17 +235,17 @@ export default function ItinerarySection() {
         <div className="text-center mb-16">
           <span className="tag-gold mb-4 inline-block">The Itinerary</span>
           <h2 className="text-3xl md:text-5xl font-bold text-[#1a1a1a] mt-4 mb-4 tracking-tight" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
-            十一日，五座城市
+            {title}
           </h2>
           <div className="divider-gold mx-auto mb-6" />
           <p className="text-[#6b6b6b] max-w-lg mx-auto text-lg leading-relaxed">
-            從馬德里一路南下安達魯西亞，再回到巴塞隆納走完高第之路
+            {subtitle}
           </p>
         </div>
 
         {/* Timeline */}
         <div className="space-y-5">
-          {DAYS.map((day, i) => (
+          {days.map((day, i) => (
             <DayCard key={day.day} day={day} index={i} />
           ))}
         </div>
@@ -234,14 +254,7 @@ export default function ItinerarySection() {
         <div className="mt-12 card-editorial p-8">
           <h3 className="font-semibold text-[#1a1a1a] text-center mb-6 text-lg">全程交通一覽</h3>
           <div className="flex flex-wrap justify-center gap-2">
-            {[
-              "TPE → BCN 18h55m",
-              "BCN → Madrid 2h30m",
-              "Madrid → Córdoba 1h45m",
-              "Córdoba → Sevilla 45m",
-              "Sevilla → Granada 2h30m",
-              "GRX → BCN 1h40m",
-            ].map((s, i) => (
+            {transportSummary.map((s, i) => (
               <span key={i} className="px-3 py-1.5 bg-[#f8f7f5] text-[#6b6b6b] text-sm rounded-lg border border-[#e5e5e5]">
                 {s}
               </span>

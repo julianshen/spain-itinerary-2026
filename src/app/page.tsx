@@ -1,16 +1,27 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import {
+  DAYS,
+  HOTELS,
+  ATTRACTIONS,
+  CITY_VIDEOS,
+  CITY_INFO,
+  DAYS_RONDA,
+  HOTELS_RONDA,
+  ATTRACTIONS_RONDA,
+  CITY_VIDEOS_RONDA,
+  CITY_INFO_RONDA,
+} from "../data";
 import Hero from "@/components/Hero";
 import ItinerarySection from "@/components/ItinerarySection";
 import AttractionsSection from "@/components/AttractionsSection";
 import HotelsSection from "@/components/HotelsSection";
 import VideoSection from "@/components/VideoSection";
 import FullBleedDivider from "@/components/FullBleedDivider";
+import dynamic from "next/dynamic";
 
 const MapSection = dynamic(() => import("@/components/MapSection"), { ssr: false });
-
-import dynamic from "next/dynamic";
 
 const NAV_ITEMS = [
   { id: "itinerary", label: "行程" },
@@ -20,10 +31,152 @@ const NAV_ITEMS = [
   { id: "videos", label: "影片" },
 ];
 
+interface PlanConfig {
+  key: string;
+  label: string;
+  days: typeof DAYS;
+  hotels: typeof HOTELS;
+  attractions: typeof ATTRACTIONS;
+  videos: typeof CITY_VIDEOS;
+  cityInfo: typeof CITY_INFO;
+  itineraryTitle: string;
+  itinerarySubtitle: string;
+  transportSummary: string[];
+  attractionsTitle: string;
+  attractionsSubtitle: string;
+  hotelsTitle: string;
+  hotelsSubtitle: string;
+  mapTitle: string;
+  mapSubtitle: string;
+  videosTitle: string;
+  videosSubtitle: string;
+  dividers: {
+    image: string;
+    alt: string;
+    caption: string;
+  }[];
+  checklist: string[];
+  footerText: string;
+}
+
+const PLANS: PlanConfig[] = [
+  {
+    key: "classic",
+    label: "方案一：經典路線",
+    days: DAYS,
+    hotels: HOTELS,
+    attractions: ATTRACTIONS,
+    videos: CITY_VIDEOS,
+    cityInfo: CITY_INFO,
+    itineraryTitle: "十一日，五座城市",
+    itinerarySubtitle: "從馬德里一路南下安達魯西亞，再回到巴塞隆納走完高第之路",
+    transportSummary: [
+      "TPE → BCN 18h55m",
+      "BCN → Madrid 2h30m",
+      "Madrid → Córdoba 1h45m",
+      "Córdoba → Sevilla 45m",
+      "Sevilla → Granada 2h30m",
+      "GRX → BCN 1h40m",
+    ],
+    attractionsTitle: "必去景點",
+    attractionsSubtitle: "從馬德里皇宮到聖家堂，每一個都是此生必訪",
+    hotelsTitle: "住宿精選",
+    hotelsSubtitle: "每間都是仔細挑選，點連結直接查價預訂",
+    mapTitle: "路線地圖",
+    mapSubtitle: "從馬德里一路向南，再到巴塞隆納",
+    videosTitle: "出發前先看",
+    videosSubtitle: "用影片預習四大城市的精華",
+    dividers: [
+      {
+        image: "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=1920&q=85",
+        alt: "Alhambra 格拉納達",
+        caption: "格拉納達 · 摩爾王朝的最後詩篇",
+      },
+      {
+        image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=1920&q=85",
+        alt: "Sevilla 塞維亞",
+        caption: "塞維亞 · 安達魯西亞的靈魂",
+      },
+      {
+        image: "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=1920&q=85",
+        alt: "Barcelona 巴塞隆納",
+        caption: "巴塞隆納 · 高第的未竟之夢",
+      },
+    ],
+    checklist: [
+      "Alhambra 門票 — 提前 2 個月預約！",
+      "聖家堂門票 — 提前 2-3 週",
+      "AVE 高鐵早鳥票 — 可省 50%",
+      "Sevilla Alcázar 門票 — 排隊很長",
+      "普拉多美術館 / 皇宮門票",
+      "全部飯店訂房 — 尤其 Parador！",
+    ],
+    footerText: "西班牙 11 天行程規劃 · 2026 年 10 月 22 日 → 11 月 1 日",
+  },
+  {
+    key: "ronda",
+    label: "方案二：Ronda 深度遊",
+    days: DAYS_RONDA,
+    hotels: HOTELS_RONDA,
+    attractions: ATTRACTIONS_RONDA,
+    videos: CITY_VIDEOS_RONDA,
+    cityInfo: CITY_INFO_RONDA,
+    itineraryTitle: "十三日，六座城市",
+    itinerarySubtitle: "馬德里 → 安達魯西亞 → 龍達峽谷 → 巴塞隆納，深入西班牙靈魂",
+    transportSummary: [
+      "TPE → BCN 18h55m",
+      "BCN → Madrid 2h30m",
+      "Madrid → Córdoba 1h45m",
+      "Córdoba → Ronda 租車 2h",
+      "Ronda → Sevilla 自駕 2h",
+      "Sevilla → Granada 2h30m",
+      "GRX → BCN 1h40m",
+    ],
+    attractionsTitle: "必去景點",
+    attractionsSubtitle: "從大清真寺到龍達新橋，深入安達魯西亞的每一個角落",
+    hotelsTitle: "住宿精選",
+    hotelsSubtitle: "Parador de Ronda 峽谷景觀房，此生必住",
+    mapTitle: "路線地圖",
+    mapSubtitle: "多繞進龍達，多兩天深度",
+    videosTitle: "出發前先看",
+    videosSubtitle: "用影片預習五大城市的精華",
+    dividers: [
+      {
+        image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=1920&q=85",
+        alt: "Sevilla 塞維亞",
+        caption: "塞維亞 · 安達魯西亞的靈魂",
+      },
+      {
+        image: "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=1920&q=85",
+        alt: "Alhambra 格拉納達",
+        caption: "格拉納達 · 摩爾王朝的最後詩篇",
+      },
+      {
+        image: "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=1920&q=85",
+        alt: "Barcelona 巴塞隆納",
+        caption: "巴塞隆納 · 高第的未竟之夢",
+      },
+    ],
+    checklist: [
+      "Alhambra 門票 — 提前 2 個月預約！",
+      "聖家堂門票 — 提前 2-3 週",
+      "AVE 高鐵早鳥票 — 可省 50%",
+      "Sevilla Alcázar 門票 — 排隊很長",
+      "Parador de Ronda — 務必提前訂房！",
+      "租車預約 — Córdoba 取車、Sevilla 還車",
+      "Ronda 鬥牛場 + 酒莊品酒預約",
+    ],
+    footerText: "西班牙 13 天行程規劃 · 2026 年 10 月 22 日 → 11 月 3 日",
+  },
+];
+
 export default function Home() {
+  const [activePlan, setActivePlan] = useState(0);
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
+
+  const plan = PLANS[activePlan];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -119,41 +272,89 @@ export default function Home() {
           <Hero />
         </section>
 
-        {/* Itinerary */}
-        <ItinerarySection />
+        {/* Plan Switcher */}
+        <section className="py-8 px-5 md:px-8 bg-[#faf6ee] border-b border-[#e5e5e5]">
+          <div className="max-w-5xl mx-auto">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div>
+                <span className="text-xs font-medium text-[#9a9a9a] uppercase tracking-wider">選擇行程方案</span>
+                <p className="text-sm text-[#6b6b6b] mt-1">不同路線、不同天數，點選切換</p>
+              </div>
+              <div className="flex bg-white rounded-xl p-1 shadow-sm border border-[#e5e5e5]">
+                {PLANS.map((p, i) => (
+                  <button
+                    key={p.key}
+                    onClick={() => setActivePlan(i)}
+                    className={`px-5 py-2.5 rounded-lg text-sm font-medium transition-all whitespace-nowrap ${
+                      activePlan === i
+                        ? "bg-[#1a1a1a] text-white shadow-sm"
+                        : "text-[#6b6b6b] hover:text-[#1a1a1a] hover:bg-[#f8f7f5]"
+                    }`}
+                  >
+                    {p.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
 
-        {/* Full-bleed divider 1: Alhambra */}
+        {/* Itinerary */}
+        <ItinerarySection
+          days={plan.days}
+          title={plan.itineraryTitle}
+          subtitle={plan.itinerarySubtitle}
+          transportSummary={plan.transportSummary}
+        />
+
+        {/* Full-bleed divider 1 */}
         <FullBleedDivider
-          image="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=1920&q=85"
-          alt="Alhambra 格拉納達"
-          caption="格拉納達 · 摩爾王朝的最後詩篇"
+          image={plan.dividers[0].image}
+          alt={plan.dividers[0].alt}
+          caption={plan.dividers[0].caption}
         />
 
         {/* Attractions */}
-        <AttractionsSection />
+        <AttractionsSection
+          attractions={plan.attractions}
+          title={plan.attractionsTitle}
+          subtitle={plan.attractionsSubtitle}
+        />
 
-        {/* Full-bleed divider 2: Sevilla */}
+        {/* Full-bleed divider 2 */}
         <FullBleedDivider
-          image="https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=1920&q=85"
-          alt="Sevilla 塞維亞"
-          caption="塞維亞 · 安達魯西亞的靈魂"
+          image={plan.dividers[1].image}
+          alt={plan.dividers[1].alt}
+          caption={plan.dividers[1].caption}
         />
 
         {/* Hotels */}
-        <HotelsSection />
+        <HotelsSection
+          hotels={plan.hotels}
+          title={plan.hotelsTitle}
+          subtitle={plan.hotelsSubtitle}
+        />
 
-        {/* Full-bleed divider 3: Barcelona */}
+        {/* Full-bleed divider 3 */}
         <FullBleedDivider
-          image="https://images.unsplash.com/photo-1583422409516-2895a77efded?w=1920&q=85"
-          alt="Barcelona 巴塞隆納"
-          caption="巴塞隆納 · 高第的未竟之夢"
+          image={plan.dividers[2].image}
+          alt={plan.dividers[2].alt}
+          caption={plan.dividers[2].caption}
         />
 
         {/* Map */}
-        <MapSection />
+        <MapSection
+          cityInfo={plan.cityInfo}
+          title={plan.mapTitle}
+          subtitle={plan.mapSubtitle}
+        />
 
         {/* Videos */}
-        <VideoSection />
+        <VideoSection
+          videos={plan.videos}
+          title={plan.videosTitle}
+          subtitle={plan.videosSubtitle}
+        />
 
         {/* Checklist - Ink section */}
         <section className="py-20 md:py-28 px-5 md:px-8 section-ink">
@@ -166,20 +367,13 @@ export default function Home() {
             </h2>
 
             <div className="grid sm:grid-cols-2 gap-4 text-left">
-              {[
-                { text: "Alhambra 門票 — 提前 2 個月預約！" },
-                { text: "聖家堂門票 — 提前 2-3 週" },
-                { text: "AVE 高鐵早鳥票 — 可省 50%" },
-                { text: "Sevilla Alcázar 門票 — 排隊很長" },
-                { text: "普拉多美術館 / 皇宮門票" },
-                { text: "全部飯店訂房 — 尤其 Parador！" },
-              ].map((item, i) => (
+              {plan.checklist.map((item, i) => (
                 <div
                   key={i}
                   className="checklist-item"
                 >
                   <div className="check-icon" />
-                  <span className="text-sm text-white/80 font-medium">{item.text}</span>
+                  <span className="text-sm text-white/80 font-medium">{item}</span>
                 </div>
               ))}
             </div>
@@ -191,7 +385,7 @@ export default function Home() {
       <footer className="py-16 px-5 border-t border-[#e5e5e5]">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-stone-500 text-sm">
-            西班牙 11 天行程規劃 · 2026 年 10 月 22 日 → 11 月 1 日
+            {plan.footerText}
           </p>
           <p className="text-stone-400 text-xs mt-2">
             Made with care for Julian

@@ -1,24 +1,34 @@
 "use client";
 
-import { ATTRACTIONS } from "../data";
+import { Attraction } from "../types";
 
-export default function AttractionsSection() {
+interface AttractionsSectionProps {
+  attractions: Attraction[];
+  title?: string;
+  subtitle?: string;
+}
+
+export default function AttractionsSection({
+  attractions,
+  title = "必去景點",
+  subtitle = "從馬德里皇宮到聖家堂，每一個都是此生必訪",
+}: AttractionsSectionProps) {
   return (
     <section id="attractions" className="py-20 md:py-28 px-5 md:px-8 section-alt">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-14">
           <span className="tag-gold mb-4 inline-block">Must-See</span>
           <h2 className="text-3xl md:text-5xl font-bold text-[#1a1a1a] mt-4 mb-4 tracking-tight" style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}>
-            必去景點
+            {title}
           </h2>
           <div className="divider-gold mx-auto mb-6" />
           <p className="text-[#6b6b6b] max-w-lg mx-auto text-lg leading-relaxed">
-            從馬德里皇宮到聖家堂，每一個都是此生必訪
+            {subtitle}
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {ATTRACTIONS.map((a, i) => (
+          {attractions.map((a, i) => (
             <div
               key={i}
               className="card-editorial overflow-hidden group"
