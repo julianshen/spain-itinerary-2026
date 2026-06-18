@@ -69,6 +69,8 @@ interface PlanConfig {
   footerText: string;
 }
 
+const MOBILE_LABELS = ["① 經典路線", "② Ronda 深度", "③ 反向路線", "④ Málaga"];
+
 const PLANS: PlanConfig[] = [
   {
     key: "classic",
@@ -403,23 +405,21 @@ export default function Home() {
           <div className="max-w-5xl mx-auto px-4 md:px-8">
             <div className="flex flex-col items-center gap-3 md:gap-4">
               <span className="text-[10px] md:text-xs font-semibold text-[#b8954e] uppercase tracking-[0.2em]">選擇行程方案</span>
-              {/* Mobile: scrollable compact pills */}
-              <div className="md:hidden w-full overflow-x-auto scrollbar-hide -mx-4 px-4">
-                <div className="flex gap-2 w-max mx-auto">
-                  {PLANS.map((p, i) => (
-                    <button
-                      key={p.key}
-                      onClick={() => setActivePlan(i)}
-                      className={`px-4 py-3 rounded-xl text-sm font-semibold transition-all whitespace-nowrap min-w-[100px] text-center ${
-                        activePlan === i
-                          ? "bg-[#1a1a1a] text-white shadow-lg shadow-[#1a1a1a]/20 scale-[1.02]"
-                          : "bg-white text-[#5a5a5a] border border-[#e5e5e5] active:scale-95"
-                      }`}
-                    >
-                      {p.label.replace('方案', '').replace('一', '①').replace('二', '②').replace('三', '③').replace('四', '④')}
-                    </button>
-                  ))}
-                </div>
+              {/* Mobile: 2x2 grid */}
+              <div className="md:hidden grid grid-cols-2 gap-2.5 w-full max-w-sm">
+                {PLANS.map((p, i) => (
+                  <button
+                    key={p.key}
+                    onClick={() => setActivePlan(i)}
+                    className={`px-3 py-3.5 rounded-xl text-sm font-semibold transition-all text-center ${
+                      activePlan === i
+                        ? "bg-[#1a1a1a] text-white shadow-lg shadow-[#1a1a1a]/20"
+                        : "bg-white text-[#5a5a5a] border border-[#e5e5e5] active:bg-[#f8f7f5]"
+                    }`}
+                  >
+                    {MOBILE_LABELS[i]}
+                  </button>
+                ))}
               </div>
               {/* Desktop: full tab bar */}
               <div className="hidden md:flex bg-white rounded-xl p-1.5 shadow-sm border border-[#e5e5e5] gap-1">
