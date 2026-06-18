@@ -991,7 +991,7 @@ export const ATTRACTIONS_MALAGA: Attraction[] = [
 export const CITY_VIDEOS_MALAGA: CityVideo[] = [
   { city: "馬德里 Madrid", embedId: "l1qH6XLC-2I", title: "馬德里旅遊｜西班牙馬德里必去景點" },
   { city: "格拉納達 Granada & Alhambra", embedId: "fL2Mno5ll9k", title: "Granada Spain Travel Guide" },
-  { city: "Málaga", embedId: "8XxD6LhdG1w", title: "Málaga Spain Travel Guide - Costa del Sol" },
+  { city: "Málaga", embedId: "x9L_RI69rks", title: "3 Days in Malaga, Spain | 15 Things to Do, Eat & Drink" },
   { city: "巴塞隆納 Barcelona", embedId: "wMfVjW7ldUc", title: "Barcelona Travel Guide - Best Things to Do" },
 ];
 
