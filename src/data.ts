@@ -23,8 +23,8 @@ export const DAYS: DayPlan[] = [
     subtitle: "普拉多美術館、皇宮、麗池公園",
     emoji: "🎨",
     highlights: [
-      { icon: "🎨", time: "09:00-12:00", title: "普拉多美術館", description: "西班牙最重要的美術館，收藏哥雅、委拉斯奎茲、葛雷柯等大師鉅作。必看：哥雅《裸體的瑪哈》、委拉斯奎茲《宮女》", duration: "3h", tip: "門票 €15，下午 6-8 點免費入場但排隊很長", link: "https://www.museodelprado.es/", image: "https://images.unsplash.com/photo-1583767415109-d4c8836adf5b?w=800&q=80" },
-      { icon: "🌿", time: "12:00-13:00", title: "麗池公園", description: "馬德里的城市綠洲。在人工湖划船、看水晶宮（Palacio de Cristal）", image: "https://images.unsplash.com/photo-1561647784-2c3c1f9a56c3?w=800&q=80" },
+      { icon: "🎨", time: "09:00-12:00", title: "普拉多美術館", description: "西班牙最重要的美術館，收藏哥雅、委拉斯奎茲、葛雷柯等大師鉅作。必看：哥雅《裸體的瑪哈》、委拉斯奎茲《宮女》", duration: "3h", tip: "門票 €15，下午 6-8 點免費入場但排隊很長", link: "https://www.museodelprado.es/", image: "https://images.unsplash.com/photo-1651902519299-9eaf6548b364?w=800&q=80" },
+      { icon: "🌿", time: "12:00-13:00", title: "麗池公園", description: "馬德里的城市綠洲。在人工湖划船、看水晶宮（Palacio de Cristal）", image: "https://images.unsplash.com/photo-1645203494470-1507ae7f1a40?w=800&q=80" },
       { icon: "👑", time: "14:30-16:30", title: "馬德里皇宮", description: "歐洲第三大皇宮，僅次於凡爾賽宮和美景宮。奢華的內部裝潢、壁畫、兵器廣場", duration: "2h", tip: "門票 €12，建議提前官網預約", link: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid", image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=800&q=80" },
       { icon: "🍫", time: "晚上", title: "San Ginés 吃 Churros", description: "開業於 1894 年的老字號，招牌是 Churros con Chocolate 巧克力油條，24 小時營業！" },
     ],
@@ -36,9 +36,9 @@ export const DAYS: DayPlan[] = [
     subtitle: "格爾尼卡、La Latina、伯納烏",
     emoji: "🏛️",
     highlights: [
-      { icon: "🎭", time: "09:30-11:30", title: "索菲亞王后藝術中心", description: "現代藝術美術館，鎮館之寶——畢卡索《格爾尼卡》！這幅反戰巨作長 7.8 公尺，親眼看到非常震撼", duration: "2h", tip: "門票 €12，週一、週三至週六 19:00-21:00 免費，週日 13:30-19:00 免費", link: "https://www.museoreinasofia.es/en", image: "https://images.unsplash.com/photo-1551821562-82b0a2a88e30?w=800&q=80" },
+      { icon: "🎭", time: "09:30-11:30", title: "索菲亞王后藝術中心", description: "現代藝術美術館，鎮館之寶——畢卡索《格爾尼卡》！這幅反戰巨作長 7.8 公尺，親眼看到非常震撼", duration: "2h", tip: "門票 €12，週一、週三至週六 19:00-21:00 免費，週日 13:30-19:00 免費", link: "https://www.museoreinasofia.es/en", image: "https://images.unsplash.com/photo-1564565899675-a159063d17be?w=800&q=80" },
       { icon: "🏘️", time: "12:00-14:00", title: "La Latina 區午餐", description: "馬德里最古老的街區，蜿蜒的小巷裡藏著無數 Tapas 酒吧。推薦吃 Callos（燉牛肚）或 Tortilla Española" },
-      { icon: "⚽", time: "15:00-17:00", title: "聖地亞哥·伯納烏球場", description: "皇家馬德里主場！參觀球場、更衣室、獎盃室、球員通道，球迷必去聖地！", duration: "2h", tip: "門票 €25-40，官網預約可選導覽", link: "https://www.realmadrid.com/en/visit-the-bernabeu", image: "https://images.unsplash.com/photo-1589489873423-d1745278a8f0?w=800&q=80" },
+      { icon: "⚽", time: "15:00-17:00", title: "聖地亞哥·伯納烏球場", description: "皇家馬德里主場！參觀球場、更衣室、獎盃室、球員通道，球迷必去聖地！", duration: "2h", tip: "門票 €25-40，官網預約可選導覽", link: "https://www.realmadrid.com/en/visit-the-bernabeu", image: "https://images.unsplash.com/photo-1522778034537-20a2486be803?w=800&q=80" },
       { icon: "🌅", time: "17:30-19:00", title: "德波神廟夕陽", description: "從埃及搬來的神廟，馬德里最浪漫的夕陽景點。免費入場，夕陽時分整個神廟和天空超美" },
     ],
   },
@@ -50,7 +50,7 @@ export const DAYS: DayPlan[] = [
     emoji: "🚄",
     highlights: [
       { icon: "🚄", time: "09:00→10:45", title: "AVE 到 Córdoba", description: "馬德里 Atocha 出發，1h45m 直達 Córdoba", duration: "1h45m", price: "€30-50" },
-      { icon: "🕌", time: "10:45-14:00", title: "Córdoba 大清真寺", description: "世界文化遺產，摩爾人興建的大清真寺內有 856 根雙色拱柱，後來天主教徒在裡面蓋了一座教堂，形成伊斯蘭+基督教的獨特融合", duration: "2-3h", tip: "門票 €13，建議上午去光線最好", link: "https://mezquita-catedraldecordoba.es/", image: "https://images.unsplash.com/photo-1558459656-c4a1c74ed44b?w=800&q=80" },
+      { icon: "🕌", time: "10:45-14:00", title: "Córdoba 大清真寺", description: "世界文化遺產，摩爾人興建的大清真寺內有 856 根雙色拱柱，後來天主教徒在裡面蓋了一座教堂，形成伊斯蘭+基督教的獨特融合", duration: "2-3h", tip: "門票 €13，建議上午去光線最好", link: "https://mezquita-catedraldecordoba.es/", image: "https://images.unsplash.com/photo-1632904080322-e71e16a5987f?w=800&q=80" },
       { icon: "🌸", time: "12:00-13:00", title: "百花巷 + 羅馬橋", description: "著名的藍白瓷磚小巷（Calleja de las Flores），以及西元 1 世紀建的羅馬橋" },
       { icon: "🚄", time: "15:00→15:45", title: "Córdoba→Sevilla", description: "AVE 只要 45 分鐘，打個盹就到了！", duration: "45min", price: "€20-35" },
       { icon: "💃", time: "晚上", title: "Sevilla 夜生活", description: "到 Sevilla 入住後，晚上去 Triana 區吃 Tapas，佛朗明哥的發源地就從這裡開始！" },
@@ -64,9 +64,9 @@ export const DAYS: DayPlan[] = [
     subtitle: "Alcázar、大教堂、西班牙廣場",
     emoji: "💃",
     highlights: [
-      { icon: "🏰", time: "09:00-11:30", title: "塞維亞王宮 Alcázar", description: "歐洲最古老的皇家宮殿之一，也是《權力遊戲》多恩王國花園的拍攝地！摩爾式建築+哥德式風格，後花園絕美", duration: "2.5h", tip: "門票 €13.5，務必提前官網預約！排隊很恐怖", link: "https://www.alcazarsevilla.org/en/", image: "https://images.unsplash.com/photo-1595498188381-e7a8f4f244ae?w=800&q=80" },
-      { icon: "⛪", time: "12:00-14:00", title: "Sevilla 大教堂 + 吉拉達塔", description: "世界最大的哥德式教堂，哥倫布的靈柩在此。旁邊的吉拉達塔是摩爾時期宣禮塔改建的鐘樓", duration: "1.5h", tip: "門票 €12，包含登塔", image: "https://images.unsplash.com/photo-1594056142363-6bea693d5711?w=800&q=80" },
-      { icon: "🌆", time: "15:00-17:00", title: "西班牙廣場", description: "1929 年博覽會所建，半圓形廣場上有 58 座瓷磚長椅，代表西班牙各省。下午光影打在瓷磚上超美！一定要划船", duration: "2h", tip: "免費，傍晚夕陽時最美", image: "https://images.unsplash.com/photo-1583428570846-e812712481f7?w=800&q=80" },
+      { icon: "🏰", time: "09:00-11:30", title: "塞維亞王宮 Alcázar", description: "歐洲最古老的皇家宮殿之一，也是《權力遊戲》多恩王國花園的拍攝地！摩爾式建築+哥德式風格，後花園絕美", duration: "2.5h", tip: "門票 €13.5，務必提前官網預約！排隊很恐怖", link: "https://www.alcazarsevilla.org/en/", image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=800&q=80" },
+      { icon: "⛪", time: "12:00-14:00", title: "Sevilla 大教堂 + 吉拉達塔", description: "世界最大的哥德式教堂，哥倫布的靈柩在此。旁邊的吉拉達塔是摩爾時期宣禮塔改建的鐘樓", duration: "1.5h", tip: "門票 €12，包含登塔", image: "https://images.unsplash.com/photo-1534106659956-d02ca15d30fb?w=800&q=80" },
+      { icon: "🌆", time: "15:00-17:00", title: "西班牙廣場", description: "1929 年博覽會所建，半圓形廣場上有 58 座瓷磚長椅，代表西班牙各省。下午光影打在瓷磚上超美！一定要划船", duration: "2h", tip: "免費，傍晚夕陽時最美", image: "https://images.unsplash.com/photo-1559386081-325882507af7?w=800&q=80" },
       { icon: "💃", time: "晚上", title: "佛朗明哥秀", description: "在 Triana 區或 Santa Cruz 區看一場真正的佛朗明哥表演，感動到起雞皮疙瘩！" },
     ],
   },
@@ -78,7 +78,7 @@ export const DAYS: DayPlan[] = [
     emoji: "🏰",
     highlights: [
       { icon: "🚄", time: "10:00→12:30", title: "AVE 到 Granada", description: "Sevilla 到 Granada 高鐵直達，約 2.5h", duration: "2h30m", price: "€25-45" },
-      { icon: "🏨", time: "13:00", title: "入住 Parador de Granada", description: "位於 Alhambra 宮殿內的傳奇飯店，前身是 15 世紀修道院，陽台就能看到阿罕布拉花園", image: "https://images.unsplash.com/photo-1590073242678-70ee3fc28f8e?w=800&q=80" },
+      { icon: "🏨", time: "13:00", title: "入住 Parador de Granada", description: "位於 Alhambra 宮殿內的傳奇飯店，前身是 15 世紀修道院，陽台就能看到阿罕布拉花園", image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80" },
       { icon: "🏘️", time: "14:00-16:00", title: "Albaicín 阿爾拜辛區", description: "UNESCO 世界遺產的摩爾人舊城區，蜿蜒的白色小巷、磁磚庭院，像走入一千零一夜的世界" },
       { icon: "🌅", time: "16:30-17:30", title: "聖尼古拉斯瞭望台", description: "遠眺 Alhambra 的最佳點！夕陽時分，阿罕布拉宮在內華達山脈前閃耀金紅色光芒" },
     ],
@@ -91,7 +91,7 @@ export const DAYS: DayPlan[] = [
     subtitle: "此生必去的宮殿奇蹟",
     emoji: "🏛️",
     highlights: [
-      { icon: "🏛️", time: "09:00-13:00", title: "阿罕布拉宮 Alhambra", description: "西班牙的瑰寶、摩爾人的最後城堡！包含納斯利宮（超精緻阿拉伯雕刻）、Generalife 夏宮花園、卡洛斯五世宮殿。每走一步都是驚嘆！", duration: "4h+", tip: "⚠️ 一定要 2 個月前預約！門票 €19.09，Nasrid Palaces 有時段限制，不能遲到！", link: "https://tickets.alhambra-patronato.es/en/", image: "https://images.unsplash.com/photo-1590073242678-70ee3fc28f8e?w=800&q=80" },
+      { icon: "🏛️", time: "09:00-13:00", title: "阿罕布拉宮 Alhambra", description: "西班牙的瑰寶、摩爾人的最後城堡！包含納斯利宮（超精緻阿拉伯雕刻）、Generalife 夏宮花園、卡洛斯五世宮殿。每走一步都是驚嘆！", duration: "4h+", tip: "⚠️ 一定要 2 個月前預約！門票 €19.09，Nasrid Palaces 有時段限制，不能遲到！", link: "https://tickets.alhambra-patronato.es/en/", image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80" },
       { icon: "🍤", time: "13:00-15:00", title: "Granada Tapas 文化", description: "Granada 是全西班牙唯一點酒就送 Tapas 的城市！Calle Navas 上每家 bar 都有驚喜，吃一圈就飽了！" },
       { icon: "⛪", time: "15:30-17:00", title: "Granada 大教堂 + 皇家禮拜堂", description: "伊莎貝拉一世女王與費迪南德國王安葬於此。禮拜堂內有他們的石棺和珍貴的中世紀藝術品" },
     ],
@@ -115,9 +115,9 @@ export const DAYS: DayPlan[] = [
     subtitle: "巴特略之家、米拉之家、奎爾公園",
     emoji: "🎨",
     highlights: [
-      { icon: "🏡", time: "09:30-11:00", title: "巴特略之家 Casa Batlló", description: "高第的海洋主題傑作，外牆像彩色龍鱗，內部沒有直線！沉浸式導覽用 AR 超酷", duration: "1.5h", tip: "門票 €35-45，官網有夜間燈光秀", link: "https://www.casabatllo.es/en/", image: "https://images.unsplash.com/photo-1621106043950-527f8a0ad103?w=800&q=80" },
-      { icon: "🏠", time: "11:30-13:00", title: "米拉之家 Casa Milà", description: "高第最後的民用建築，波浪型石造外牆、煙囪屋頂像星際大戰的場景。屋頂必去！", duration: "1.5h", tip: "門票 €25，屋頂看夕陽特別美", image: "https://images.unsplash.com/photo-1599581312641-5fdff8fc53ea?w=800&q=80" },
-      { icon: "🌳", time: "15:00-17:00", title: "奎爾公園 Park Güell", description: "高第打造的童話花園社區，彩色馬賽克蜥蜴、波浪長椅、世界最長的曲線長椅", duration: "2h", tip: "紀念碑區域門票 €10，可線上預約", image: "https://images.unsplash.com/photo-1568144805308-7b3d8f46a37a?w=800&q=80" },
+      { icon: "🏡", time: "09:30-11:00", title: "巴特略之家 Casa Batlló", description: "高第的海洋主題傑作，外牆像彩色龍鱗，內部沒有直線！沉浸式導覽用 AR 超酷", duration: "1.5h", tip: "門票 €35-45，官網有夜間燈光秀", link: "https://www.casabatllo.es/en/", image: "https://images.unsplash.com/photo-1579282240050-352db0a14c21?w=800&q=80" },
+      { icon: "🏠", time: "11:30-13:00", title: "米拉之家 Casa Milà", description: "高第最後的民用建築，波浪型石造外牆、煙囪屋頂像星際大戰的場景。屋頂必去！", duration: "1.5h", tip: "門票 €25，屋頂看夕陽特別美", image: "https://images.unsplash.com/photo-1568921097010-b59ee67056df?w=800&q=80" },
+      { icon: "🌳", time: "15:00-17:00", title: "奎爾公園 Park Güell", description: "高第打造的童話花園社區，彩色馬賽克蜥蜴、波浪長椅、世界最長的曲線長椅", duration: "2h", tip: "紀念碑區域門票 €10，可線上預約", image: "https://images.unsplash.com/photo-1630219694734-fe47ab76b15e?w=800&q=80" },
     ],
   },
   {
@@ -129,7 +129,7 @@ export const DAYS: DayPlan[] = [
     highlights: [
       { icon: "🏘️", time: "09:00-11:00", title: "哥德區 Barri Gòtic", description: "巴塞最古老的街區，狹窄的中世紀小巷、隱藏廣場。找到聖伊莉莎白廣場和主教橋" },
       { icon: "🛍️", time: "11:00-13:00", title: "蘭布拉大道 La Rambla", description: "巴塞隆納最著名的林蔭大道，街頭藝人、花店、咖啡座，走到底就是哥倫布紀念碑和海港" },
-      { icon: "🐟", time: "11:30-13:00", title: "博蓋利亞市場", description: "歐洲最大市場之一，鮮豔的水果攤、伊比利火腿、現榨果汁、海鮮⋯⋯五感全開！", image: "https://images.unsplash.com/photo-1559721724-1f58a92e1d37?w=800&q=80" },
+      { icon: "🐟", time: "11:30-13:00", title: "博蓋利亞市場", description: "歐洲最大市場之一，鮮豔的水果攤、伊比利火腿、現榨果汁、海鮮⋯⋯五感全開！", image: "https://images.unsplash.com/photo-1614635454419-36aa631da264?w=800&q=80" },
       { icon: "🌊", time: "15:00-17:00", title: "巴塞海灘 Barceloneta", description: "地中海陽光、沙灘、海鮮 Paella，旅程尾聲放空一下" },
     ],
   },
@@ -154,7 +154,7 @@ export const HOTELS: Hotel[] = [
     priceRange: "€268-400 / 晚",
     description: "位於 Alhambra 宮殿內，前身是 15 世紀修道院。住在世界遺產裡是什麼感覺？只有 40 間房，極度搶手！",
     highlights: ["在 Alhambra 裡面！陽台看宮殿花園", "餐廳露台有 Alhambra 全景", "僅 40 間房，極致寧靜", "古典 Andalusian 裝潢風格"],
-    image: "https://images.unsplash.com/photo-1590073242678-70ee3fc28f8e?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80",
     bookingLinks: [
       { name: "🏛️ 官網 Paradores.es", url: "https://paradores.es/en/parador-de-granada" },
       { name: "📘 Booking.com", url: "https://www.booking.com/hotel/es/parador-de-granada.html" },
@@ -184,7 +184,7 @@ export const HOTELS: Hotel[] = [
     priceRange: "$80-200 / 晚",
     description: "建議住在 Santa Cruz 區（舊城區）或 Triana 區，靠近 Alcázar 和大教堂。",
     highlights: ["📍 Santa Cruz（近 Alcázar，最方便）", "📍 Triana（對岸，佛朗明哥氣氛）", "🌟 Hotel Casa 1800（9.1分，古典莊園風）", "🌟 Hotel Alhambra Palace 系列"],
-    image: "https://images.unsplash.com/photo-1595498188381-e7a8f4f244ae?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=800&q=80",
     bookingLinks: [
       { name: "📘 Hotel Casa 1800 查價", url: "https://www.booking.com/hotel/es/casa-1800-granada.html" },
     ],
@@ -205,14 +205,14 @@ export const HOTELS: Hotel[] = [
 ];
 
 export const ATTRACTIONS: Attraction[] = [
-  { name: "普拉多美術館", city: "Madrid", emoji: "🎨", description: "世界最頂尖的藝術博物館之一，收藏西班牙黃金時代巨作", tips: ["門票 €15，18:00-20:00 免費", "預留至少 2-3 小時", "必看哥雅《裸體的瑪哈》"], image: "https://images.unsplash.com/photo-1583767415109-d4c8836adf5b?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://www.museodelprado.es/" },
+  { name: "普拉多美術館", city: "Madrid", emoji: "🎨", description: "世界最頂尖的藝術博物館之一，收藏西班牙黃金時代巨作", tips: ["門票 €15，18:00-20:00 免費", "預留至少 2-3 小時", "必看哥雅《裸體的瑪哈》"], image: "https://images.unsplash.com/photo-1651902519299-9eaf6548b364?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://www.museodelprado.es/" },
   { name: "馬德里皇宮", city: "Madrid", emoji: "👑", description: "歐洲第三大皇宮，奢華程度令人咋舌", tips: ["門票 €12，建議預約", "包含兵器廣場和藥局", "旁邊就是阿穆德納教堂"], image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=800&q=80", timeNeeded: "1.5-2h", ticketLink: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid" },
-  { name: "伯納烏球場", city: "Madrid", emoji: "⚽", description: "皇家馬德里主場，足球迷的聖地", tips: ["門票 €25-40", "包含獎盃室和球員通道", "比賽日可能不開放參觀"], image: "https://images.unsplash.com/photo-1589489873423-d1745278a8f0?w=800&q=80", timeNeeded: "2h", ticketLink: "https://www.realmadrid.com/en/visit-the-bernabeu" },
-  { name: "Córdoba 清真寺大教堂", city: "Córdoba", emoji: "🕌", description: "世界遺產，伊斯蘭+基督教融合的建築奇蹟", tips: ["門票 €13", "早上光線最好", "856 根雙色拱柱是必看"], image: "https://images.unsplash.com/photo-1558459656-c4a1c74ed44b?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://mezquita-catedraldecordoba.es/" },
-  { name: "塞維亞王宮 Alcázar", city: "Sevilla", emoji: "🏰", description: "歐洲最古老皇家宮殿，《權力遊戲》拍攝地", tips: ["門票 €13.5，務必預約", "後花園超美", "GOT 迷必去多恩花園場景"], image: "https://images.unsplash.com/photo-1595498188381-e7a8f4f244ae?w=800&q=80", timeNeeded: "2.5h", ticketLink: "https://www.alcazarsevilla.org/en/" },
-  { name: "阿罕布拉宮 Alhambra", city: "Granada", emoji: "🏛️", description: "西班牙最偉大的伊斯蘭建築，摩爾人的最後榮光", tips: ["⚠️ 提前 2 個月預約！", "門票 €19.09", "Nasrid 宮殿有時段限制"], image: "https://images.unsplash.com/photo-1590073242678-70ee3fc28f8e?w=800&q=80", timeNeeded: "4h+", ticketLink: "https://tickets.alhambra-patronato.es/en/" },
+  { name: "伯納烏球場", city: "Madrid", emoji: "⚽", description: "皇家馬德里主場，足球迷的聖地", tips: ["門票 €25-40", "包含獎盃室和球員通道", "比賽日可能不開放參觀"], image: "https://images.unsplash.com/photo-1522778034537-20a2486be803?w=800&q=80", timeNeeded: "2h", ticketLink: "https://www.realmadrid.com/en/visit-the-bernabeu" },
+  { name: "Córdoba 清真寺大教堂", city: "Córdoba", emoji: "🕌", description: "世界遺產，伊斯蘭+基督教融合的建築奇蹟", tips: ["門票 €13", "早上光線最好", "856 根雙色拱柱是必看"], image: "https://images.unsplash.com/photo-1632904080322-e71e16a5987f?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://mezquita-catedraldecordoba.es/" },
+  { name: "塞維亞王宮 Alcázar", city: "Sevilla", emoji: "🏰", description: "歐洲最古老皇家宮殿，《權力遊戲》拍攝地", tips: ["門票 €13.5，務必預約", "後花園超美", "GOT 迷必去多恩花園場景"], image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=800&q=80", timeNeeded: "2.5h", ticketLink: "https://www.alcazarsevilla.org/en/" },
+  { name: "阿罕布拉宮 Alhambra", city: "Granada", emoji: "🏛️", description: "西班牙最偉大的伊斯蘭建築，摩爾人的最後榮光", tips: ["⚠️ 提前 2 個月預約！", "門票 €19.09", "Nasrid 宮殿有時段限制"], image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80", timeNeeded: "4h+", ticketLink: "https://tickets.alhambra-patronato.es/en/" },
   { name: "聖家堂", city: "BCN", emoji: "⛪", description: "高第畢生傑作，2026 年終於要完工！", tips: ["門票 €26-40，預約", "選 Passion 塔登頂", "下午光影最美"], image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://sagradafamilia.org/en/tickets" },
-  { name: "巴特略之家", city: "BCN", emoji: "🏡", description: "高第海洋主題建築，沒有直線的童話之家", tips: ["門票 €35-45", "AR 導覽超酷", "夜間燈光秀可考慮"], image: "https://images.unsplash.com/photo-1621106043950-527f8a0ad103?w=800&q=80", timeNeeded: "1.5h", ticketLink: "https://www.casabatllo.es/en/" },
+  { name: "巴特略之家", city: "BCN", emoji: "🏡", description: "高第海洋主題建築，沒有直線的童話之家", tips: ["門票 €35-45", "AR 導覽超酷", "夜間燈光秀可考慮"], image: "https://images.unsplash.com/photo-1579282240050-352db0a14c21?w=800&q=80", timeNeeded: "1.5h", ticketLink: "https://www.casabatllo.es/en/" },
 ];
 
 export const CITY_VIDEOS: CityVideo[] = [
