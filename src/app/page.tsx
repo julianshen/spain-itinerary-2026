@@ -411,7 +411,7 @@ export default function Home() {
                     className={`px-4 py-2.5 rounded-lg text-sm font-medium transition-all whitespace-nowrap ${
                       activePlan === i
                         ? "bg-[#1a1a1a] text-white shadow-md"
-                        : "text-[#6b6b6b] hover:text-[#1a1a1a] hover:bg-[#f8f7f5]"
+                        : "text-[#1a1a1a] hover:bg-[#f8f7f5]"
                     }`}
                   >
                     {p.label}

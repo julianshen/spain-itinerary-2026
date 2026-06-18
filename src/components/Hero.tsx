@@ -65,7 +65,7 @@ export default function Hero() {
 
           {/* Rich description */}
           <p
-            className={`text-base md:text-lg text-white/50 leading-relaxed mb-10 max-w-md transition-all duration-700 delay-400 ${
+            className={`text-base md:text-lg text-white/70 leading-relaxed mb-10 max-w-md transition-all duration-700 delay-400 ${
               mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
@@ -117,16 +117,16 @@ export default function Hero() {
             }`}
           >
             <div>
-              <div className="text-2xl font-bold text-[#c9a84c]">11</div>
-              <div className="text-xs text-white/40">天數</div>
+              <div className="text-2xl font-bold text-[#c9a84c] drop-shadow-sm">11</div>
+              <div className="text-xs text-white/60">天數</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-[#b8735a]">5</div>
-              <div className="text-xs text-white/40">城市</div>
+              <div className="text-2xl font-bold text-[#b8735a] drop-shadow-sm">5</div>
+              <div className="text-xs text-white/60">城市</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-[#2a6b7a]">15+</div>
-              <div className="text-xs text-white/40">景點</div>
+              <div className="text-2xl font-bold text-[#2a6b7a] drop-shadow-sm">15+</div>
+              <div className="text-xs text-white/60">景點</div>
             </div>
           </div>
         </div>
@@ -156,9 +156,9 @@ export default function Hero() {
         <img
           src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=1920&q=85"
           alt="西班牙 Granada Alhambra"
-          className="w-full h-full object-cover opacity-30"
+          className="w-full h-full object-cover opacity-25"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a]/80 via-[#1a1a1a]/60 to-[#1a1a1a]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a]/90 via-[#1a1a1a]/80 to-[#1a1a1a]" />
       </div>
 
       {/* Scroll indicator */}
