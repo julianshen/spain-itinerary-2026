@@ -23,9 +23,9 @@ export const DAYS: DayPlan[] = [
     subtitle: "普拉多美術館、皇宮、麗池公園",
     emoji: "art",
     highlights: [
-      { icon: "art", time: "09:00-12:00", title: "普拉多美術館", description: "西班牙最重要的美術館，收藏哥雅、委拉斯奎茲、葛雷柯等大師鉅作。必看：哥雅《裸體的瑪哈》、委拉斯奎茲《宮女》", duration: "3h", tip: "門票 €15，下午 6-8 點免費入場但排隊很長", link: "https://www.museodelprado.es/", image: "https://images.unsplash.com/photo-1651902519299-9eaf6548b364?w=800&q=80" },
-      { icon: "leaf", time: "12:00-13:00", title: "麗池公園", description: "馬德里的城市綠洲。在人工湖划船、看水晶宮（Palacio de Cristal）", image: "https://images.unsplash.com/photo-1645203494470-1507ae7f1a40?w=800&q=80" },
-      { icon: "crown", time: "14:30-16:30", title: "馬德里皇宮", description: "歐洲第三大皇宮，僅次於凡爾賽宮和美景宮。奢華的內部裝潢、壁畫、兵器廣場", duration: "2h", tip: "門票 €12，建議提前官網預約", link: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid", image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=800&q=80" },
+      { icon: "art", time: "09:00-12:00", title: "普拉多美術館", description: "西班牙最重要的美術館，收藏哥雅、委拉斯奎茲、葛雷柯等大師鉅作。必看：哥雅《裸體的瑪哈》、委拉斯奎茲《宮女》", duration: "3h", tip: "門票 €15，下午 6-8 點免費入場但排隊很長", link: "https://www.museodelprado.es/", image: "https://images.unsplash.com/photo-1651902519299-9eaf6548b364?w=800&q=80", blogLinks: [{ title: "Lonely Planet 普拉多指南", url: "https://www.lonelyplanet.com/articles/top-things-to-do-in-madrid" }, { title: "Rick Steves 馬德里攻略", url: "https://www.ricksteves.com/europe/spain/madrid" }] },
+      { icon: "leaf", time: "12:00-13:00", title: "麗池公園", description: "馬德里的城市綠洲。在人工湖划船、看水晶宮（Palacio de Cristal）", image: "https://images.unsplash.com/photo-1645203494470-1507ae7f1a40?w=800&q=80" , blogLinks: [{"title": "Lonely Planet 馬德里", "url": "https://www.lonelyplanet.com/articles/top-things-to-do-in-madrid"}, {"title": "Rick Steves 馬德里", "url": "https://www.ricksteves.com/europe/spain/madrid"}]},
+      { icon: "crown", time: "14:30-16:30", title: "馬德里皇宮", description: "歐洲第三大皇宮，僅次於凡爾賽宮和美景宮。奢華的內部裝潢、壁畫、兵器廣場", duration: "2h", tip: "門票 €12，建議提前官網預約", link: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid", image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=800&q=80" , blogLinks: [{"title": "Rick Steves 馬德里", "url": "https://www.ricksteves.com/watch-read-listen/read/articles/a-blitz-tour-of-madrid"}, {"title": "Lonely Planet 馬德里", "url": "https://www.lonelyplanet.com/articles/top-things-to-do-in-madrid"}]},
       { icon: "chocolate", time: "晚上", title: "San Ginés 吃 Churros", description: "開業於 1894 年的老字號，招牌是 Churros con Chocolate 巧克力油條，24 小時營業！" },
     ],
   },
@@ -36,9 +36,9 @@ export const DAYS: DayPlan[] = [
     subtitle: "格爾尼卡、La Latina、伯納烏",
     emoji: "landmark",
     highlights: [
-      { icon: "theater", time: "09:30-11:30", title: "索菲亞王后藝術中心", description: "現代藝術美術館，鎮館之寶——畢卡索《格爾尼卡》！這幅反戰巨作長 7.8 公尺，親眼看到非常震撼", duration: "2h", tip: "門票 €12，週一、週三至週六 19:00-21:00 免費，週日 13:30-19:00 免費", link: "https://www.museoreinasofia.es/en", image: "https://images.unsplash.com/photo-1564565899675-a159063d17be?w=800&q=80" },
+      { icon: "theater", time: "09:30-11:30", title: "索菲亞王后藝術中心", description: "現代藝術美術館，鎮館之寶——畢卡索《格爾尼卡》！這幅反戰巨作長 7.8 公尺，親眼看到非常震撼", duration: "2h", tip: "門票 €12，週一、週三至週六 19:00-21:00 免費，週日 13:30-19:00 免費", link: "https://www.museoreinasofia.es/en", image: "https://images.unsplash.com/photo-1564565899675-a159063d17be?w=800&q=80" , blogLinks: [{"title": "Guardian Reina Sofía", "url": "https://www.theguardian.com/world/2026/feb/17/reina-sofia-madrid-museum-rehang-spain"}, {"title": "Rick Steves 馬德里", "url": "https://www.ricksteves.com/europe/spain/madrid"}]},
       { icon: "city", time: "12:00-14:00", title: "La Latina 區午餐", description: "馬德里最古老的街區，蜿蜒的小巷裡藏著無數 Tapas 酒吧。推薦吃 Callos（燉牛肚）或 Tortilla Española" },
-      { icon: "soccer", time: "15:00-17:00", title: "聖地亞哥·伯納烏球場", description: "皇家馬德里主場！參觀球場、更衣室、獎盃室、球員通道，球迷必去聖地！", duration: "2h", tip: "門票 €25-40，官網預約可選導覽", link: "https://www.realmadrid.com/en/visit-the-bernabeu", image: "https://images.unsplash.com/photo-1522778034537-20a2486be803?w=800&q=80" },
+      { icon: "soccer", time: "15:00-17:00", title: "聖地亞哥·伯納烏球場", description: "皇家馬德里主場！參觀球場、更衣室、獎盃室、球員通道，球迷必去聖地！", duration: "2h", tip: "門票 €25-40，官網預約可選導覽", link: "https://www.realmadrid.com/en/visit-the-bernabeu", image: "https://images.unsplash.com/photo-1522778034537-20a2486be803?w=800&q=80" , blogLinks: [{"title": "伯納烏球場終極指南", "url": "https://www.aroundtheworld4u.com/santiago-bernabeu-stadium/"}]},
       { icon: "sunset", time: "17:30-19:00", title: "德波神廟夕陽", description: "從埃及搬來的神廟，馬德里最浪漫的夕陽景點。免費入場，夕陽時分整個神廟和天空超美" },
     ],
   },
@@ -50,7 +50,7 @@ export const DAYS: DayPlan[] = [
     emoji: "train",
     highlights: [
       { icon: "train", time: "09:00→10:45", title: "AVE 到 Córdoba", description: "馬德里 Atocha 出發，1h45m 直達 Córdoba", duration: "1h45m", price: "€30-50" },
-      { icon: "mosque", time: "10:45-14:00", title: "Córdoba 大清真寺", description: "世界文化遺產，摩爾人興建的大清真寺內有 856 根雙色拱柱，後來天主教徒在裡面蓋了一座教堂，形成伊斯蘭+基督教的獨特融合", duration: "2-3h", tip: "門票 €13，建議上午去光線最好", link: "https://mezquita-catedraldecordoba.es/", image: "https://images.unsplash.com/photo-1632904080322-e71e16a5987f?w=800&q=80" },
+      { icon: "mosque", time: "10:45-14:00", title: "Córdoba 大清真寺", description: "世界文化遺產，摩爾人興建的大清真寺內有 856 根雙色拱柱，後來天主教徒在裡面蓋了一座教堂，形成伊斯蘭+基督教的獨特融合", duration: "2-3h", tip: "門票 €13，建議上午去光線最好", link: "https://mezquita-catedraldecordoba.es/", image: "https://images.unsplash.com/photo-1632904080322-e71e16a5987f?w=800&q=80" , blogLinks: [{"title": "Approach Guides 清真寺", "url": "https://approachguides.com/guide/spain-cordoba-mezquita/"}, {"title": "Mi Brava 清真寺攻略", "url": "https://www.mibrava.com/post/the-mosque-cathedral-of-cordoba-making-the-most-of-your-time"}]},
       { icon: "flower", time: "12:00-13:00", title: "百花巷 + 羅馬橋", description: "著名的藍白瓷磚小巷（Calleja de las Flores），以及西元 1 世紀建的羅馬橋" },
       { icon: "train", time: "15:00→15:45", title: "Córdoba→Sevilla", description: "AVE 只要 45 分鐘，打個盹就到了！", duration: "45min", price: "€20-35" },
       { icon: "dance", time: "晚上", title: "Sevilla 夜生活", description: "到 Sevilla 入住後，晚上去 Triana 區吃 Tapas，佛朗明哥的發源地就從這裡開始！" },
@@ -64,9 +64,9 @@ export const DAYS: DayPlan[] = [
     subtitle: "Alcázar、大教堂、西班牙廣場",
     emoji: "dance",
     highlights: [
-      { icon: "castle", time: "09:00-11:30", title: "塞維亞王宮 Alcázar", description: "歐洲最古老的皇家宮殿之一，也是《權力遊戲》多恩王國花園的拍攝地！摩爾式建築+哥德式風格，後花園絕美", duration: "2.5h", tip: "門票 €13.5，務必提前官網預約！排隊很恐怖", link: "https://www.alcazarsevilla.org/en/", image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=800&q=80" },
+      { icon: "castle", time: "09:00-11:30", title: "塞維亞王宮 Alcázar", description: "歐洲最古老的皇家宮殿之一，也是《權力遊戲》多恩王國花園的拍攝地！摩爾式建築+哥德式風格，後花園絕美", duration: "2.5h", tip: "門票 €13.5，務必提前官網預約！排隊很恐怖", link: "https://www.alcazarsevilla.org/en/", image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=800&q=80" , blogLinks: [{"title": "Spanish Sabores Sevilla 攻略", "url": "https://spanishsabores.com/seville-with-kids/"}, {"title": "Lonely Planet Sevilla 必知", "url": "https://www.lonelyplanet.com/articles/things-to-know-before-traveling-to-seville"}]},
       { icon: "church", time: "12:00-14:00", title: "Sevilla 大教堂 + 吉拉達塔", description: "世界最大的哥德式教堂，哥倫布的靈柩在此。旁邊的吉拉達塔是摩爾時期宣禮塔改建的鐘樓", duration: "1.5h", tip: "門票 €12，包含登塔", image: "https://images.unsplash.com/photo-1534106659956-d02ca15d30fb?w=800&q=80" },
-      { icon: "cityscape", time: "15:00-17:00", title: "西班牙廣場", description: "1929 年博覽會所建，半圓形廣場上有 58 座瓷磚長椅，代表西班牙各省。下午光影打在瓷磚上超美！一定要划船", duration: "2h", tip: "免費，傍晚夕陽時最美", image: "https://images.unsplash.com/photo-1559386081-325882507af7?w=800&q=80" },
+      { icon: "cityscape", time: "15:00-17:00", title: "西班牙廣場", description: "1929 年博覽會所建，半圓形廣場上有 58 座瓷磚長椅，代表西班牙各省。下午光影打在瓷磚上超美！一定要划船", duration: "2h", tip: "免費，傍晚夕陽時最美", image: "https://images.unsplash.com/photo-1559386081-325882507af7?w=800&q=80" , blogLinks: [{"title": "Wanderlust Rose 西班牙廣場", "url": "https://thewanderlustrose.com/a-guide-to-plaza-de-espana-in-seville-a-must-visit-gem/"}, {"title": "TripSavvy 西班牙廣場", "url": "https://www.tripsavvy.com/seville-plaza-de-espana-the-complete-guide-4582054"}]},
       { icon: "dance", time: "晚上", title: "佛朗明哥秀", description: "在 Triana 區或 Santa Cruz 區看一場真正的佛朗明哥表演，感動到起雞皮疙瘩！" },
     ],
   },
@@ -79,7 +79,7 @@ export const DAYS: DayPlan[] = [
     highlights: [
       { icon: "train", time: "10:00→12:30", title: "AVE 到 Granada", description: "Sevilla 到 Granada 高鐵直達，約 2.5h", duration: "2h30m", price: "€25-45" },
       { icon: "hotel", time: "13:00", title: "入住 Parador de Granada", description: "位於 Alhambra 宮殿內的傳奇飯店，前身是 15 世紀修道院，陽台就能看到阿罕布拉花園", image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80" },
-      { icon: "city", time: "14:00-16:00", title: "Albaicín 阿爾拜辛區", description: "UNESCO 世界遺產的摩爾人舊城區，蜿蜒的白色小巷、磁磚庭院，像走入一千零一夜的世界" },
+      { icon: "city", time: "14:00-16:00", title: "Albaicín 阿爾拜辛區", description: "UNESCO 世界遺產的摩爾人舊城區，蜿蜒的白色小巷、磁磚庭院，像走入一千零一夜的世界" , blogLinks: [{"title": "Andalucía Mia Albaicín", "url": "https://www.andaluciamia.com/en/albaicin-in-granada-like-a-trip-to-al-andalus/"}, {"title": "Love Granada Albaicín", "url": "https://www.lovegranada.com/places/albaicin/"}]},
       { icon: "sunset", time: "16:30-17:30", title: "聖尼古拉斯瞭望台", description: "遠眺 Alhambra 的最佳點！夕陽時分，阿罕布拉宮在內華達山脈前閃耀金紅色光芒" },
     ],
     transport: { mode: "🚄 AVE", from: "Sevilla Santa Justa", to: "Granada", duration: "2h30m", price: "€25-45", details: "Renfe AVE 直達 Granada 車站。建議 10:00 出發，12:30 到，下午開始探索。" },
@@ -91,7 +91,7 @@ export const DAYS: DayPlan[] = [
     subtitle: "此生必去的宮殿奇蹟",
     emoji: "landmark",
     highlights: [
-      { icon: "landmark", time: "09:00-13:00", title: "阿罕布拉宮 Alhambra", description: "西班牙的瑰寶、摩爾人的最後城堡！包含納斯利宮（超精緻阿拉伯雕刻）、Generalife 夏宮花園、卡洛斯五世宮殿。每走一步都是驚嘆！", duration: "4h+", tip: "⚠️ 一定要 2 個月前預約！門票 €19.09，Nasrid Palaces 有時段限制，不能遲到！", link: "https://tickets.alhambra-patronato.es/en/", image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80" },
+      { icon: "landmark", time: "09:00-13:00", title: "阿罕布拉宮 Alhambra", description: "西班牙的瑰寶、摩爾人的最後城堡！包含納斯利宮（超精緻阿拉伯雕刻）、Generalife 夏宮花園、卡洛斯五世宮殿。每走一步都是驚嘆！", duration: "4h+", tip: "⚠️ 一定要 2 個月前預約！門票 €19.09，Nasrid Palaces 有時段限制，不能遲到！", link: "https://tickets.alhambra-patronato.es/en/", image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80" , blogLinks: [{"title": "Rick Steves Alhambra", "url": "https://blog.ricksteves.com/blog/granadas-alhambra/"}, {"title": "Lonely Planet Granada", "url": "https://www.lonelyplanet.com/articles/top-things-to-do-in-granada-spain"}]},
       { icon: "shrimp", time: "13:00-15:00", title: "Granada Tapas 文化", description: "Granada 是全西班牙唯一點酒就送 Tapas 的城市！Calle Navas 上每家 bar 都有驚喜，吃一圈就飽了！" },
       { icon: "church", time: "15:30-17:00", title: "Granada 大教堂 + 皇家禮拜堂", description: "伊莎貝拉一世女王與費迪南德國王安葬於此。禮拜堂內有他們的石棺和珍貴的中世紀藝術品" },
     ],
@@ -104,7 +104,7 @@ export const DAYS: DayPlan[] = [
     emoji: "flight",
     highlights: [
       { icon: "flight", time: "10:00→11:40", title: "Granada 飛巴塞隆納", description: "Vueling 直飛 BCN，飛行僅 1h40m，輕鬆接上下午行程", duration: "1h40m", price: "€25-50", tip: "Vueling 官網早買有優惠", link: "https://www.vueling.com/" },
-      { icon: "landmark", time: "14:00-17:00", title: "聖家堂 Sagrada Familia", description: "高第的畢生傑作，也是世界唯一尚未完工就被列為世界遺產的建築。光影透過彩繪玻璃灑落，宛如走進森林迷宮！預計 2026 年完工！", duration: "3h", tip: "門票 €26-40，一定要預約！建議選 Passion 塔登頂", link: "https://sagradafamilia.org/en/tickets", image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=800&q=80" },
+      { icon: "landmark", time: "14:00-17:00", title: "聖家堂 Sagrada Familia", description: "高第的畢生傑作，也是世界唯一尚未完工就被列為世界遺產的建築。光影透過彩繪玻璃灑落，宛如走進森林迷宮！預計 2026 年完工！", duration: "3h", tip: "門票 €26-40，一定要預約！建議選 Passion 塔登頂", link: "https://sagradafamilia.org/en/tickets", image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=800&q=80" , blogLinks: [{"title": "Lonely Planet 聖家堂指南", "url": "https://www.lonelyplanet.com/articles/guide-to-la-sagrada-familia-barcelona"}, {"title": "Atlas Obscura 聖家堂", "url": "https://www.atlasobscura.com/places/sagrada-familia"}]},
     ],
     transport: { mode: "✈️ 飛機", from: "Granada GRX", to: "巴塞隆納 BCN", duration: "1h40m", price: "€25-50", details: "Vueling 直飛，每日多班。飛行時間短，建議訂中午前航班，下午還能跑行程。" },
   },
@@ -115,9 +115,9 @@ export const DAYS: DayPlan[] = [
     subtitle: "巴特略之家、米拉之家、奎爾公園",
     emoji: "art",
     highlights: [
-      { icon: "house", time: "09:30-11:00", title: "巴特略之家 Casa Batlló", description: "高第的海洋主題傑作，外牆像彩色龍鱗，內部沒有直線！沉浸式導覽用 AR 超酷", duration: "1.5h", tip: "門票 €35-45，官網有夜間燈光秀", link: "https://www.casabatllo.es/en/", image: "https://images.unsplash.com/photo-1579282240050-352db0a14c21?w=800&q=80" },
-      { icon: "building", time: "11:30-13:00", title: "米拉之家 Casa Milà", description: "高第最後的民用建築，波浪型石造外牆、煙囪屋頂像星際大戰的場景。屋頂必去！", duration: "1.5h", tip: "門票 €25，屋頂看夕陽特別美", image: "https://images.unsplash.com/photo-1568921097010-b59ee67056df?w=800&q=80" },
-      { icon: "park", time: "15:00-17:00", title: "奎爾公園 Park Güell", description: "高第打造的童話花園社區，彩色馬賽克蜥蜴、波浪長椅、世界最長的曲線長椅", duration: "2h", tip: "紀念碑區域門票 €10，可線上預約", image: "https://images.unsplash.com/photo-1630219694734-fe47ab76b15e?w=800&q=80" },
+      { icon: "house", time: "09:30-11:00", title: "巴特略之家 Casa Batlló", description: "高第的海洋主題傑作，外牆像彩色龍鱗，內部沒有直線！沉浸式導覽用 AR 超酷", duration: "1.5h", tip: "門票 €35-45，官網有夜間燈光秀", link: "https://www.casabatllo.es/en/", image: "https://images.unsplash.com/photo-1579282240050-352db0a14c21?w=800&q=80" , blogLinks: [{"title": "Travel Lemming Casa Batlló", "url": "https://travellemming.com/casa-batllo/"}, {"title": "BCN.travel 指南", "url": "https://www.bcn.travel/casa-batllo-guide/"}]},
+      { icon: "building", time: "11:30-13:00", title: "米拉之家 Casa Milà", description: "高第最後的民用建築，波浪型石造外牆、煙囪屋頂像星際大戰的場景。屋頂必去！", duration: "1.5h", tip: "門票 €25，屋頂看夕陽特別美", image: "https://images.unsplash.com/photo-1568921097010-b59ee67056df?w=800&q=80" , blogLinks: [{"title": "Guardian Casa Milà", "url": "https://www.theguardian.com/artanddesign/2026/may/04/the-last-resident-of-casa-mila-on-life-in-gaudis-masterwork"}, {"title": "Rick Steves Barcelona", "url": "https://www.ricksteves.com/europe/spain/barcelona"}]},
+      { icon: "park", time: "15:00-17:00", title: "奎爾公園 Park Güell", description: "高第打造的童話花園社區，彩色馬賽克蜥蜴、波浪長椅、世界最長的曲線長椅", duration: "2h", tip: "紀念碑區域門票 €10，可線上預約", image: "https://images.unsplash.com/photo-1630219694734-fe47ab76b15e?w=800&q=80" , blogLinks: [{"title": "The Tour Guy 公園指南", "url": "https://thetourguy.com/travel-blog/spain/barcelona/park-guell/guide-to-park-guell/"}, {"title": "Geographical Cure 公園攻略", "url": "https://www.thegeographicalcure.com/post/guide-to-park-guell"}]},
     ],
   },
   {
@@ -129,8 +129,8 @@ export const DAYS: DayPlan[] = [
     highlights: [
       { icon: "city", time: "09:00-11:00", title: "哥德區 Barri Gòtic", description: "巴塞最古老的街區，狹窄的中世紀小巷、隱藏廣場。找到聖伊莉莎白廣場和主教橋" },
       { icon: "shopping", time: "11:00-13:00", title: "蘭布拉大道 La Rambla", description: "巴塞隆納最著名的林蔭大道，街頭藝人、花店、咖啡座，走到底就是哥倫布紀念碑和海港" },
-      { icon: "fish", time: "11:30-13:00", title: "博蓋利亞市場", description: "歐洲最大市場之一，鮮豔的水果攤、伊比利火腿、現榨果汁、海鮮⋯⋯五感全開！", image: "https://images.unsplash.com/photo-1614635454419-36aa631da264?w=800&q=80" },
-      { icon: "beach", time: "15:00-17:00", title: "巴塞海灘 Barceloneta", description: "地中海陽光、沙灘、海鮮 Paella，旅程尾聲放空一下" },
+      { icon: "fish", time: "11:30-13:00", title: "博蓋利亞市場", description: "歐洲最大市場之一，鮮豔的水果攤、伊比利火腿、現榨果汁、海鮮⋯⋯五感全開！", image: "https://images.unsplash.com/photo-1614635454419-36aa631da264?w=800&q=80" , blogLinks: [{"title": "Devour Tours 巴塞行程", "url": "https://devourtours.com/destinations/spain/barcelona/"}, {"title": "CK Travels Boquería", "url": "https://www.cktravels.com/morning-food-tour-boqueria-market-barcelona/"}]},
+      { icon: "beach", time: "15:00-17:00", title: "巴塞海灘 Barceloneta", description: "地中海陽光、沙灘、海鮮 Paella，旅程尾聲放空一下" , blogLinks: [{"title": "WeBarcelona 海灘", "url": "https://www.webarcelona.net/beaches-barcelona/barceloneta"}, {"title": "Lonely Planet 巴塞海灘", "url": "https://www.lonelyplanet.com/articles/best-beach-barcelona"}]},
     ],
   },
   {
@@ -168,9 +168,9 @@ export const DAYS_RONDA: DayPlan[] = [
     subtitle: "普拉多美術館、皇宮、麗池公園",
     emoji: "art",
     highlights: [
-      { icon: "art", time: "09:00-12:00", title: "普拉多美術館", description: "西班牙最重要的美術館，收藏哥雅、委拉斯奎茲、葛雷柯等大師鉅作。必看：哥雅《裸體的瑪哈》、委拉斯奎茲《宮女》", duration: "3h", tip: "門票 €15，下午 6-8 點免費入場但排隊很長", link: "https://www.museodelprado.es/", image: "https://images.unsplash.com/photo-1651902519299-9eaf6548b364?w=800&q=80" },
-      { icon: "leaf", time: "12:00-13:00", title: "麗池公園", description: "馬德里的城市綠洲。在人工湖划船、看水晶宮（Palacio de Cristal）", image: "https://images.unsplash.com/photo-1645203494470-1507ae7f1a40?w=800&q=80" },
-      { icon: "crown", time: "14:30-16:30", title: "馬德里皇宮", description: "歐洲第三大皇宮，僅次於凡爾賽宮和美景宮。奢華的內部裝潢、壁畫、兵器廣場", duration: "2h", tip: "門票 €12，建議提前官網預約", link: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid", image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=800&q=80" },
+      { icon: "art", time: "09:00-12:00", title: "普拉多美術館", description: "西班牙最重要的美術館，收藏哥雅、委拉斯奎茲、葛雷柯等大師鉅作。必看：哥雅《裸體的瑪哈》、委拉斯奎茲《宮女》", duration: "3h", tip: "門票 €15，下午 6-8 點免費入場但排隊很長", link: "https://www.museodelprado.es/", image: "https://images.unsplash.com/photo-1651902519299-9eaf6548b364?w=800&q=80", blogLinks: [{ title: "Lonely Planet 普拉多指南", url: "https://www.lonelyplanet.com/articles/top-things-to-do-in-madrid" }, { title: "Rick Steves 馬德里攻略", url: "https://www.ricksteves.com/europe/spain/madrid" }] },
+      { icon: "leaf", time: "12:00-13:00", title: "麗池公園", description: "馬德里的城市綠洲。在人工湖划船、看水晶宮（Palacio de Cristal）", image: "https://images.unsplash.com/photo-1645203494470-1507ae7f1a40?w=800&q=80" , blogLinks: [{"title": "Lonely Planet 馬德里", "url": "https://www.lonelyplanet.com/articles/top-things-to-do-in-madrid"}, {"title": "Rick Steves 馬德里", "url": "https://www.ricksteves.com/europe/spain/madrid"}]},
+      { icon: "crown", time: "14:30-16:30", title: "馬德里皇宮", description: "歐洲第三大皇宮，僅次於凡爾賽宮和美景宮。奢華的內部裝潢、壁畫、兵器廣場", duration: "2h", tip: "門票 €12，建議提前官網預約", link: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid", image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=800&q=80" , blogLinks: [{"title": "Rick Steves 馬德里", "url": "https://www.ricksteves.com/watch-read-listen/read/articles/a-blitz-tour-of-madrid"}, {"title": "Lonely Planet 馬德里", "url": "https://www.lonelyplanet.com/articles/top-things-to-do-in-madrid"}]},
       { icon: "chocolate", time: "晚上", title: "San Ginés 吃 Churros", description: "開業於 1894 年的老字號，招牌是 Churros con Chocolate 巧克力油條，24 小時營業！" },
     ],
   },
@@ -181,9 +181,9 @@ export const DAYS_RONDA: DayPlan[] = [
     subtitle: "格爾尼卡、La Latina、伯納烏",
     emoji: "landmark",
     highlights: [
-      { icon: "theater", time: "09:30-11:30", title: "索菲亞王后藝術中心", description: "現代藝術美術館，鎮館之寶——畢卡索《格爾尼卡》！這幅反戰巨作長 7.8 公尺，親眼看到非常震撼", duration: "2h", tip: "門票 €12，週一、週三至週六 19:00-21:00 免費，週日 13:30-19:00 免費", link: "https://www.museoreinasofia.es/en", image: "https://images.unsplash.com/photo-1564565899675-a159063d17be?w=800&q=80" },
+      { icon: "theater", time: "09:30-11:30", title: "索菲亞王后藝術中心", description: "現代藝術美術館，鎮館之寶——畢卡索《格爾尼卡》！這幅反戰巨作長 7.8 公尺，親眼看到非常震撼", duration: "2h", tip: "門票 €12，週一、週三至週六 19:00-21:00 免費，週日 13:30-19:00 免費", link: "https://www.museoreinasofia.es/en", image: "https://images.unsplash.com/photo-1564565899675-a159063d17be?w=800&q=80" , blogLinks: [{"title": "Guardian Reina Sofía", "url": "https://www.theguardian.com/world/2026/feb/17/reina-sofia-madrid-museum-rehang-spain"}, {"title": "Rick Steves 馬德里", "url": "https://www.ricksteves.com/europe/spain/madrid"}]},
       { icon: "city", time: "12:00-14:00", title: "La Latina 區午餐", description: "馬德里最古老的街區，蜿蜒的小巷裡藏著無數 Tapas 酒吧。推薦吃 Callos（燉牛肚）或 Tortilla Española" },
-      { icon: "soccer", time: "15:00-17:00", title: "聖地亞哥·伯納烏球場", description: "皇家馬德里主場！參觀球場、更衣室、獎盃室、球員通道，球迷必去聖地！", duration: "2h", tip: "門票 €25-40，官網預約可選導覽", link: "https://www.realmadrid.com/en/visit-the-bernabeu", image: "https://images.unsplash.com/photo-1522778034537-20a2486be803?w=800&q=80" },
+      { icon: "soccer", time: "15:00-17:00", title: "聖地亞哥·伯納烏球場", description: "皇家馬德里主場！參觀球場、更衣室、獎盃室、球員通道，球迷必去聖地！", duration: "2h", tip: "門票 €25-40，官網預約可選導覽", link: "https://www.realmadrid.com/en/visit-the-bernabeu", image: "https://images.unsplash.com/photo-1522778034537-20a2486be803?w=800&q=80" , blogLinks: [{"title": "伯納烏球場終極指南", "url": "https://www.aroundtheworld4u.com/santiago-bernabeu-stadium/"}]},
       { icon: "sunset", time: "17:30-19:00", title: "德波神廟夕陽", description: "從埃及搬來的神廟，馬德里最浪漫的夕陽景點。免費入場，夕陽時分整個神廟和天空超美" },
     ],
   },
@@ -195,7 +195,7 @@ export const DAYS_RONDA: DayPlan[] = [
     emoji: "train",
     highlights: [
       { icon: "train", time: "09:00→10:45", title: "AVE 到 Córdoba", description: "馬德里 Atocha 出發，1h45m 直達 Córdoba", duration: "1h45m", price: "€30-50" },
-      { icon: "mosque", time: "10:45-14:00", title: "Córdoba 大清真寺", description: "世界文化遺產，摩爾人興建的大清真寺內有 856 根雙色拱柱，後來天主教徒在裡面蓋了一座教堂，形成伊斯蘭+基督教的獨特融合", duration: "2-3h", tip: "門票 €13，建議上午去光線最好", link: "https://mezquita-catedraldecordoba.es/", image: "https://images.unsplash.com/photo-1632904080322-e71e16a5987f?w=800&q=80" },
+      { icon: "mosque", time: "10:45-14:00", title: "Córdoba 大清真寺", description: "世界文化遺產，摩爾人興建的大清真寺內有 856 根雙色拱柱，後來天主教徒在裡面蓋了一座教堂，形成伊斯蘭+基督教的獨特融合", duration: "2-3h", tip: "門票 €13，建議上午去光線最好", link: "https://mezquita-catedraldecordoba.es/", image: "https://images.unsplash.com/photo-1632904080322-e71e16a5987f?w=800&q=80" , blogLinks: [{"title": "Approach Guides 清真寺", "url": "https://approachguides.com/guide/spain-cordoba-mezquita/"}, {"title": "Mi Brava 清真寺攻略", "url": "https://www.mibrava.com/post/the-mosque-cathedral-of-cordoba-making-the-most-of-your-time"}]},
       { icon: "flower", time: "12:00-13:00", title: "百花巷 + 羅馬橋", description: "著名的藍白瓷磚小巷（Calleja de las Flores），以及西元 1 世紀建的羅馬橋" },
       { icon: "car", time: "15:00→17:00", title: "Córdoba → Ronda", description: "租車或搭巴士前往 Ronda，約 2 小時。沿途是安達魯西亞最美鄉村公路，橄欖樹與葡萄園交錯", duration: "2h", price: "€15-25" },
       { icon: "bridge", time: "17:30-19:00", title: "Puente Nuevo 新橋夕陽", description: "Ronda 地標！98 公尺高的新橋橫跨 El Tajo 峽谷，連接新舊城區。夕陽時分，懸崖與橋身在金光中宛如電影場景", image: "https://images.unsplash.com/photo-1599623560574-39d485900c95?w=800&q=80" },
@@ -210,7 +210,7 @@ export const DAYS_RONDA: DayPlan[] = [
     emoji: "bridge",
     highlights: [
       { icon: "bridge", time: "09:00-10:30", title: "Puente Nuevo 新橋徒步", description: "清晨走過新橋，從谷底仰望這座 18 世紀的石橋巨構。橋身中間還藏著一間舊監獄，現在是展覽館", duration: "1.5h", tip: "免費，清晨光線最佳，遊客也少", image: "https://images.unsplash.com/photo-1599623560574-39d485900c95?w=800&q=80" },
-      { icon: "bull", time: "11:00-12:30", title: "Plaza de Toros 鬥牛場", description: "西班牙最古老的鬥牛場之一（1785 年），也是鬥牛士的朝聖地。環形建築本身就很美，博物館講述鬥牛文化歷史", duration: "1.5h", tip: "門票 €8.5，包含博物館與鬥牛場內部", link: "https://www.rmcr.org/", image: "https://images.unsplash.com/photo-1564399580075-5dfe19c205f3?w=800&q=80" },
+      { icon: "bull", time: "11:00-12:30", title: "Plaza de Toros 鬥牛場", description: "西班牙最古老的鬥牛場之一（1785 年），也是鬥牛士的朝聖地。環形建築本身就很美，博物館講述鬥牛文化歷史", duration: "1.5h", tip: "門票 €8.5，包含博物館與鬥牛場內部", link: "https://www.rmcr.org/", image: "https://images.unsplash.com/photo-1564399580075-5dfe19c205f3?w=800&q=80" , blogLinks: [{"title": "Ronda Today 鬥牛場", "url": "https://rondatoday.com/plaza-de-toros-bullring/"}, {"title": "Culture Trip 鬥牛場", "url": "https://theculturetrip.com/europe/spain/articles/spains-most-impressive-bullrings"}]},
       { icon: "landmark", time: "14:00-15:30", title: "阿拉伯浴場 + 老城區", description: "13 世紀的摩爾人浴場遺跡，保存完好的拱頂與蒸汽系統。附近是白色小屋密佈的老城區，每個轉角都是明信片", duration: "1.5h", tip: "浴場門票 €3.5，週日免費" },
       { icon: "wine", time: "16:00-18:00", title: "Ronda 酒莊品酒", description: "Ronda 是 Malaga 葡萄酒產區的核心，高海拔種植的紅酒濃郁奔放。推薦 Bodega Joaquín Fernández 或 Descalzos Viejos", duration: "2h", tip: "品酒 €15-25，需預約" },
     ],
@@ -224,7 +224,7 @@ export const DAYS_RONDA: DayPlan[] = [
     highlights: [
       { icon: "car", time: "09:00→11:00", title: "Ronda → Sevilla 自駕", description: "沿 A-376 公路穿越安達魯西亞鄉村，約 2 小時。途中可停 Setenil de las Bodegas——岩石下鑿出的白色小鎮，超有特色！", duration: "2h", price: "油費約 €15" },
       { icon: "hotel", time: "12:00", title: "Sevilla 入住 + 午餐", description: "抵達 Sevilla，入住 Santa Cruz 區或 Triana 區，附近吃 Sevilla 風味 Tapas" },
-      { icon: "cityscape", time: "15:00-17:00", title: "西班牙廣場", description: "1929 年博覽會所建，半圓形廣場上有 58 座瓷磚長椅，代表西班牙各省。下午光影打在瓷磚上超美！一定要划船", duration: "2h", tip: "免費，傍晚夕陽時最美", image: "https://images.unsplash.com/photo-1559386081-325882507af7?w=800&q=80" },
+      { icon: "cityscape", time: "15:00-17:00", title: "西班牙廣場", description: "1929 年博覽會所建，半圓形廣場上有 58 座瓷磚長椅，代表西班牙各省。下午光影打在瓷磚上超美！一定要划船", duration: "2h", tip: "免費，傍晚夕陽時最美", image: "https://images.unsplash.com/photo-1559386081-325882507af7?w=800&q=80" , blogLinks: [{"title": "Wanderlust Rose 西班牙廣場", "url": "https://thewanderlustrose.com/a-guide-to-plaza-de-espana-in-seville-a-must-visit-gem/"}, {"title": "TripSavvy 西班牙廣場", "url": "https://www.tripsavvy.com/seville-plaza-de-espana-the-complete-guide-4582054"}]},
       { icon: "dance", time: "晚上", title: "佛朗明哥秀", description: "在 Triana 區或 Santa Cruz 區看一場真正的佛朗明哥表演，感動到起雞皮疙瘩！" },
     ],
     transport: { mode: "🚗 自駕", from: "Ronda", to: "Sevilla", duration: "2h", price: "油費 €15", details: "Ronda 無火車站，建議自駕或租車前往 Sevilla（2h）。途中可停 Setenil de las Bodegas（岩石小鎮，30min）。" },
@@ -236,7 +236,7 @@ export const DAYS_RONDA: DayPlan[] = [
     subtitle: "Alcázar、大教堂、都市陽傘",
     emoji: "castle",
     highlights: [
-      { icon: "castle", time: "09:00-11:30", title: "塞維亞王宮 Alcázar", description: "歐洲最古老的皇家宮殿之一，也是《權力遊戲》多恩王國花園的拍攝地！摩爾式建築+哥德式風格，後花園絕美", duration: "2.5h", tip: "門票 €13.5，務必提前官網預約！排隊很恐怖", link: "https://www.alcazarsevilla.org/en/", image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=800&q=80" },
+      { icon: "castle", time: "09:00-11:30", title: "塞維亞王宮 Alcázar", description: "歐洲最古老的皇家宮殿之一，也是《權力遊戲》多恩王國花園的拍攝地！摩爾式建築+哥德式風格，後花園絕美", duration: "2.5h", tip: "門票 €13.5，務必提前官網預約！排隊很恐怖", link: "https://www.alcazarsevilla.org/en/", image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=800&q=80" , blogLinks: [{"title": "Spanish Sabores Sevilla 攻略", "url": "https://spanishsabores.com/seville-with-kids/"}, {"title": "Lonely Planet Sevilla 必知", "url": "https://www.lonelyplanet.com/articles/things-to-know-before-traveling-to-seville"}]},
       { icon: "church", time: "12:00-14:00", title: "Sevilla 大教堂 + 吉拉達塔", description: "世界最大的哥德式教堂，哥倫布的靈柩在此。旁邊的吉拉達塔是摩爾時期宣禮塔改建的鐘樓", duration: "1.5h", tip: "門票 €12，包含登塔", image: "https://images.unsplash.com/photo-1534106659956-d02ca15d30fb?w=800&q=80" },
       { icon: "mushroom", time: "15:00-16:30", title: "都市陽傘 Setas de Sevilla", description: "世界最大的木造建築，像巨型蘑菇群。頂層觀景台可 360° 俯瞰 Sevilla 全城，夕陽時分最浪漫", duration: "1.5h", tip: "門票 €15，含觀景台 + 展覽" },
       { icon: "sunset", time: "17:00-18:30", title: "瓜達幾維河河畔夕陽", description: "沿著黃金塔到 Triana 橋散步，看夕陽把河水染成金色，Sevilla 最愜意的時刻" },
@@ -251,7 +251,7 @@ export const DAYS_RONDA: DayPlan[] = [
     highlights: [
       { icon: "train", time: "10:00→12:30", title: "AVE 到 Granada", description: "Sevilla 到 Granada 高鐵直達，約 2.5h", duration: "2h30m", price: "€25-45" },
       { icon: "hotel", time: "13:00", title: "入住 Parador de Granada", description: "位於 Alhambra 宮殿內的傳奇飯店，前身是 15 世紀修道院，陽台就能看到阿罕布拉花園", image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80" },
-      { icon: "city", time: "14:00-16:00", title: "Albaicín 阿爾拜辛區", description: "UNESCO 世界遺產的摩爾人舊城區，蜿蜒的白色小巷、磁磚庭院，像走入一千零一夜的世界" },
+      { icon: "city", time: "14:00-16:00", title: "Albaicín 阿爾拜辛區", description: "UNESCO 世界遺產的摩爾人舊城區，蜿蜒的白色小巷、磁磚庭院，像走入一千零一夜的世界" , blogLinks: [{"title": "Andalucía Mia Albaicín", "url": "https://www.andaluciamia.com/en/albaicin-in-granada-like-a-trip-to-al-andalus/"}, {"title": "Love Granada Albaicín", "url": "https://www.lovegranada.com/places/albaicin/"}]},
       { icon: "sunset", time: "16:30-17:30", title: "聖尼古拉斯瞭望台", description: "遠眺 Alhambra 的最佳點！夕陽時分，阿罕布拉宮在內華達山脈前閃耀金紅色光芒" },
     ],
     transport: { mode: "🚄 AVE", from: "Sevilla Santa Justa", to: "Granada", duration: "2h30m", price: "€25-45", details: "Renfe AVE 直達 Granada 車站。建議 10:00 出發，12:30 到，下午開始探索。" },
@@ -263,7 +263,7 @@ export const DAYS_RONDA: DayPlan[] = [
     subtitle: "此生必去的宮殿奇蹟",
     emoji: "landmark",
     highlights: [
-      { icon: "landmark", time: "09:00-13:00", title: "阿罕布拉宮 Alhambra", description: "西班牙的瑰寶、摩爾人的最後城堡！包含納斯利宮（超精緻阿拉伯雕刻）、Generalife 夏宮花園、卡洛斯五世宮殿。每走一步都是驚嘆！", duration: "4h+", tip: "⚠️ 一定要 2 個月前預約！門票 €19.09，Nasrid Palaces 有時段限制，不能遲到！", link: "https://tickets.alhambra-patronato.es/en/", image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80" },
+      { icon: "landmark", time: "09:00-13:00", title: "阿罕布拉宮 Alhambra", description: "西班牙的瑰寶、摩爾人的最後城堡！包含納斯利宮（超精緻阿拉伯雕刻）、Generalife 夏宮花園、卡洛斯五世宮殿。每走一步都是驚嘆！", duration: "4h+", tip: "⚠️ 一定要 2 個月前預約！門票 €19.09，Nasrid Palaces 有時段限制，不能遲到！", link: "https://tickets.alhambra-patronato.es/en/", image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80" , blogLinks: [{"title": "Rick Steves Alhambra", "url": "https://blog.ricksteves.com/blog/granadas-alhambra/"}, {"title": "Lonely Planet Granada", "url": "https://www.lonelyplanet.com/articles/top-things-to-do-in-granada-spain"}]},
       { icon: "shrimp", time: "13:00-15:00", title: "Granada Tapas 文化", description: "Granada 是全西班牙唯一點酒就送 Tapas 的城市！Calle Navas 上每家 bar 都有驚喜，吃一圈就飽了！" },
       { icon: "church", time: "15:30-17:00", title: "Granada 大教堂 + 皇家禮拜堂", description: "伊莎貝拉一世女王與費迪南德國王安葬於此。禮拜堂內有他們的石棺和珍貴的中世紀藝術品" },
     ],
@@ -276,7 +276,7 @@ export const DAYS_RONDA: DayPlan[] = [
     emoji: "flight",
     highlights: [
       { icon: "flight", time: "10:00→11:40", title: "Granada 飛巴塞隆納", description: "Vueling 直飛 BCN，飛行僅 1h40m，輕鬆接上下午行程", duration: "1h40m", price: "€25-50", tip: "Vueling 官網早買有優惠", link: "https://www.vueling.com/" },
-      { icon: "landmark", time: "14:00-17:00", title: "聖家堂 Sagrada Familia", description: "高第的畢生傑作，也是世界唯一尚未完工就被列為世界遺產的建築。光影透過彩繪玻璃灑落，宛如走進森林迷宮！預計 2026 年完工！", duration: "3h", tip: "門票 €26-40，一定要預約！建議選 Passion 塔登頂", link: "https://sagradafamilia.org/en/tickets", image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=800&q=80" },
+      { icon: "landmark", time: "14:00-17:00", title: "聖家堂 Sagrada Familia", description: "高第的畢生傑作，也是世界唯一尚未完工就被列為世界遺產的建築。光影透過彩繪玻璃灑落，宛如走進森林迷宮！預計 2026 年完工！", duration: "3h", tip: "門票 €26-40，一定要預約！建議選 Passion 塔登頂", link: "https://sagradafamilia.org/en/tickets", image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=800&q=80" , blogLinks: [{"title": "Lonely Planet 聖家堂指南", "url": "https://www.lonelyplanet.com/articles/guide-to-la-sagrada-familia-barcelona"}, {"title": "Atlas Obscura 聖家堂", "url": "https://www.atlasobscura.com/places/sagrada-familia"}]},
     ],
     transport: { mode: "✈️ 飛機", from: "Granada GRX", to: "巴塞隆納 BCN", duration: "1h40m", price: "€25-50", details: "Vueling 直飛，每日多班。飛行時間短，建議訂中午前航班，下午還能跑行程。" },
   },
@@ -287,9 +287,9 @@ export const DAYS_RONDA: DayPlan[] = [
     subtitle: "巴特略之家、米拉之家、奎爾公園",
     emoji: "art",
     highlights: [
-      { icon: "house", time: "09:30-11:00", title: "巴特略之家 Casa Batlló", description: "高第的海洋主題傑作，外牆像彩色龍鱗，內部沒有直線！沉浸式導覽用 AR 超酷", duration: "1.5h", tip: "門票 €35-45，官網有夜間燈光秀", link: "https://www.casabatllo.es/en/", image: "https://images.unsplash.com/photo-1579282240050-352db0a14c21?w=800&q=80" },
-      { icon: "building", time: "11:30-13:00", title: "米拉之家 Casa Milà", description: "高第最後的民用建築，波浪型石造外牆、煙囪屋頂像星際大戰的場景。屋頂必去！", duration: "1.5h", tip: "門票 €25，屋頂看夕陽特別美", image: "https://images.unsplash.com/photo-1568921097010-b59ee67056df?w=800&q=80" },
-      { icon: "park", time: "15:00-17:00", title: "奎爾公園 Park Güell", description: "高第打造的童話花園社區，彩色馬賽克蜥蜴、波浪長椅、世界最長的曲線長椅", duration: "2h", tip: "紀念碑區域門票 €10，可線上預約", image: "https://images.unsplash.com/photo-1630219694734-fe47ab76b15e?w=800&q=80" },
+      { icon: "house", time: "09:30-11:00", title: "巴特略之家 Casa Batlló", description: "高第的海洋主題傑作，外牆像彩色龍鱗，內部沒有直線！沉浸式導覽用 AR 超酷", duration: "1.5h", tip: "門票 €35-45，官網有夜間燈光秀", link: "https://www.casabatllo.es/en/", image: "https://images.unsplash.com/photo-1579282240050-352db0a14c21?w=800&q=80" , blogLinks: [{"title": "Travel Lemming Casa Batlló", "url": "https://travellemming.com/casa-batllo/"}, {"title": "BCN.travel 指南", "url": "https://www.bcn.travel/casa-batllo-guide/"}]},
+      { icon: "building", time: "11:30-13:00", title: "米拉之家 Casa Milà", description: "高第最後的民用建築，波浪型石造外牆、煙囪屋頂像星際大戰的場景。屋頂必去！", duration: "1.5h", tip: "門票 €25，屋頂看夕陽特別美", image: "https://images.unsplash.com/photo-1568921097010-b59ee67056df?w=800&q=80" , blogLinks: [{"title": "Guardian Casa Milà", "url": "https://www.theguardian.com/artanddesign/2026/may/04/the-last-resident-of-casa-mila-on-life-in-gaudis-masterwork"}, {"title": "Rick Steves Barcelona", "url": "https://www.ricksteves.com/europe/spain/barcelona"}]},
+      { icon: "park", time: "15:00-17:00", title: "奎爾公園 Park Güell", description: "高第打造的童話花園社區，彩色馬賽克蜥蜴、波浪長椅、世界最長的曲線長椅", duration: "2h", tip: "紀念碑區域門票 €10，可線上預約", image: "https://images.unsplash.com/photo-1630219694734-fe47ab76b15e?w=800&q=80" , blogLinks: [{"title": "The Tour Guy 公園指南", "url": "https://thetourguy.com/travel-blog/spain/barcelona/park-guell/guide-to-park-guell/"}, {"title": "Geographical Cure 公園攻略", "url": "https://www.thegeographicalcure.com/post/guide-to-park-guell"}]},
     ],
   },
   {
@@ -301,8 +301,8 @@ export const DAYS_RONDA: DayPlan[] = [
     highlights: [
       { icon: "city", time: "09:00-11:00", title: "哥德區 Barri Gòtic", description: "巴塞最古老的街區，狹窄的中世紀小巷、隱藏廣場。找到聖伊莉莎白廣場和主教橋" },
       { icon: "shopping", time: "11:00-13:00", title: "蘭布拉大道 La Rambla", description: "巴塞隆納最著名的林蔭大道，街頭藝人、花店、咖啡座，走到底就是哥倫布紀念碑和海港" },
-      { icon: "fish", time: "11:30-13:00", title: "博蓋利亞市場", description: "歐洲最大市場之一，鮮豔的水果攤、伊比利火腿、現榨果汁、海鮮⋯⋯五感全開！", image: "https://images.unsplash.com/photo-1614635454419-36aa631da264?w=800&q=80" },
-      { icon: "beach", time: "15:00-17:00", title: "巴塞海灘 Barceloneta", description: "地中海陽光、沙灘、海鮮 Paella，旅程尾聲放空一下" },
+      { icon: "fish", time: "11:30-13:00", title: "博蓋利亞市場", description: "歐洲最大市場之一，鮮豔的水果攤、伊比利火腿、現榨果汁、海鮮⋯⋯五感全開！", image: "https://images.unsplash.com/photo-1614635454419-36aa631da264?w=800&q=80" , blogLinks: [{"title": "Devour Tours 巴塞行程", "url": "https://devourtours.com/destinations/spain/barcelona/"}, {"title": "CK Travels Boquería", "url": "https://www.cktravels.com/morning-food-tour-boqueria-market-barcelona/"}]},
+      { icon: "beach", time: "15:00-17:00", title: "巴塞海灘 Barceloneta", description: "地中海陽光、沙灘、海鮮 Paella，旅程尾聲放空一下" , blogLinks: [{"title": "WeBarcelona 海灘", "url": "https://www.webarcelona.net/beaches-barcelona/barceloneta"}, {"title": "Lonely Planet 巴塞海灘", "url": "https://www.lonelyplanet.com/articles/best-beach-barcelona"}]},
     ],
   },
   {
@@ -342,9 +342,9 @@ export const DAYS_REVERSE: DayPlan[] = [
     subtitle: "Alcázar、大教堂、西班牙廣場",
     emoji: "dance",
     highlights: [
-      { icon: "castle", time: "09:00-11:30", title: "塞維亞王宮 Alcázar", description: "歐洲最古老的皇家宮殿之一，也是《權力遊戲》多恩王國花園的拍攝地！摩爾式建築+哥德式風格，後花園絕美", duration: "2.5h", tip: "門票 €13.5，務必提前官網預約！排隊很恐怖", link: "https://www.alcazarsevilla.org/en/", image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=800&q=80" },
+      { icon: "castle", time: "09:00-11:30", title: "塞維亞王宮 Alcázar", description: "歐洲最古老的皇家宮殿之一，也是《權力遊戲》多恩王國花園的拍攝地！摩爾式建築+哥德式風格，後花園絕美", duration: "2.5h", tip: "門票 €13.5，務必提前官網預約！排隊很恐怖", link: "https://www.alcazarsevilla.org/en/", image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=800&q=80" , blogLinks: [{"title": "Spanish Sabores Sevilla 攻略", "url": "https://spanishsabores.com/seville-with-kids/"}, {"title": "Lonely Planet Sevilla 必知", "url": "https://www.lonelyplanet.com/articles/things-to-know-before-traveling-to-seville"}]},
       { icon: "church", time: "12:00-14:00", title: "Sevilla 大教堂 + 吉拉達塔", description: "世界最大的哥德式教堂，哥倫布的靈柩在此。旁邊的吉拉達塔是摩爾時期宣禮塔改建的鐘樓", duration: "1.5h", tip: "門票 €12，包含登塔", image: "https://images.unsplash.com/photo-1534106659956-d02ca15d30fb?w=800&q=80" },
-      { icon: "cityscape", time: "15:00-17:00", title: "西班牙廣場", description: "1929 年博覽會所建，半圓形廣場上有 58 座瓷磚長椅，代表西班牙各省。下午光影打在瓷磚上超美！一定要划船", duration: "2h", tip: "免費，傍晚夕陽時最美", image: "https://images.unsplash.com/photo-1559386081-325882507af7?w=800&q=80" },
+      { icon: "cityscape", time: "15:00-17:00", title: "西班牙廣場", description: "1929 年博覽會所建，半圓形廣場上有 58 座瓷磚長椅，代表西班牙各省。下午光影打在瓷磚上超美！一定要划船", duration: "2h", tip: "免費，傍晚夕陽時最美", image: "https://images.unsplash.com/photo-1559386081-325882507af7?w=800&q=80" , blogLinks: [{"title": "Wanderlust Rose 西班牙廣場", "url": "https://thewanderlustrose.com/a-guide-to-plaza-de-espana-in-seville-a-must-visit-gem/"}, {"title": "TripSavvy 西班牙廣場", "url": "https://www.tripsavvy.com/seville-plaza-de-espana-the-complete-guide-4582054"}]},
       { icon: "dance", time: "晚上", title: "佛朗明哥秀", description: "在 Triana 區或 Santa Cruz 區看一場真正的佛朗明哥表演，感動到起雞皮疙瘩！" },
     ],
   },
@@ -357,7 +357,7 @@ export const DAYS_REVERSE: DayPlan[] = [
     highlights: [
       { icon: "train", time: "10:00→12:30", title: "AVE 到 Granada", description: "Sevilla 到 Granada 高鐵直達，約 2.5h", duration: "2h30m", price: "€25-45" },
       { icon: "hotel", time: "13:00", title: "入住 Parador de Granada", description: "位於 Alhambra 宮殿內的傳奇飯店，前身是 15 世紀修道院，陽台就能看到阿罕布拉花園", image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80" },
-      { icon: "city", time: "14:00-16:00", title: "Albaicín 阿爾拜辛區", description: "UNESCO 世界遺產的摩爾人舊城區，蜿蜒的白色小巷、磁磚庭院，像走入一千零一夜的世界" },
+      { icon: "city", time: "14:00-16:00", title: "Albaicín 阿爾拜辛區", description: "UNESCO 世界遺產的摩爾人舊城區，蜿蜒的白色小巷、磁磚庭院，像走入一千零一夜的世界" , blogLinks: [{"title": "Andalucía Mia Albaicín", "url": "https://www.andaluciamia.com/en/albaicin-in-granada-like-a-trip-to-al-andalus/"}, {"title": "Love Granada Albaicín", "url": "https://www.lovegranada.com/places/albaicin/"}]},
       { icon: "sunset", time: "16:30-17:30", title: "聖尼古拉斯瞭望台", description: "遠眺 Alhambra 的最佳點！夕陽時分，阿罕布拉宮在內華達山脈前閃耀金紅色光芒" },
     ],
     transport: { mode: "🚄 AVE", from: "Sevilla Santa Justa", to: "Granada", duration: "2h30m", price: "€25-45", details: "Renfe AVE 直達 Granada 車站。建議 10:00 出發，12:30 到，下午開始探索。" },
@@ -369,7 +369,7 @@ export const DAYS_REVERSE: DayPlan[] = [
     subtitle: "此生必去的宮殿奇蹟",
     emoji: "landmark",
     highlights: [
-      { icon: "landmark", time: "09:00-13:00", title: "阿罕布拉宮 Alhambra", description: "西班牙的瑰寶、摩爾人的最後城堡！包含納斯利宮（超精緻阿拉伯雕刻）、Generalife 夏宮花園、卡洛斯五世宮殿。每走一步都是驚嘆！", duration: "4h+", tip: "⚠️ 一定要 2 個月前預約！門票 €19.09，Nasrid Palaces 有時段限制，不能遲到！", link: "https://tickets.alhambra-patronato.es/en/", image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80" },
+      { icon: "landmark", time: "09:00-13:00", title: "阿罕布拉宮 Alhambra", description: "西班牙的瑰寶、摩爾人的最後城堡！包含納斯利宮（超精緻阿拉伯雕刻）、Generalife 夏宮花園、卡洛斯五世宮殿。每走一步都是驚嘆！", duration: "4h+", tip: "⚠️ 一定要 2 個月前預約！門票 €19.09，Nasrid Palaces 有時段限制，不能遲到！", link: "https://tickets.alhambra-patronato.es/en/", image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80" , blogLinks: [{"title": "Rick Steves Alhambra", "url": "https://blog.ricksteves.com/blog/granadas-alhambra/"}, {"title": "Lonely Planet Granada", "url": "https://www.lonelyplanet.com/articles/top-things-to-do-in-granada-spain"}]},
       { icon: "shrimp", time: "13:00-15:00", title: "Granada Tapas 文化", description: "Granada 是全西班牙唯一點酒就送 Tapas 的城市！Calle Navas 上每家 bar 都有驚喜，吃一圈就飽了！" },
       { icon: "church", time: "15:30-17:00", title: "Granada 大教堂 + 皇家禮拜堂", description: "伊莎貝拉一世女王與費迪南德國王安葬於此。禮拜堂內有他們的石棺和珍貴的中世紀藝術品" },
     ],
@@ -382,9 +382,9 @@ export const DAYS_REVERSE: DayPlan[] = [
     emoji: "train",
     highlights: [
       { icon: "train", time: "09:00→11:30", title: "AVE 到 Córdoba", description: "Granada 到 Córdoba 高鐵直達，約 2.5h", duration: "2h30m", price: "€25-45" },
-      { icon: "mosque", time: "12:00-15:00", title: "Córdoba 大清真寺", description: "世界文化遺產，摩爾人興建的大清真寺內有 856 根雙色拱柱，後來天主教徒在裡面蓋了一座教堂，形成伊斯蘭+基督教的獨特融合", duration: "2-3h", tip: "門票 €13，建議上午去光線最好", link: "https://mezquita-catedraldecordoba.es/", image: "https://images.unsplash.com/photo-1632904080322-e71e16a5987f?w=800&q=80" },
+      { icon: "mosque", time: "12:00-15:00", title: "Córdoba 大清真寺", description: "世界文化遺產，摩爾人興建的大清真寺內有 856 根雙色拱柱，後來天主教徒在裡面蓋了一座教堂，形成伊斯蘭+基督教的獨特融合", duration: "2-3h", tip: "門票 €13，建議上午去光線最好", link: "https://mezquita-catedraldecordoba.es/", image: "https://images.unsplash.com/photo-1632904080322-e71e16a5987f?w=800&q=80" , blogLinks: [{"title": "Approach Guides 清真寺", "url": "https://approachguides.com/guide/spain-cordoba-mezquita/"}, {"title": "Mi Brava 清真寺攻略", "url": "https://www.mibrava.com/post/the-mosque-cathedral-of-cordoba-making-the-most-of-your-time"}]},
       { icon: "flower", time: "15:30-16:30", title: "百花巷 + 羅馬橋", description: "著名的藍白瓷磚小巷（Calleja de las Flores），以及西元 1 世紀建的羅馬橋" },
-      { icon: "bridge", time: "17:00-18:30", title: "羅馬橋夕陽", description: "古羅馬橋橫跨瓜達幾維河，遠眺清真寺全景，夕陽時分金光灑落最美" },
+      { icon: "bridge", time: "17:00-18:30", title: "羅馬橋夕陽", description: "古羅馬橋橫跨瓜達幾維河，遠眺清真寺全景，夕陽時分金光灑落最美" , blogLinks: [{"title": "A Luxury Travel Blog Córdoba", "url": "https://www.aluxurytravelblog.com/2017/02/20/5-things-to-do-in-cordoba/"}]},
     ],
     transport: { mode: "🚄 AVE", from: "Granada", to: "Córdoba", duration: "2h30m", price: "€25-45", details: "Renfe AVE 直達。建議 09:00 出發，11:30 到，下午開始探索。" },
   },
@@ -397,8 +397,8 @@ export const DAYS_REVERSE: DayPlan[] = [
     highlights: [
       { icon: "train", time: "09:00→10:45", title: "AVE 到馬德里", description: "Córdoba 到馬德里高鐵直達，約 1h45m", duration: "1h45m", price: "€30-50" },
       { icon: "art", time: "11:00-14:00", title: "普拉多美術館", description: "西班牙最重要的美術館，收藏哥雅、委拉斯奎茲、葛雷柯等大師鉅作。必看：哥雅《裸體的瑪哈》、委拉斯奎茲《宮女》", duration: "3h", tip: "門票 €15，下午 6-8 點免費入場但排隊很長", link: "https://www.museodelprado.es/", image: "https://images.unsplash.com/photo-1651902519299-9eaf6548b364?w=800&q=80" },
-      { icon: "leaf", time: "14:00-15:00", title: "麗池公園", description: "馬德里的城市綠洲。在人工湖划船、看水晶宮（Palacio de Cristal）", image: "https://images.unsplash.com/photo-1645203494470-1507ae7f1a40?w=800&q=80" },
-      { icon: "crown", time: "15:30-17:30", title: "馬德里皇宮", description: "歐洲第三大皇宮，僅次於凡爾賽宮和美景宮。奢華的內部裝潢、壁畫、兵器廣場", duration: "2h", tip: "門票 €12，建議提前官網預約", link: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid", image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=800&q=80" },
+      { icon: "leaf", time: "14:00-15:00", title: "麗池公園", description: "馬德里的城市綠洲。在人工湖划船、看水晶宮（Palacio de Cristal）", image: "https://images.unsplash.com/photo-1645203494470-1507ae7f1a40?w=800&q=80" , blogLinks: [{"title": "Lonely Planet 馬德里", "url": "https://www.lonelyplanet.com/articles/top-things-to-do-in-madrid"}, {"title": "Rick Steves 馬德里", "url": "https://www.ricksteves.com/europe/spain/madrid"}]},
+      { icon: "crown", time: "15:30-17:30", title: "馬德里皇宮", description: "歐洲第三大皇宮，僅次於凡爾賽宮和美景宮。奢華的內部裝潢、壁畫、兵器廣場", duration: "2h", tip: "門票 €12，建議提前官網預約", link: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid", image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=800&q=80" , blogLinks: [{"title": "Rick Steves 馬德里", "url": "https://www.ricksteves.com/watch-read-listen/read/articles/a-blitz-tour-of-madrid"}, {"title": "Lonely Planet 馬德里", "url": "https://www.lonelyplanet.com/articles/top-things-to-do-in-madrid"}]},
       { icon: "chocolate", time: "晚上", title: "San Ginés 吃 Churros", description: "開業於 1894 年的老字號，招牌是 Churros con Chocolate 巧克力油條，24 小時營業！" },
     ],
     transport: { mode: "🚄 AVE", from: "Córdoba", to: "馬德里 Atocha", duration: "1h45m", price: "€30-50", details: "Renfe AVE 直達。建議 09:00 出發，10:45 到，開始馬德里藝術之旅。" },
@@ -410,9 +410,9 @@ export const DAYS_REVERSE: DayPlan[] = [
     subtitle: "格爾尼卡、La Latina、伯納烏",
     emoji: "landmark",
     highlights: [
-      { icon: "theater", time: "09:30-11:30", title: "索菲亞王后藝術中心", description: "現代藝術美術館，鎮館之寶——畢卡索《格爾尼卡》！這幅反戰巨作長 7.8 公尺，親眼看到非常震撼", duration: "2h", tip: "門票 €12，週一、週三至週六 19:00-21:00 免費，週日 13:30-19:00 免費", link: "https://www.museoreinasofia.es/en", image: "https://images.unsplash.com/photo-1564565899675-a159063d17be?w=800&q=80" },
+      { icon: "theater", time: "09:30-11:30", title: "索菲亞王后藝術中心", description: "現代藝術美術館，鎮館之寶——畢卡索《格爾尼卡》！這幅反戰巨作長 7.8 公尺，親眼看到非常震撼", duration: "2h", tip: "門票 €12，週一、週三至週六 19:00-21:00 免費，週日 13:30-19:00 免費", link: "https://www.museoreinasofia.es/en", image: "https://images.unsplash.com/photo-1564565899675-a159063d17be?w=800&q=80" , blogLinks: [{"title": "Guardian Reina Sofía", "url": "https://www.theguardian.com/world/2026/feb/17/reina-sofia-madrid-museum-rehang-spain"}, {"title": "Rick Steves 馬德里", "url": "https://www.ricksteves.com/europe/spain/madrid"}]},
       { icon: "city", time: "12:00-14:00", title: "La Latina 區午餐", description: "馬德里最古老的街區，蜿蜒的小巷裡藏著無數 Tapas 酒吧。推薦吃 Callos（燉牛肚）或 Tortilla Española" },
-      { icon: "soccer", time: "15:00-17:00", title: "聖地亞哥·伯納烏球場", description: "皇家馬德里主場！參觀球場、更衣室、獎盃室、球員通道，球迷必去聖地！", duration: "2h", tip: "門票 €25-40，官網預約可選導覽", link: "https://www.realmadrid.com/en/visit-the-bernabeu", image: "https://images.unsplash.com/photo-1522778034537-20a2486be803?w=800&q=80" },
+      { icon: "soccer", time: "15:00-17:00", title: "聖地亞哥·伯納烏球場", description: "皇家馬德里主場！參觀球場、更衣室、獎盃室、球員通道，球迷必去聖地！", duration: "2h", tip: "門票 €25-40，官網預約可選導覽", link: "https://www.realmadrid.com/en/visit-the-bernabeu", image: "https://images.unsplash.com/photo-1522778034537-20a2486be803?w=800&q=80" , blogLinks: [{"title": "伯納烏球場終極指南", "url": "https://www.aroundtheworld4u.com/santiago-bernabeu-stadium/"}]},
       { icon: "sunset", time: "17:30-19:00", title: "德波神廟夕陽", description: "從埃及搬來的神廟，馬德里最浪漫的夕陽景點。免費入場，夕陽時分整個神廟和天空超美" },
     ],
   },
@@ -425,8 +425,8 @@ export const DAYS_REVERSE: DayPlan[] = [
     highlights: [
       { icon: "train", time: "09:00→11:30", title: "AVE 到巴塞隆納", description: "馬德里到巴塞隆納高鐵直達，約 2.5h", duration: "2h30m", price: "€40-70" },
       { icon: "hotel", time: "12:00", title: "入住巴塞隆納飯店", description: "建議住在 Eixample 擴展區（高第建築都在這）或哥德區附近", image: "https://images.unsplash.com/photo-1507619579562-f2e10da1ec86?w=800&q=80" },
-      { icon: "food", time: "13:00-14:30", title: "La Boqueria 市場午餐", description: "巴塞隆納最著名市場，新鮮海鮮、果汁、Tapas", image: "https://images.unsplash.com/photo-1614635454419-36aa631da264?w=800&q=80" },
-      { icon: "landmark", time: "15:00-17:00", title: "聖家堂 Sagrada Familia", description: "高第的畢生傑作，也是世界唯一尚未完工就被列為世界遺產的建築。光影透過彩繪玻璃灑落，宛如走進森林迷宮！預計 2026 年完工！", duration: "3h", tip: "門票 €26-40，一定要預約！建議選 Passion 塔登頂", link: "https://sagradafamilia.org/en/tickets", image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=800&q=80" },
+      { icon: "food", time: "13:00-14:30", title: "La Boqueria 市場午餐", description: "巴塞隆納最著名市場，新鮮海鮮、果汁、Tapas", image: "https://images.unsplash.com/photo-1614635454419-36aa631da264?w=800&q=80" , blogLinks: [{"title": "Devour Tours 巴塞行程", "url": "https://devourtours.com/destinations/spain/barcelona/"}, {"title": "CK Travels Boquería", "url": "https://www.cktravels.com/morning-food-tour-boqueria-market-barcelona/"}]},
+      { icon: "landmark", time: "15:00-17:00", title: "聖家堂 Sagrada Familia", description: "高第的畢生傑作，也是世界唯一尚未完工就被列為世界遺產的建築。光影透過彩繪玻璃灑落，宛如走進森林迷宮！預計 2026 年完工！", duration: "3h", tip: "門票 €26-40，一定要預約！建議選 Passion 塔登頂", link: "https://sagradafamilia.org/en/tickets", image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=800&q=80" , blogLinks: [{"title": "Lonely Planet 聖家堂指南", "url": "https://www.lonelyplanet.com/articles/guide-to-la-sagrada-familia-barcelona"}, {"title": "Atlas Obscura 聖家堂", "url": "https://www.atlasobscura.com/places/sagrada-familia"}]},
     ],
     transport: { mode: "🚄 AVE", from: "馬德里 Atocha", to: "巴塞隆納 Sants", duration: "2h30m", price: "€40-70", details: "Renfe AVE 直達。建議 09:00 出發，11:30 到，下午開始高第之旅。" },
   },
@@ -437,9 +437,9 @@ export const DAYS_REVERSE: DayPlan[] = [
     subtitle: "巴特略之家、米拉之家、奎爾公園",
     emoji: "art",
     highlights: [
-      { icon: "house", time: "09:30-11:00", title: "巴特略之家 Casa Batlló", description: "高第的海洋主題傑作，外牆像彩色龍鱗，內部沒有直線！沉浸式導覽用 AR 超酷", duration: "1.5h", tip: "門票 €35-45，官網有夜間燈光秀", link: "https://www.casabatllo.es/en/", image: "https://images.unsplash.com/photo-1579282240050-352db0a14c21?w=800&q=80" },
-      { icon: "building", time: "11:30-13:00", title: "米拉之家 Casa Milà", description: "高第最後的民用建築，波浪型石造外牆、煙囪屋頂像星際大戰的場景。屋頂必去！", duration: "1.5h", tip: "門票 €25，屋頂看夕陽特別美", image: "https://images.unsplash.com/photo-1568921097010-b59ee67056df?w=800&q=80" },
-      { icon: "park", time: "15:00-17:00", title: "奎爾公園 Park Güell", description: "高第打造的童話花園社區，彩色馬賽克蜥蜴、波浪長椅、世界最長的曲線長椅", duration: "2h", tip: "紀念碑區域門票 €10，可線上預約", image: "https://images.unsplash.com/photo-1630219694734-fe47ab76b15e?w=800&q=80" },
+      { icon: "house", time: "09:30-11:00", title: "巴特略之家 Casa Batlló", description: "高第的海洋主題傑作，外牆像彩色龍鱗，內部沒有直線！沉浸式導覽用 AR 超酷", duration: "1.5h", tip: "門票 €35-45，官網有夜間燈光秀", link: "https://www.casabatllo.es/en/", image: "https://images.unsplash.com/photo-1579282240050-352db0a14c21?w=800&q=80" , blogLinks: [{"title": "Travel Lemming Casa Batlló", "url": "https://travellemming.com/casa-batllo/"}, {"title": "BCN.travel 指南", "url": "https://www.bcn.travel/casa-batllo-guide/"}]},
+      { icon: "building", time: "11:30-13:00", title: "米拉之家 Casa Milà", description: "高第最後的民用建築，波浪型石造外牆、煙囪屋頂像星際大戰的場景。屋頂必去！", duration: "1.5h", tip: "門票 €25，屋頂看夕陽特別美", image: "https://images.unsplash.com/photo-1568921097010-b59ee67056df?w=800&q=80" , blogLinks: [{"title": "Guardian Casa Milà", "url": "https://www.theguardian.com/artanddesign/2026/may/04/the-last-resident-of-casa-mila-on-life-in-gaudis-masterwork"}, {"title": "Rick Steves Barcelona", "url": "https://www.ricksteves.com/europe/spain/barcelona"}]},
+      { icon: "park", time: "15:00-17:00", title: "奎爾公園 Park Güell", description: "高第打造的童話花園社區，彩色馬賽克蜥蜴、波浪長椅、世界最長的曲線長椅", duration: "2h", tip: "紀念碑區域門票 €10，可線上預約", image: "https://images.unsplash.com/photo-1630219694734-fe47ab76b15e?w=800&q=80" , blogLinks: [{"title": "The Tour Guy 公園指南", "url": "https://thetourguy.com/travel-blog/spain/barcelona/park-guell/guide-to-park-guell/"}, {"title": "Geographical Cure 公園攻略", "url": "https://www.thegeographicalcure.com/post/guide-to-park-guell"}]},
     ],
   },
   {
@@ -451,8 +451,8 @@ export const DAYS_REVERSE: DayPlan[] = [
     highlights: [
       { icon: "city", time: "09:00-11:00", title: "哥德區 Barri Gòtic", description: "巴塞最古老的街區，狹窄的中世紀小巷、隱藏廣場。找到聖伊莉莎白廣場和主教橋" },
       { icon: "shopping", time: "11:00-13:00", title: "蘭布拉大道 La Rambla", description: "巴塞隆納最著名的林蔭大道，街頭藝人、花店、咖啡座，走到底就是哥倫布紀念碑和海港" },
-      { icon: "fish", time: "11:30-13:00", title: "博蓋利亞市場", description: "歐洲最大市場之一，鮮豔的水果攤、伊比利火腿、現榨果汁、海鮮⋯⋯五感全開！", image: "https://images.unsplash.com/photo-1614635454419-36aa631da264?w=800&q=80" },
-      { icon: "beach", time: "15:00-17:00", title: "巴塞海灘 Barceloneta", description: "地中海陽光、沙灘、海鮮 Paella，旅程尾聲放空一下" },
+      { icon: "fish", time: "11:30-13:00", title: "博蓋利亞市場", description: "歐洲最大市場之一，鮮豔的水果攤、伊比利火腿、現榨果汁、海鮮⋯⋯五感全開！", image: "https://images.unsplash.com/photo-1614635454419-36aa631da264?w=800&q=80" , blogLinks: [{"title": "Devour Tours 巴塞行程", "url": "https://devourtours.com/destinations/spain/barcelona/"}, {"title": "CK Travels Boquería", "url": "https://www.cktravels.com/morning-food-tour-boqueria-market-barcelona/"}]},
+      { icon: "beach", time: "15:00-17:00", title: "巴塞海灘 Barceloneta", description: "地中海陽光、沙灘、海鮮 Paella，旅程尾聲放空一下" , blogLinks: [{"title": "WeBarcelona 海灘", "url": "https://www.webarcelona.net/beaches-barcelona/barceloneta"}, {"title": "Lonely Planet 巴塞海灘", "url": "https://www.lonelyplanet.com/articles/best-beach-barcelona"}]},
     ],
   },
   {
@@ -527,14 +527,14 @@ export const HOTELS_REVERSE: Hotel[] = [
 ];
 
 export const ATTRACTIONS_REVERSE: Attraction[] = [
-  { name: "塞維亞王宮 Alcázar", city: "Sevilla", emoji: "castle", description: "歐洲最古老皇家宮殿，《權力遊戲》拍攝地", tips: ["門票 €13.5，務必預約", "後花園超美", "GOT 迷必去多恩花園場景"], image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=800&q=80", timeNeeded: "2.5h", ticketLink: "https://www.alcazarsevilla.org/en/" },
-  { name: "阿罕布拉宮 Alhambra", city: "Granada", emoji: "landmark", description: "西班牙最偉大的伊斯蘭建築，摩爾人的最後榮光", tips: ["⚠️ 提前 2 個月預約！", "門票 €19.09", "Nasrid 宮殿有時段限制"], image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80", timeNeeded: "4h+", ticketLink: "https://tickets.alhambra-patronato.es/en/" },
-  { name: "Córdoba 清真寺大教堂", city: "Córdoba", emoji: "mosque", description: "世界遺產，伊斯蘭+基督教融合的建築奇蹟", tips: ["門票 €13", "早上光線最好", "856 根雙色拱柱是必看"], image: "https://images.unsplash.com/photo-1632904080322-e71e16a5987f?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://mezquita-catedraldecordoba.es/" },
-  { name: "普拉多美術館", city: "Madrid", emoji: "art", description: "世界最頂尖的藝術博物館之一，收藏西班牙黃金時代巨作", tips: ["門票 €15，18:00-20:00 免費", "預留至少 2-3 小時", "必看哥雅《裸體的瑪哈》"], image: "https://images.unsplash.com/photo-1651902519299-9eaf6548b364?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://www.museodelprado.es/" },
-  { name: "馬德里皇宮", city: "Madrid", emoji: "crown", description: "歐洲第三大皇宮，奢華程度令人咋舌", tips: ["門票 €12，建議預約", "包含兵器廣場和藥局", "旁邊就是阿穆德納教堂"], image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=800&q=80", timeNeeded: "1.5-2h", ticketLink: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid" },
-  { name: "伯納烏球場", city: "Madrid", emoji: "soccer", description: "皇家馬德里主場，足球迷的聖地", tips: ["門票 €25-40", "包含獎盃室和球員通道", "比賽日可能不開放參觀"], image: "https://images.unsplash.com/photo-1522778034537-20a2486be803?w=800&q=80", timeNeeded: "2h", ticketLink: "https://www.realmadrid.com/en/visit-the-bernabeu" },
-  { name: "聖家堂", city: "BCN", emoji: "church", description: "高第畢生傑作，2026 年終於要完工！", tips: ["門票 €26-40，預約", "選 Passion 塔登頂", "下午光影最美"], image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://sagradafamilia.org/en/tickets" },
-  { name: "巴特略之家", city: "BCN", emoji: "🏡", description: "高第海洋主題建築，沒有直線的童話之家", tips: ["門票 €35-45", "AR 導覽超酷", "夜間燈光秀可考慮"], image: "https://images.unsplash.com/photo-1579282240050-352db0a14c21?w=800&q=80", timeNeeded: "1.5h", ticketLink: "https://www.casabatllo.es/en/" },
+  { name: "塞維亞王宮 Alcázar", city: "Sevilla", emoji: "castle", description: "歐洲最古老皇家宮殿，《權力遊戲》拍攝地", tips: ["門票 €13.5，務必預約", "後花園超美", "GOT 迷必去多恩花園場景"], image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=800&q=80", timeNeeded: "2.5h", ticketLink: "https://www.alcazarsevilla.org/en/" , blogLinks: [{"title": "Spanish Sabores Sevilla 攻略", "url": "https://spanishsabores.com/seville-with-kids/"}, {"title": "Lonely Planet Sevilla 必知", "url": "https://www.lonelyplanet.com/articles/things-to-know-before-traveling-to-seville"}]},
+  { name: "阿罕布拉宮 Alhambra", city: "Granada", emoji: "landmark", description: "西班牙最偉大的伊斯蘭建築，摩爾人的最後榮光", tips: ["⚠️ 提前 2 個月預約！", "門票 €19.09", "Nasrid 宮殿有時段限制"], image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80", timeNeeded: "4h+", ticketLink: "https://tickets.alhambra-patronato.es/en/" , blogLinks: [{"title": "Rick Steves Alhambra", "url": "https://blog.ricksteves.com/blog/granadas-alhambra/"}, {"title": "Lonely Planet Granada", "url": "https://www.lonelyplanet.com/articles/top-things-to-do-in-granada-spain"}]},
+  { name: "Córdoba 清真寺大教堂", city: "Córdoba", emoji: "mosque", description: "世界遺產，伊斯蘭+基督教融合的建築奇蹟", tips: ["門票 €13", "早上光線最好", "856 根雙色拱柱是必看"], image: "https://images.unsplash.com/photo-1632904080322-e71e16a5987f?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://mezquita-catedraldecordoba.es/" , blogLinks: [{"title": "Approach Guides 清真寺", "url": "https://approachguides.com/guide/spain-cordoba-mezquita/"}, {"title": "Mi Brava 清真寺攻略", "url": "https://www.mibrava.com/post/the-mosque-cathedral-of-cordoba-making-the-most-of-your-time"}]},
+  { name: "普拉多美術館", city: "Madrid", emoji: "art", description: "世界最頂尖的藝術博物館之一，收藏西班牙黃金時代巨作", tips: ["門票 €15，18:00-20:00 免費", "預留至少 2-3 小時", "必看哥雅《裸體的瑪哈》"], image: "https://images.unsplash.com/photo-1651902519299-9eaf6548b364?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://www.museodelprado.es/" , blogLinks: [{"title": "Lonely Planet 普拉多指南", "url": "https://www.lonelyplanet.com/articles/top-things-to-do-in-madrid"}, {"title": "Rick Steves 馬德里攻略", "url": "https://www.ricksteves.com/europe/spain/madrid"}]},
+  { name: "馬德里皇宮", city: "Madrid", emoji: "crown", description: "歐洲第三大皇宮，奢華程度令人咋舌", tips: ["門票 €12，建議預約", "包含兵器廣場和藥局", "旁邊就是阿穆德納教堂"], image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=800&q=80", timeNeeded: "1.5-2h", ticketLink: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid" , blogLinks: [{"title": "Rick Steves 馬德里", "url": "https://www.ricksteves.com/watch-read-listen/read/articles/a-blitz-tour-of-madrid"}, {"title": "Lonely Planet 馬德里", "url": "https://www.lonelyplanet.com/articles/top-things-to-do-in-madrid"}]},
+  { name: "伯納烏球場", city: "Madrid", emoji: "soccer", description: "皇家馬德里主場，足球迷的聖地", tips: ["門票 €25-40", "包含獎盃室和球員通道", "比賽日可能不開放參觀"], image: "https://images.unsplash.com/photo-1522778034537-20a2486be803?w=800&q=80", timeNeeded: "2h", ticketLink: "https://www.realmadrid.com/en/visit-the-bernabeu" , blogLinks: [{"title": "伯納烏球場終極指南", "url": "https://www.aroundtheworld4u.com/santiago-bernabeu-stadium/"}]},
+  { name: "聖家堂", city: "BCN", emoji: "church", description: "高第畢生傑作，2026 年終於要完工！", tips: ["門票 €26-40，預約", "選 Passion 塔登頂", "下午光影最美"], image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://sagradafamilia.org/en/tickets" , blogLinks: [{"title": "Lonely Planet 聖家堂指南", "url": "https://www.lonelyplanet.com/articles/guide-to-la-sagrada-familia-barcelona"}, {"title": "Atlas Obscura 聖家堂", "url": "https://www.atlasobscura.com/places/sagrada-familia"}]},
+  { name: "巴特略之家", city: "BCN", emoji: "🏡", description: "高第海洋主題建築，沒有直線的童話之家", tips: ["門票 €35-45", "AR 導覽超酷", "夜間燈光秀可考慮"], image: "https://images.unsplash.com/photo-1579282240050-352db0a14c21?w=800&q=80", timeNeeded: "1.5h", ticketLink: "https://www.casabatllo.es/en/" , blogLinks: [{"title": "Travel Lemming Casa Batlló", "url": "https://travellemming.com/casa-batllo/"}, {"title": "BCN.travel 指南", "url": "https://www.bcn.travel/casa-batllo-guide/"}]},
 ];
 
 export const CITY_VIDEOS_REVERSE: CityVideo[] = [
@@ -694,27 +694,27 @@ export const HOTELS_RONDA: Hotel[] = [
 ];
 
 export const ATTRACTIONS: Attraction[] = [
-  { name: "普拉多美術館", city: "Madrid", emoji: "art", description: "世界最頂尖的藝術博物館之一，收藏西班牙黃金時代巨作", tips: ["門票 €15，18:00-20:00 免費", "預留至少 2-3 小時", "必看哥雅《裸體的瑪哈》"], image: "https://images.unsplash.com/photo-1651902519299-9eaf6548b364?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://www.museodelprado.es/" },
-  { name: "馬德里皇宮", city: "Madrid", emoji: "crown", description: "歐洲第三大皇宮，奢華程度令人咋舌", tips: ["門票 €12，建議預約", "包含兵器廣場和藥局", "旁邊就是阿穆德納教堂"], image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=800&q=80", timeNeeded: "1.5-2h", ticketLink: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid" },
-  { name: "伯納烏球場", city: "Madrid", emoji: "soccer", description: "皇家馬德里主場，足球迷的聖地", tips: ["門票 €25-40", "包含獎盃室和球員通道", "比賽日可能不開放參觀"], image: "https://images.unsplash.com/photo-1522778034537-20a2486be803?w=800&q=80", timeNeeded: "2h", ticketLink: "https://www.realmadrid.com/en/visit-the-bernabeu" },
-  { name: "Córdoba 清真寺大教堂", city: "Córdoba", emoji: "mosque", description: "世界遺產，伊斯蘭+基督教融合的建築奇蹟", tips: ["門票 €13", "早上光線最好", "856 根雙色拱柱是必看"], image: "https://images.unsplash.com/photo-1632904080322-e71e16a5987f?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://mezquita-catedraldecordoba.es/" },
-  { name: "塞維亞王宮 Alcázar", city: "Sevilla", emoji: "castle", description: "歐洲最古老皇家宮殿，《權力遊戲》拍攝地", tips: ["門票 €13.5，務必預約", "後花園超美", "GOT 迷必去多恩花園場景"], image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=800&q=80", timeNeeded: "2.5h", ticketLink: "https://www.alcazarsevilla.org/en/" },
-  { name: "阿罕布拉宮 Alhambra", city: "Granada", emoji: "landmark", description: "西班牙最偉大的伊斯蘭建築，摩爾人的最後榮光", tips: ["⚠️ 提前 2 個月預約！", "門票 €19.09", "Nasrid 宮殿有時段限制"], image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80", timeNeeded: "4h+", ticketLink: "https://tickets.alhambra-patronato.es/en/" },
-  { name: "聖家堂", city: "BCN", emoji: "church", description: "高第畢生傑作，2026 年終於要完工！", tips: ["門票 €26-40，預約", "選 Passion 塔登頂", "下午光影最美"], image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://sagradafamilia.org/en/tickets" },
-  { name: "巴特略之家", city: "BCN", emoji: "🏡", description: "高第海洋主題建築，沒有直線的童話之家", tips: ["門票 €35-45", "AR 導覽超酷", "夜間燈光秀可考慮"], image: "https://images.unsplash.com/photo-1579282240050-352db0a14c21?w=800&q=80", timeNeeded: "1.5h", ticketLink: "https://www.casabatllo.es/en/" },
+  { name: "普拉多美術館", city: "Madrid", emoji: "art", description: "世界最頂尖的藝術博物館之一，收藏西班牙黃金時代巨作", tips: ["門票 €15，18:00-20:00 免費", "預留至少 2-3 小時", "必看哥雅《裸體的瑪哈》"], image: "https://images.unsplash.com/photo-1651902519299-9eaf6548b364?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://www.museodelprado.es/" , blogLinks: [{"title": "Lonely Planet 普拉多指南", "url": "https://www.lonelyplanet.com/articles/top-things-to-do-in-madrid"}, {"title": "Rick Steves 馬德里攻略", "url": "https://www.ricksteves.com/europe/spain/madrid"}]},
+  { name: "馬德里皇宮", city: "Madrid", emoji: "crown", description: "歐洲第三大皇宮，奢華程度令人咋舌", tips: ["門票 €12，建議預約", "包含兵器廣場和藥局", "旁邊就是阿穆德納教堂"], image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=800&q=80", timeNeeded: "1.5-2h", ticketLink: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid" , blogLinks: [{"title": "Rick Steves 馬德里", "url": "https://www.ricksteves.com/watch-read-listen/read/articles/a-blitz-tour-of-madrid"}, {"title": "Lonely Planet 馬德里", "url": "https://www.lonelyplanet.com/articles/top-things-to-do-in-madrid"}]},
+  { name: "伯納烏球場", city: "Madrid", emoji: "soccer", description: "皇家馬德里主場，足球迷的聖地", tips: ["門票 €25-40", "包含獎盃室和球員通道", "比賽日可能不開放參觀"], image: "https://images.unsplash.com/photo-1522778034537-20a2486be803?w=800&q=80", timeNeeded: "2h", ticketLink: "https://www.realmadrid.com/en/visit-the-bernabeu" , blogLinks: [{"title": "伯納烏球場終極指南", "url": "https://www.aroundtheworld4u.com/santiago-bernabeu-stadium/"}]},
+  { name: "Córdoba 清真寺大教堂", city: "Córdoba", emoji: "mosque", description: "世界遺產，伊斯蘭+基督教融合的建築奇蹟", tips: ["門票 €13", "早上光線最好", "856 根雙色拱柱是必看"], image: "https://images.unsplash.com/photo-1632904080322-e71e16a5987f?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://mezquita-catedraldecordoba.es/" , blogLinks: [{"title": "Approach Guides 清真寺", "url": "https://approachguides.com/guide/spain-cordoba-mezquita/"}, {"title": "Mi Brava 清真寺攻略", "url": "https://www.mibrava.com/post/the-mosque-cathedral-of-cordoba-making-the-most-of-your-time"}]},
+  { name: "塞維亞王宮 Alcázar", city: "Sevilla", emoji: "castle", description: "歐洲最古老皇家宮殿，《權力遊戲》拍攝地", tips: ["門票 €13.5，務必預約", "後花園超美", "GOT 迷必去多恩花園場景"], image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=800&q=80", timeNeeded: "2.5h", ticketLink: "https://www.alcazarsevilla.org/en/" , blogLinks: [{"title": "Spanish Sabores Sevilla 攻略", "url": "https://spanishsabores.com/seville-with-kids/"}, {"title": "Lonely Planet Sevilla 必知", "url": "https://www.lonelyplanet.com/articles/things-to-know-before-traveling-to-seville"}]},
+  { name: "阿罕布拉宮 Alhambra", city: "Granada", emoji: "landmark", description: "西班牙最偉大的伊斯蘭建築，摩爾人的最後榮光", tips: ["⚠️ 提前 2 個月預約！", "門票 €19.09", "Nasrid 宮殿有時段限制"], image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80", timeNeeded: "4h+", ticketLink: "https://tickets.alhambra-patronato.es/en/" , blogLinks: [{"title": "Rick Steves Alhambra", "url": "https://blog.ricksteves.com/blog/granadas-alhambra/"}, {"title": "Lonely Planet Granada", "url": "https://www.lonelyplanet.com/articles/top-things-to-do-in-granada-spain"}]},
+  { name: "聖家堂", city: "BCN", emoji: "church", description: "高第畢生傑作，2026 年終於要完工！", tips: ["門票 €26-40，預約", "選 Passion 塔登頂", "下午光影最美"], image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://sagradafamilia.org/en/tickets" , blogLinks: [{"title": "Lonely Planet 聖家堂指南", "url": "https://www.lonelyplanet.com/articles/guide-to-la-sagrada-familia-barcelona"}, {"title": "Atlas Obscura 聖家堂", "url": "https://www.atlasobscura.com/places/sagrada-familia"}]},
+  { name: "巴特略之家", city: "BCN", emoji: "🏡", description: "高第海洋主題建築，沒有直線的童話之家", tips: ["門票 €35-45", "AR 導覽超酷", "夜間燈光秀可考慮"], image: "https://images.unsplash.com/photo-1579282240050-352db0a14c21?w=800&q=80", timeNeeded: "1.5h", ticketLink: "https://www.casabatllo.es/en/" , blogLinks: [{"title": "Travel Lemming Casa Batlló", "url": "https://travellemming.com/casa-batllo/"}, {"title": "BCN.travel 指南", "url": "https://www.bcn.travel/casa-batllo-guide/"}]},
 ];
 
 export const ATTRACTIONS_RONDA: Attraction[] = [
-  { name: "普拉多美術館", city: "Madrid", emoji: "art", description: "世界最頂尖的藝術博物館之一，收藏西班牙黃金時代巨作", tips: ["門票 €15，18:00-20:00 免費", "預留至少 2-3 小時", "必看哥雅《裸體的瑪哈》"], image: "https://images.unsplash.com/photo-1651902519299-9eaf6548b364?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://www.museodelprado.es/" },
-  { name: "馬德里皇宮", city: "Madrid", emoji: "crown", description: "歐洲第三大皇宮，奢華程度令人咋舌", tips: ["門票 €12，建議預約", "包含兵器廣場和藥局", "旁邊就是阿穆德納教堂"], image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=800&q=80", timeNeeded: "1.5-2h", ticketLink: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid" },
-  { name: "伯納烏球場", city: "Madrid", emoji: "soccer", description: "皇家馬德里主場，足球迷的聖地", tips: ["門票 €25-40", "包含獎盃室和球員通道", "比賽日可能不開放參觀"], image: "https://images.unsplash.com/photo-1522778034537-20a2486be803?w=800&q=80", timeNeeded: "2h", ticketLink: "https://www.realmadrid.com/en/visit-the-bernabeu" },
-  { name: "Córdoba 清真寺大教堂", city: "Córdoba", emoji: "mosque", description: "世界遺產，伊斯蘭+基督教融合的建築奇蹟", tips: ["門票 €13", "早上光線最好", "856 根雙色拱柱是必看"], image: "https://images.unsplash.com/photo-1632904080322-e71e16a5987f?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://mezquita-catedraldecordoba.es/" },
-  { name: "Puente Nuevo 新橋", city: "Ronda", emoji: "bridge", description: "Ronda 地標，98 公尺高橫跨 El Tajo 峽谷，連接新舊城區", tips: ["免費，清晨或夕陽最美", "橋身中間藏有舊監獄展覽館", "從谷底仰望最壯觀"], image: "https://images.unsplash.com/photo-1599623560574-39d485900c95?w=800&q=80", timeNeeded: "1-2h", ticketLink: "" },
-  { name: "Ronda 鬥牛場", city: "Ronda", emoji: "bull", description: "西班牙最古老鬥牛場（1785 年），鬥牛士朝聖地", tips: ["門票 €8.5，含博物館", "環形建築本身就很美", "週日可能有免費時段"], image: "https://images.unsplash.com/photo-1564399580075-5dfe19c205f3?w=800&q=80", timeNeeded: "1.5h", ticketLink: "https://www.rmcr.org/" },
-  { name: "塞維亞王宮 Alcázar", city: "Sevilla", emoji: "castle", description: "歐洲最古老皇家宮殿，《權力遊戲》拍攝地", tips: ["門票 €13.5，務必預約", "後花園超美", "GOT 迷必去多恩花園場景"], image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=800&q=80", timeNeeded: "2.5h", ticketLink: "https://www.alcazarsevilla.org/en/" },
-  { name: "阿罕布拉宮 Alhambra", city: "Granada", emoji: "landmark", description: "西班牙最偉大的伊斯蘭建築，摩爾人的最後榮光", tips: ["⚠️ 提前 2 個月預約！", "門票 €19.09", "Nasrid 宮殿有時段限制"], image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80", timeNeeded: "4h+", ticketLink: "https://tickets.alhambra-patronato.es/en/" },
-  { name: "聖家堂", city: "BCN", emoji: "church", description: "高第畢生傑作，2026 年終於要完工！", tips: ["門票 €26-40，預約", "選 Passion 塔登頂", "下午光影最美"], image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://sagradafamilia.org/en/tickets" },
-  { name: "巴特略之家", city: "BCN", emoji: "🏡", description: "高第海洋主題建築，沒有直線的童話之家", tips: ["門票 €35-45", "AR 導覽超酷", "夜間燈光秀可考慮"], image: "https://images.unsplash.com/photo-1579282240050-352db0a14c21?w=800&q=80", timeNeeded: "1.5h", ticketLink: "https://www.casabatllo.es/en/" },
+  { name: "普拉多美術館", city: "Madrid", emoji: "art", description: "世界最頂尖的藝術博物館之一，收藏西班牙黃金時代巨作", tips: ["門票 €15，18:00-20:00 免費", "預留至少 2-3 小時", "必看哥雅《裸體的瑪哈》"], image: "https://images.unsplash.com/photo-1651902519299-9eaf6548b364?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://www.museodelprado.es/" , blogLinks: [{"title": "Lonely Planet 普拉多指南", "url": "https://www.lonelyplanet.com/articles/top-things-to-do-in-madrid"}, {"title": "Rick Steves 馬德里攻略", "url": "https://www.ricksteves.com/europe/spain/madrid"}]},
+  { name: "馬德里皇宮", city: "Madrid", emoji: "crown", description: "歐洲第三大皇宮，奢華程度令人咋舌", tips: ["門票 €12，建議預約", "包含兵器廣場和藥局", "旁邊就是阿穆德納教堂"], image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=800&q=80", timeNeeded: "1.5-2h", ticketLink: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid" , blogLinks: [{"title": "Rick Steves 馬德里", "url": "https://www.ricksteves.com/watch-read-listen/read/articles/a-blitz-tour-of-madrid"}, {"title": "Lonely Planet 馬德里", "url": "https://www.lonelyplanet.com/articles/top-things-to-do-in-madrid"}]},
+  { name: "伯納烏球場", city: "Madrid", emoji: "soccer", description: "皇家馬德里主場，足球迷的聖地", tips: ["門票 €25-40", "包含獎盃室和球員通道", "比賽日可能不開放參觀"], image: "https://images.unsplash.com/photo-1522778034537-20a2486be803?w=800&q=80", timeNeeded: "2h", ticketLink: "https://www.realmadrid.com/en/visit-the-bernabeu" , blogLinks: [{"title": "伯納烏球場終極指南", "url": "https://www.aroundtheworld4u.com/santiago-bernabeu-stadium/"}]},
+  { name: "Córdoba 清真寺大教堂", city: "Córdoba", emoji: "mosque", description: "世界遺產，伊斯蘭+基督教融合的建築奇蹟", tips: ["門票 €13", "早上光線最好", "856 根雙色拱柱是必看"], image: "https://images.unsplash.com/photo-1632904080322-e71e16a5987f?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://mezquita-catedraldecordoba.es/" , blogLinks: [{"title": "Approach Guides 清真寺", "url": "https://approachguides.com/guide/spain-cordoba-mezquita/"}, {"title": "Mi Brava 清真寺攻略", "url": "https://www.mibrava.com/post/the-mosque-cathedral-of-cordoba-making-the-most-of-your-time"}]},
+  { name: "Puente Nuevo 新橋", city: "Ronda", emoji: "bridge", description: "Ronda 地標，98 公尺高橫跨 El Tajo 峽谷，連接新舊城區", tips: ["免費，清晨或夕陽最美", "橋身中間藏有舊監獄展覽館", "從谷底仰望最壯觀"], image: "https://images.unsplash.com/photo-1599623560574-39d485900c95?w=800&q=80", timeNeeded: "1-2h", ticketLink: "" , blogLinks: [{"title": "Guide to Andalucía Puente Nuevo", "url": "https://guidetoandalucia.com/ronda-puente-nuevo/"}, {"title": "Big World Small Pockets Ronda", "url": "https://www.bigworldsmallpockets.com/ronda-spain-bridge/"}]},
+  { name: "Ronda 鬥牛場", city: "Ronda", emoji: "bull", description: "西班牙最古老鬥牛場（1785 年），鬥牛士朝聖地", tips: ["門票 €8.5，含博物館", "環形建築本身就很美", "週日可能有免費時段"], image: "https://images.unsplash.com/photo-1564399580075-5dfe19c205f3?w=800&q=80", timeNeeded: "1.5h", ticketLink: "https://www.rmcr.org/" , blogLinks: [{"title": "Ronda Today 鬥牛場", "url": "https://rondatoday.com/plaza-de-toros-bullring/"}, {"title": "Culture Trip 鬥牛場", "url": "https://theculturetrip.com/europe/spain/articles/spains-most-impressive-bullrings"}]},
+  { name: "塞維亞王宮 Alcázar", city: "Sevilla", emoji: "castle", description: "歐洲最古老皇家宮殿，《權力遊戲》拍攝地", tips: ["門票 €13.5，務必預約", "後花園超美", "GOT 迷必去多恩花園場景"], image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=800&q=80", timeNeeded: "2.5h", ticketLink: "https://www.alcazarsevilla.org/en/" , blogLinks: [{"title": "Spanish Sabores Sevilla 攻略", "url": "https://spanishsabores.com/seville-with-kids/"}, {"title": "Lonely Planet Sevilla 必知", "url": "https://www.lonelyplanet.com/articles/things-to-know-before-traveling-to-seville"}]},
+  { name: "阿罕布拉宮 Alhambra", city: "Granada", emoji: "landmark", description: "西班牙最偉大的伊斯蘭建築，摩爾人的最後榮光", tips: ["⚠️ 提前 2 個月預約！", "門票 €19.09", "Nasrid 宮殿有時段限制"], image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80", timeNeeded: "4h+", ticketLink: "https://tickets.alhambra-patronato.es/en/" , blogLinks: [{"title": "Rick Steves Alhambra", "url": "https://blog.ricksteves.com/blog/granadas-alhambra/"}, {"title": "Lonely Planet Granada", "url": "https://www.lonelyplanet.com/articles/top-things-to-do-in-granada-spain"}]},
+  { name: "聖家堂", city: "BCN", emoji: "church", description: "高第畢生傑作，2026 年終於要完工！", tips: ["門票 €26-40，預約", "選 Passion 塔登頂", "下午光影最美"], image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://sagradafamilia.org/en/tickets" , blogLinks: [{"title": "Lonely Planet 聖家堂指南", "url": "https://www.lonelyplanet.com/articles/guide-to-la-sagrada-familia-barcelona"}, {"title": "Atlas Obscura 聖家堂", "url": "https://www.atlasobscura.com/places/sagrada-familia"}]},
+  { name: "巴特略之家", city: "BCN", emoji: "🏡", description: "高第海洋主題建築，沒有直線的童話之家", tips: ["門票 €35-45", "AR 導覽超酷", "夜間燈光秀可考慮"], image: "https://images.unsplash.com/photo-1579282240050-352db0a14c21?w=800&q=80", timeNeeded: "1.5h", ticketLink: "https://www.casabatllo.es/en/" , blogLinks: [{"title": "Travel Lemming Casa Batlló", "url": "https://travellemming.com/casa-batllo/"}, {"title": "BCN.travel 指南", "url": "https://www.bcn.travel/casa-batllo-guide/"}]},
 ];
 
 export const CITY_VIDEOS: CityVideo[] = [
@@ -782,9 +782,9 @@ export const DAYS_MALAGA: DayPlan[] = [
     subtitle: "普拉多美術館、皇宮、麗池公園",
     emoji: "art",
     highlights: [
-      { icon: "art", time: "09:00-12:00", title: "普拉多美術館", description: "西班牙最重要的美術館，收藏哥雅、委拉斯奎茲、葛雷柯等大師鉅作。必看：哥雅《裸體的瑪哈》、委拉斯奎茲《宮女》", duration: "3h", tip: "門票 €15，下午 6-8 點免費入場但排隊很長", link: "https://www.museodelprado.es/", image: "https://images.unsplash.com/photo-1651902519299-9eaf6548b364?w=800&q=80" },
-      { icon: "leaf", time: "12:00-13:00", title: "麗池公園", description: "馬德里的城市綠洲。在人工湖划船、看水晶宮（Palacio de Cristal）", image: "https://images.unsplash.com/photo-1645203494470-1507ae7f1a40?w=800&q=80" },
-      { icon: "crown", time: "14:30-16:30", title: "馬德里皇宮", description: "歐洲第三大皇宮，僅次於凡爾賽宮和美景宮。奢華的內部裝潢、壁畫、兵器廣場", duration: "2h", tip: "門票 €12，建議提前官網預約", link: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid", image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=800&q=80" },
+      { icon: "art", time: "09:00-12:00", title: "普拉多美術館", description: "西班牙最重要的美術館，收藏哥雅、委拉斯奎茲、葛雷柯等大師鉅作。必看：哥雅《裸體的瑪哈》、委拉斯奎茲《宮女》", duration: "3h", tip: "門票 €15，下午 6-8 點免費入場但排隊很長", link: "https://www.museodelprado.es/", image: "https://images.unsplash.com/photo-1651902519299-9eaf6548b364?w=800&q=80", blogLinks: [{ title: "Lonely Planet 普拉多指南", url: "https://www.lonelyplanet.com/articles/top-things-to-do-in-madrid" }, { title: "Rick Steves 馬德里攻略", url: "https://www.ricksteves.com/europe/spain/madrid" }] },
+      { icon: "leaf", time: "12:00-13:00", title: "麗池公園", description: "馬德里的城市綠洲。在人工湖划船、看水晶宮（Palacio de Cristal）", image: "https://images.unsplash.com/photo-1645203494470-1507ae7f1a40?w=800&q=80" , blogLinks: [{"title": "Lonely Planet 馬德里", "url": "https://www.lonelyplanet.com/articles/top-things-to-do-in-madrid"}, {"title": "Rick Steves 馬德里", "url": "https://www.ricksteves.com/europe/spain/madrid"}]},
+      { icon: "crown", time: "14:30-16:30", title: "馬德里皇宮", description: "歐洲第三大皇宮，僅次於凡爾賽宮和美景宮。奢華的內部裝潢、壁畫、兵器廣場", duration: "2h", tip: "門票 €12，建議提前官網預約", link: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid", image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=800&q=80" , blogLinks: [{"title": "Rick Steves 馬德里", "url": "https://www.ricksteves.com/watch-read-listen/read/articles/a-blitz-tour-of-madrid"}, {"title": "Lonely Planet 馬德里", "url": "https://www.lonelyplanet.com/articles/top-things-to-do-in-madrid"}]},
       { icon: "chocolate", time: "晚上", title: "San Ginés 吃 Churros", description: "開業於 1894 年的老字號，招牌是 Churros con Chocolate 巧克力油條，24 小時營業！" },
     ],
   },
@@ -810,7 +810,7 @@ export const DAYS_MALAGA: DayPlan[] = [
     subtitle: "此生必去的宮殿奇蹟",
     emoji: "landmark",
     highlights: [
-      { icon: "landmark", time: "08:30-13:00", title: "阿罕布拉宮 Alhambra", description: "西班牙的瑰寶、摩爾人的最後城堡！包含納斯利宮（超精緻阿拉伯雕刻）、Generalife 夏宮花園、卡洛斯五世宮殿。每走一步都是驚嘆！", duration: "4h+", tip: "⚠️ 一定要 2 個月前預約！門票 €19.09，Nasrid Palaces 有時段限制，不能遲到！", link: "https://tickets.alhambra-patronato.es/en/", image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80" },
+      { icon: "landmark", time: "08:30-13:00", title: "阿罕布拉宮 Alhambra", description: "西班牙的瑰寶、摩爾人的最後城堡！包含納斯利宮（超精緻阿拉伯雕刻）、Generalife 夏宮花園、卡洛斯五世宮殿。每走一步都是驚嘆！", duration: "4h+", tip: "⚠️ 一定要 2 個月前預約！門票 €19.09，Nasrid Palaces 有時段限制，不能遲到！", link: "https://tickets.alhambra-patronato.es/en/", image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80" , blogLinks: [{"title": "Rick Steves Alhambra", "url": "https://blog.ricksteves.com/blog/granadas-alhambra/"}, {"title": "Lonely Planet Granada", "url": "https://www.lonelyplanet.com/articles/top-things-to-do-in-granada-spain"}]},
       { icon: "food", time: "13:00-14:30", title: "Parador 午餐", description: "在 Alhambra 宮殿內的國營旅館用餐，享受歷史氛圍" },
       { icon: "church", time: "15:00-16:30", title: "Granada 大教堂 + 皇家禮拜堂", description: "伊莎貝拉一世女王與費迪南德國王安葬於此。禮拜堂內有他們的石棺和珍貴的中世紀藝術品" },
       { icon: "night", time: "17:00-18:30", title: "阿爾拜辛區夜景", description: "再次登上聖尼古拉斯觀景台，Alhambra 夜景燈火" },
@@ -825,9 +825,9 @@ export const DAYS_MALAGA: DayPlan[] = [
     highlights: [
       { icon: "car", time: "09:00→10:30", title: "Granada → Málaga 自駕", description: "租車沿 A-92 公路南下，約 1.5h。沿途是安達魯西亞鄉村與橄欖樹", duration: "1.5h", price: "€20-30" },
       { icon: "hotel", time: "11:00", title: "入住 Málaga 飯店", description: "建議住在老城區或港口附近，方便步行探索", image: "https://images.unsplash.com/photo-1722600522563-7ce0b38c8796?w=800&q=80" },
-      { icon: "art", time: "12:00-14:00", title: "畢卡索美術館", description: "Málaga 是畢卡索出生地，美術館收藏 200+ 幅作品，從早期到立體派都有", duration: "2h", tip: "門票 €9，週日免費", link: "https://www.museopicassomalaga.org/", image: "https://images.unsplash.com/photo-1704468828542-59b03784d2cb?w=800&q=80" },
+      { icon: "art", time: "12:00-14:00", title: "畢卡索美術館", description: "Málaga 是畢卡索出生地，美術館收藏 200+ 幅作品，從早期到立體派都有", duration: "2h", tip: "門票 €9，週日免費", link: "https://www.museopicassomalaga.org/", image: "https://images.unsplash.com/photo-1704468828542-59b03784d2cb?w=800&q=80" , blogLinks: [{"title": "I Travel for the Stars Málaga", "url": "https://itravelforthestars.com/malaga-travel-guide/"}, {"title": "Vivre Málaga 畢卡索", "url": "https://vivremalaga.com/en/picasso-museum-malaga/"}]},
       { icon: "landmark", time: "14:30-15:30", title: "Málaga 羅馬劇場 + 城堡", description: "西元 1 世紀的羅馬劇場，以及摩爾時期的 Alcazaba 城堡，俯瞰港口", image: "https://images.unsplash.com/photo-1615839130907-2f68ca162d44?w=800&q=80" },
-      { icon: "beach", time: "16:00-18:00", title: "La Malagueta 海灘", description: "Málaga 市區海灘，地中海陽光、沙灘、海鮮餐廳，放鬆一下", image: "https://images.unsplash.com/photo-1583740353597-98b4986c0af8?w=800&q=80" },
+      { icon: "beach", time: "16:00-18:00", title: "La Malagueta 海灘", description: "Málaga 市區海灘，地中海陽光、沙灘、海鮮餐廳，放鬆一下", image: "https://images.unsplash.com/photo-1583740353597-98b4986c0af8?w=800&q=80" , blogLinks: [{"title": "Old Town Málaga 海灘", "url": "https://oldtownmalaga.com/malagueta-beach/"}]},
       { icon: "food", time: "晚上", title: "港口區晚餐", description: "Muelle Uno 港口區，現代餐廳與傳統 Tapas 並存，海鮮超新鮮" },
     ],
     transport: { mode: "🚗 租車", from: "Granada", to: "Málaga", duration: "1.5h", price: "€20-30", details: "Granada 租車沿 A-92 南下到 Málaga（1.5h）。Málaga 有還車點，後續可搭火車或繼續自駕。" },
@@ -839,9 +839,9 @@ export const DAYS_MALAGA: DayPlan[] = [
     subtitle: "太陽海岸 → 懸崖小鎮",
     emoji: "bridge",
     highlights: [
-      { icon: "beach", time: "08:00-09:30", title: "Málaga 海灘晨跑", description: "La Malagueta 海灘晨間散步，地中海晨光超療癒", image: "https://images.unsplash.com/photo-1588775841569-41ae0d3340dd?w=800&q=80" },
+      { icon: "beach", time: "08:00-09:30", title: "Málaga 海灘晨跑", description: "La Malagueta 海灘晨間散步，地中海晨光超療癒", image: "https://images.unsplash.com/photo-1588775841569-41ae0d3340dd?w=800&q=80" , blogLinks: [{"title": "Old Town Málaga 海灘", "url": "https://oldtownmalaga.com/malagueta-beach/"}]},
       { icon: "car", time: "10:00→11:30", title: "Málaga → Ronda", description: "自駕沿 A-357 公路穿越山區，約 1.5h。沿途是安達魯西亞最美鄉村公路", duration: "1.5h", price: "油費約 €10" },
-      { icon: "bridge", time: "12:00-13:30", title: "Puente Nuevo 新橋", description: "Ronda 地標！98 公尺高的新橋橫跨 El Tajo 峽谷，連接新舊城區。橋身中間還藏著一間舊監獄展覽館", image: "https://images.unsplash.com/photo-1599623560574-39d485900c95?w=800&q=80" },
+      { icon: "bridge", time: "12:00-13:30", title: "Puente Nuevo 新橋", description: "Ronda 地標！98 公尺高的新橋橫跨 El Tajo 峽谷，連接新舊城區。橋身中間還藏著一間舊監獄展覽館", image: "https://images.unsplash.com/photo-1599623560574-39d485900c95?w=800&q=80" , blogLinks: [{"title": "Guide to Andalucía Puente Nuevo", "url": "https://guidetoandalucia.com/ronda-puente-nuevo/"}, {"title": "Big World Small Pockets Ronda", "url": "https://www.bigworldsmallpockets.com/ronda-spain-bridge/"}]},
       { icon: "bull", time: "14:00-15:30", title: "Ronda 鬥牛場 + 老城區", description: "西班牙最古老的鬥牛場之一（1785 年），環形建築本身就很美。附近白色小屋密佈的老城區每個轉角都是明信片", duration: "1.5h", tip: "鬥牛場門票 €8.5，含博物館", link: "https://www.rmcr.org/", image: "https://images.unsplash.com/photo-1564399580075-5dfe19c205f3?w=800&q=80" },
       { icon: "wine", time: "16:00-17:30", title: "Ronda 酒莊品酒", description: "Ronda 是 Malaga 葡萄酒產區的核心，高海拔種植的紅酒濃郁奔放。推薦 Bodega Joaquín Fernández", duration: "1.5h", tip: "品酒 €15-25，需預約" },
       { icon: "car", time: "18:00→19:30", title: "Ronda → Málaga", description: "傍晚開回 Málaga，約 1.5h。可順路停觀景台看夕陽", duration: "1.5h" },
@@ -870,9 +870,9 @@ export const DAYS_MALAGA: DayPlan[] = [
     subtitle: "巴特略之家、米拉之家、聖家堂",
     emoji: "art",
     highlights: [
-      { icon: "house", time: "09:30-11:00", title: "巴特略之家 Casa Batlló", description: "高第的海洋主題傑作，外牆像彩色龍鱗，內部沒有直線！沉浸式導覽用 AR 超酷", duration: "1.5h", tip: "門票 €35-45，官網有夜間燈光秀", link: "https://www.casabatllo.es/en/", image: "https://images.unsplash.com/photo-1579282240050-352db0a14c21?w=800&q=80" },
-      { icon: "building", time: "11:30-13:00", title: "米拉之家 Casa Milà", description: "高第最後的民用建築，波浪型石造外牆、煙囪屋頂像星際大戰的場景。屋頂必去！", duration: "1.5h", tip: "門票 €25，屋頂看夕陽特別美", image: "https://images.unsplash.com/photo-1568921097010-b59ee67056df?w=800&q=80" },
-      { icon: "landmark", time: "14:00-17:00", title: "聖家堂 Sagrada Familia", description: "高第的畢生傑作，也是世界唯一尚未完工就被列為世界遺產的建築。光影透過彩繪玻璃灑落，宛如走進森林迷宮！預計 2026 年完工！", duration: "3h", tip: "門票 €26-40，一定要預約！建議選 Passion 塔登頂", link: "https://sagradafamilia.org/en/tickets", image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=800&q=80" },
+      { icon: "house", time: "09:30-11:00", title: "巴特略之家 Casa Batlló", description: "高第的海洋主題傑作，外牆像彩色龍鱗，內部沒有直線！沉浸式導覽用 AR 超酷", duration: "1.5h", tip: "門票 €35-45，官網有夜間燈光秀", link: "https://www.casabatllo.es/en/", image: "https://images.unsplash.com/photo-1579282240050-352db0a14c21?w=800&q=80" , blogLinks: [{"title": "Travel Lemming Casa Batlló", "url": "https://travellemming.com/casa-batllo/"}, {"title": "BCN.travel 指南", "url": "https://www.bcn.travel/casa-batllo-guide/"}]},
+      { icon: "building", time: "11:30-13:00", title: "米拉之家 Casa Milà", description: "高第最後的民用建築，波浪型石造外牆、煙囪屋頂像星際大戰的場景。屋頂必去！", duration: "1.5h", tip: "門票 €25，屋頂看夕陽特別美", image: "https://images.unsplash.com/photo-1568921097010-b59ee67056df?w=800&q=80" , blogLinks: [{"title": "Guardian Casa Milà", "url": "https://www.theguardian.com/artanddesign/2026/may/04/the-last-resident-of-casa-mila-on-life-in-gaudis-masterwork"}, {"title": "Rick Steves Barcelona", "url": "https://www.ricksteves.com/europe/spain/barcelona"}]},
+      { icon: "landmark", time: "14:00-17:00", title: "聖家堂 Sagrada Familia", description: "高第的畢生傑作，也是世界唯一尚未完工就被列為世界遺產的建築。光影透過彩繪玻璃灑落，宛如走進森林迷宮！預計 2026 年完工！", duration: "3h", tip: "門票 €26-40，一定要預約！建議選 Passion 塔登頂", link: "https://sagradafamilia.org/en/tickets", image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=800&q=80" , blogLinks: [{"title": "Lonely Planet 聖家堂指南", "url": "https://www.lonelyplanet.com/articles/guide-to-la-sagrada-familia-barcelona"}, {"title": "Atlas Obscura 聖家堂", "url": "https://www.atlasobscura.com/places/sagrada-familia"}]},
     ],
   },
   {
@@ -882,11 +882,11 @@ export const DAYS_MALAGA: DayPlan[] = [
     subtitle: "童話花園與中世紀迷宮",
     emoji: "park",
     highlights: [
-      { icon: "park", time: "09:00-11:00", title: "奎爾公園 Park Güell", description: "高第打造的童話花園社區，彩色馬賽克蜥蜴、波浪長椅、世界最長的曲線長椅", duration: "2h", tip: "紀念碑區域門票 €10，可線上預約", image: "https://images.unsplash.com/photo-1630219694734-fe47ab76b15e?w=800&q=80" },
+      { icon: "park", time: "09:00-11:00", title: "奎爾公園 Park Güell", description: "高第打造的童話花園社區，彩色馬賽克蜥蜴、波浪長椅、世界最長的曲線長椅", duration: "2h", tip: "紀念碑區域門票 €10，可線上預約", image: "https://images.unsplash.com/photo-1630219694734-fe47ab76b15e?w=800&q=80" , blogLinks: [{"title": "The Tour Guy 公園指南", "url": "https://thetourguy.com/travel-blog/spain/barcelona/park-guell/guide-to-park-guell/"}, {"title": "Geographical Cure 公園攻略", "url": "https://www.thegeographicalcure.com/post/guide-to-park-guell"}]},
       { icon: "city", time: "12:00-14:00", title: "哥德區 Barri Gòtic", description: "巴塞最古老的街區，狹窄的中世紀小巷、隱藏廣場。找到聖伊莉莎白廣場和主教橋" },
       { icon: "fish", time: "14:00-15:30", title: "博蓋利亞市場午餐", description: "歐洲最大市場之一，鮮豔的水果攤、伊比利火腿、現榨果汁、海鮮⋯⋯五感全開！", image: "https://images.unsplash.com/photo-1614635454419-36aa631da264?w=800&q=80" },
-      { icon: "landmark", time: "16:00-17:00", title: "巴塞隆納主教座堂", description: "哥德區核心，13世紀哥德式建築，屋頂觀景台", image: "https://images.unsplash.com/photo-1688397160949-239083d9bc61?w=800&q=80" },
-      { icon: "beach", time: "17:30-19:00", title: "巴塞海灘 Barceloneta", description: "地中海陽光、沙灘、海鮮 Paella，旅程尾聲放空一下", image: "https://images.unsplash.com/photo-1573413534184-6aa47a50d3ec?w=800&q=80" },
+      { icon: "landmark", time: "16:00-17:00", title: "巴塞隆納主教座堂", description: "哥德區核心，13世紀哥德式建築，屋頂觀景台", image: "https://images.unsplash.com/photo-1688397160949-239083d9bc61?w=800&q=80" , blogLinks: [{"title": "Creative Adventurer 主教座堂", "url": "https://thecreativeadventurer.com/the-ultimate-self-guided-tour-of-the-barcelona-cathedral/"}, {"title": "Lonely Planet 主教座堂", "url": "https://www.lonelyplanet.com/points-of-interest/la-catedral/1204430"}]},
+      { icon: "beach", time: "17:30-19:00", title: "巴塞海灘 Barceloneta", description: "地中海陽光、沙灘、海鮮 Paella，旅程尾聲放空一下", image: "https://images.unsplash.com/photo-1573413534184-6aa47a50d3ec?w=800&q=80" , blogLinks: [{"title": "WeBarcelona 海灘", "url": "https://www.webarcelona.net/beaches-barcelona/barceloneta"}, {"title": "Lonely Planet 巴塞海灘", "url": "https://www.lonelyplanet.com/articles/best-beach-barcelona"}]},
     ],
   },
   {
@@ -898,8 +898,8 @@ export const DAYS_MALAGA: DayPlan[] = [
     highlights: [
       { icon: "shopping", time: "09:00-11:00", title: "蘭布拉大道 La Rambla", description: "巴塞隆納最著名的林蔭大道，街頭藝人、花店、咖啡座，走到底就是哥倫布紀念碑和海港" },
       { icon: "food", time: "11:00-13:00", title: "El Born 區午餐", description: "巴塞隆納最潮街區，設計師店、創意料理、藝術畫廊" },
-      { icon: "landmark", time: "14:00-15:30", title: "巴塞隆納音樂宮", description: "現代主義音樂廳，彩色玻璃天窗，世界遺產", image: "https://images.unsplash.com/photo-1567934452596-4d1a296c439e?w=800&q=80" },
-      { icon: "sunset", time: "16:00-17:30", title: "Bunkers del Carmel", description: "巴塞隆納最佳觀景台，360度城市全景，夕陽絕美", image: "https://images.unsplash.com/photo-1563344019-cefeb9b19784?w=800&q=80" },
+      { icon: "landmark", time: "14:00-15:30", title: "巴塞隆納音樂宮", description: "現代主義音樂廳，彩色玻璃天窗，世界遺產", image: "https://images.unsplash.com/photo-1567934452596-4d1a296c439e?w=800&q=80" , blogLinks: [{"title": "Barcelona Urbana 音樂宮", "url": "https://barcelonaurbana.com/en/blog/palau-musica-catalana-visit-guide"}, {"title": "Geographical Cure 音樂宮", "url": "https://www.thegeographicalcure.com/post/guide-to-palau-de-la-musica"}]},
+      { icon: "sunset", time: "16:00-17:30", title: "Bunkers del Carmel", description: "巴塞隆納最佳觀景台，360度城市全景，夕陽絕美", image: "https://images.unsplash.com/photo-1563344019-cefeb9b19784?w=800&q=80" , blogLinks: [{"title": "Third Eye Traveller Bunkers", "url": "https://thirdeyetraveller.com/barcelona-bunkers-del-carmel/"}, {"title": "Barcelona Hacks Bunkers", "url": "https://barcelonahacks.com/bunkers-del-carmel/"}]},
       { icon: "food", time: "晚上", title: "告別晚餐", description: "Carrer de Blai 步行街，Pinchos 酒吧巡禮", image: "https://images.unsplash.com/photo-1565599837630-15af1496cd6e?w=800&q=80" },
     ],
   },
@@ -976,16 +976,16 @@ export const HOTELS_MALAGA: Hotel[] = [
 ];
 
 export const ATTRACTIONS_MALAGA: Attraction[] = [
-  { name: "普拉多美術館", city: "Madrid", emoji: "art", description: "世界最頂尖的藝術博物館之一，收藏西班牙黃金時代巨作", tips: ["門票 €15，18:00-20:00 免費", "預留至少 2-3 小時", "必看哥雅《裸體的瑪哈》"], image: "https://images.unsplash.com/photo-1651902519299-9eaf6548b364?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://www.museodelprado.es/" },
-  { name: "馬德里皇宮", city: "Madrid", emoji: "crown", description: "歐洲第三大皇宮，奢華程度令人咋舌", tips: ["門票 €12，建議預約", "包含兵器廣場和藥局", "旁邊就是阿穆德納教堂"], image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=800&q=80", timeNeeded: "1.5-2h", ticketLink: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid" },
-  { name: "伯納烏球場", city: "Madrid", emoji: "soccer", description: "皇家馬德里主場，足球迷的聖地", tips: ["門票 €25-40", "包含獎盃室和球員通道", "比賽日可能不開放參觀"], image: "https://images.unsplash.com/photo-1522778034537-20a2486be803?w=800&q=80", timeNeeded: "2h", ticketLink: "https://www.realmadrid.com/en/visit-the-bernabeu" },
-  { name: "阿罕布拉宮 Alhambra", city: "Granada", emoji: "landmark", description: "西班牙最偉大的伊斯蘭建築，摩爾人的最後榮光", tips: ["⚠️ 提前 2 個月預約！", "門票 €19.09", "Nasrid 宮殿有時段限制"], image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80", timeNeeded: "4h+", ticketLink: "https://tickets.alhambra-patronato.es/en/" },
-  { name: "畢卡索美術館", city: "Málaga", emoji: "art", description: "Málaga 是畢卡索出生地，收藏 200+ 幅作品", tips: ["門票 €9，週日免費", "從早期到立體派都有", "建議 2 小時"], image: "https://images.unsplash.com/photo-1704468828542-59b03784d2cb?w=800&q=80", timeNeeded: "2h", ticketLink: "https://www.museopicassomalaga.org/" },
+  { name: "普拉多美術館", city: "Madrid", emoji: "art", description: "世界最頂尖的藝術博物館之一，收藏西班牙黃金時代巨作", tips: ["門票 €15，18:00-20:00 免費", "預留至少 2-3 小時", "必看哥雅《裸體的瑪哈》"], image: "https://images.unsplash.com/photo-1651902519299-9eaf6548b364?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://www.museodelprado.es/" , blogLinks: [{"title": "Lonely Planet 普拉多指南", "url": "https://www.lonelyplanet.com/articles/top-things-to-do-in-madrid"}, {"title": "Rick Steves 馬德里攻略", "url": "https://www.ricksteves.com/europe/spain/madrid"}]},
+  { name: "馬德里皇宮", city: "Madrid", emoji: "crown", description: "歐洲第三大皇宮，奢華程度令人咋舌", tips: ["門票 €12，建議預約", "包含兵器廣場和藥局", "旁邊就是阿穆德納教堂"], image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=800&q=80", timeNeeded: "1.5-2h", ticketLink: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid" , blogLinks: [{"title": "Rick Steves 馬德里", "url": "https://www.ricksteves.com/watch-read-listen/read/articles/a-blitz-tour-of-madrid"}, {"title": "Lonely Planet 馬德里", "url": "https://www.lonelyplanet.com/articles/top-things-to-do-in-madrid"}]},
+  { name: "伯納烏球場", city: "Madrid", emoji: "soccer", description: "皇家馬德里主場，足球迷的聖地", tips: ["門票 €25-40", "包含獎盃室和球員通道", "比賽日可能不開放參觀"], image: "https://images.unsplash.com/photo-1522778034537-20a2486be803?w=800&q=80", timeNeeded: "2h", ticketLink: "https://www.realmadrid.com/en/visit-the-bernabeu" , blogLinks: [{"title": "伯納烏球場終極指南", "url": "https://www.aroundtheworld4u.com/santiago-bernabeu-stadium/"}]},
+  { name: "阿罕布拉宮 Alhambra", city: "Granada", emoji: "landmark", description: "西班牙最偉大的伊斯蘭建築，摩爾人的最後榮光", tips: ["⚠️ 提前 2 個月預約！", "門票 €19.09", "Nasrid 宮殿有時段限制"], image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80", timeNeeded: "4h+", ticketLink: "https://tickets.alhambra-patronato.es/en/" , blogLinks: [{"title": "Rick Steves Alhambra", "url": "https://blog.ricksteves.com/blog/granadas-alhambra/"}, {"title": "Lonely Planet Granada", "url": "https://www.lonelyplanet.com/articles/top-things-to-do-in-granada-spain"}]},
+  { name: "畢卡索美術館", city: "Málaga", emoji: "art", description: "Málaga 是畢卡索出生地，收藏 200+ 幅作品", tips: ["門票 €9，週日免費", "從早期到立體派都有", "建議 2 小時"], image: "https://images.unsplash.com/photo-1704468828542-59b03784d2cb?w=800&q=80", timeNeeded: "2h", ticketLink: "https://www.museopicassomalaga.org/" , blogLinks: [{"title": "I Travel for the Stars Málaga", "url": "https://itravelforthestars.com/malaga-travel-guide/"}, {"title": "Vivre Málaga 畢卡索", "url": "https://vivremalaga.com/en/picasso-museum-malaga/"}]},
     { name: "Málaga 羅馬劇場", city: "Málaga", emoji: "landmark", description: "西元 1 世紀古羅馬遺跡，免費參觀", tips: ["免費", "旁邊就是 Alcazaba 城堡", "可買聯票"], image: "https://images.unsplash.com/photo-1615839130907-2f68ca162d44?w=800&q=80", timeNeeded: "1h", ticketLink: "" },
-  { name: "Puente Nuevo 新橋", city: "Ronda", emoji: "bridge", description: "Ronda 地標，98 公尺高橫跨 El Tajo 峽谷", tips: ["免費", "橋身中間藏有舊監獄展覽館", "從谷底仰望最壯觀"], image: "https://images.unsplash.com/photo-1599623560574-39d485900c95?w=800&q=80", timeNeeded: "1-2h", ticketLink: "" },
-  { name: "Ronda 鬥牛場", city: "Ronda", emoji: "bull", description: "西班牙最古老鬥牛場（1785 年）", tips: ["門票 €8.5，含博物館", "環形建築本身就很美", "週日可能有免費時段"], image: "https://images.unsplash.com/photo-1564399580075-5dfe19c205f3?w=800&q=80", timeNeeded: "1.5h", ticketLink: "https://www.rmcr.org/" },
-  { name: "聖家堂", city: "BCN", emoji: "church", description: "高第畢生傑作，2026 年終於要完工！", tips: ["門票 €26-40，預約", "選 Passion 塔登頂", "下午光影最美"], image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://sagradafamilia.org/en/tickets" },
-  { name: "巴特略之家", city: "BCN", emoji: "🏡", description: "高第海洋主題建築，沒有直線的童話之家", tips: ["門票 €35-45", "AR 導覽超酷", "夜間燈光秀可考慮"], image: "https://images.unsplash.com/photo-1579282240050-352db0a14c21?w=800&q=80", timeNeeded: "1.5h", ticketLink: "https://www.casabatllo.es/en/" },
+  { name: "Puente Nuevo 新橋", city: "Ronda", emoji: "bridge", description: "Ronda 地標，98 公尺高橫跨 El Tajo 峽谷", tips: ["免費", "橋身中間藏有舊監獄展覽館", "從谷底仰望最壯觀"], image: "https://images.unsplash.com/photo-1599623560574-39d485900c95?w=800&q=80", timeNeeded: "1-2h", ticketLink: "" , blogLinks: [{"title": "Guide to Andalucía Puente Nuevo", "url": "https://guidetoandalucia.com/ronda-puente-nuevo/"}, {"title": "Big World Small Pockets Ronda", "url": "https://www.bigworldsmallpockets.com/ronda-spain-bridge/"}]},
+  { name: "Ronda 鬥牛場", city: "Ronda", emoji: "bull", description: "西班牙最古老鬥牛場（1785 年）", tips: ["門票 €8.5，含博物館", "環形建築本身就很美", "週日可能有免費時段"], image: "https://images.unsplash.com/photo-1564399580075-5dfe19c205f3?w=800&q=80", timeNeeded: "1.5h", ticketLink: "https://www.rmcr.org/" , blogLinks: [{"title": "Ronda Today 鬥牛場", "url": "https://rondatoday.com/plaza-de-toros-bullring/"}, {"title": "Culture Trip 鬥牛場", "url": "https://theculturetrip.com/europe/spain/articles/spains-most-impressive-bullrings"}]},
+  { name: "聖家堂", city: "BCN", emoji: "church", description: "高第畢生傑作，2026 年終於要完工！", tips: ["門票 €26-40，預約", "選 Passion 塔登頂", "下午光影最美"], image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://sagradafamilia.org/en/tickets" , blogLinks: [{"title": "Lonely Planet 聖家堂指南", "url": "https://www.lonelyplanet.com/articles/guide-to-la-sagrada-familia-barcelona"}, {"title": "Atlas Obscura 聖家堂", "url": "https://www.atlasobscura.com/places/sagrada-familia"}]},
+  { name: "巴特略之家", city: "BCN", emoji: "🏡", description: "高第海洋主題建築，沒有直線的童話之家", tips: ["門票 €35-45", "AR 導覽超酷", "夜間燈光秀可考慮"], image: "https://images.unsplash.com/photo-1579282240050-352db0a14c21?w=800&q=80", timeNeeded: "1.5h", ticketLink: "https://www.casabatllo.es/en/" , blogLinks: [{"title": "Travel Lemming Casa Batlló", "url": "https://travellemming.com/casa-batllo/"}, {"title": "BCN.travel 指南", "url": "https://www.bcn.travel/casa-batllo-guide/"}]},
 ];
 
 export const CITY_VIDEOS_MALAGA: CityVideo[] = [

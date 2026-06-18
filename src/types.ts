@@ -18,6 +18,7 @@ export interface Highlight {
   tip?: string;
   image?: string;
   link?: string;
+  blogLinks?: { title: string; url: string }[];
 }
 
 export interface Transport {
@@ -52,6 +53,7 @@ export interface Attraction {
   image: string;
   timeNeeded: string;
   ticketLink?: string;
+  blogLinks?: { title: string; url: string }[];
 }
 
 export interface CityVideo {
