@@ -399,11 +399,30 @@ export default function Home() {
         </section>
 
         {/* Plan Switcher */}
-        <section className="py-8 px-5 md:px-8 bg-[#faf6ee] border-b border-[#e5e5e5]">
-          <div className="max-w-5xl mx-auto">
-            <div className="flex flex-col items-center gap-4">
-              <span className="text-xs font-medium text-[#9a9a9a] uppercase tracking-[0.2em]">選擇行程方案</span>
-              <div className="flex bg-white rounded-xl p-1.5 shadow-sm border border-[#e5e5e5] gap-1">
+        <section className="py-6 md:py-8 bg-[#faf6ee] border-b border-[#e5e5e5]">
+          <div className="max-w-5xl mx-auto px-4 md:px-8">
+            <div className="flex flex-col items-center gap-3 md:gap-4">
+              <span className="text-[10px] md:text-xs font-semibold text-[#b8954e] uppercase tracking-[0.2em]">選擇行程方案</span>
+              {/* Mobile: scrollable compact pills */}
+              <div className="md:hidden w-full overflow-x-auto scrollbar-hide -mx-4 px-4">
+                <div className="flex gap-2 w-max mx-auto">
+                  {PLANS.map((p, i) => (
+                    <button
+                      key={p.key}
+                      onClick={() => setActivePlan(i)}
+                      className={`px-4 py-3 rounded-xl text-sm font-semibold transition-all whitespace-nowrap min-w-[100px] text-center ${
+                        activePlan === i
+                          ? "bg-[#1a1a1a] text-white shadow-lg shadow-[#1a1a1a]/20 scale-[1.02]"
+                          : "bg-white text-[#5a5a5a] border border-[#e5e5e5] active:scale-95"
+                      }`}
+                    >
+                      {p.label.replace('方案', '').replace('一', '①').replace('二', '②').replace('三', '③').replace('四', '④')}
+                    </button>
+                  ))}
+                </div>
+              </div>
+              {/* Desktop: full tab bar */}
+              <div className="hidden md:flex bg-white rounded-xl p-1.5 shadow-sm border border-[#e5e5e5] gap-1">
                 {PLANS.map((p, i) => (
                   <button
                     key={p.key}
@@ -411,14 +430,14 @@ export default function Home() {
                     className={`px-4 py-2.5 rounded-lg text-sm font-medium transition-all whitespace-nowrap ${
                       activePlan === i
                         ? "bg-[#1a1a1a] text-white shadow-md"
-                        : "text-[#1a1a1a] hover:bg-[#f8f7f5]"
+                        : "text-[#8a8a8a] hover:bg-[#f8f7f5]"
                     }`}
                   >
                     {p.label}
                   </button>
                 ))}
               </div>
-              <p className="text-xs text-[#9a9a9a] text-center">{plan.itinerarySubtitle}</p>
+              <p className="text-xs text-[#9a9a9a] text-center max-w-md">{plan.itinerarySubtitle}</p>
             </div>
           </div>
         </section>
