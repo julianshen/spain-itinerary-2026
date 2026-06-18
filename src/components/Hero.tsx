@@ -14,15 +14,24 @@ export default function Hero() {
   }, []);
 
   const cities = [
-    { name: "馬德里", label: "Madrid" },
-    { name: "哥多華", label: "Córdoba" },
-    { name: "塞維亞", label: "Sevilla" },
-    { name: "格拉納達", label: "Granada" },
-    { name: "巴塞隆納", label: "Barcelona" },
+    { name: "馬德里", label: "Madrid", color: "#c9a84c" },
+    { name: "哥多華", label: "Córdoba", color: "#b8735a" },
+    { name: "塞維亞", label: "Sevilla", color: "#2a6b7a" },
+    { name: "格拉納達", label: "Granada", color: "#3a7a5a" },
+    { name: "巴塞隆納", label: "Barcelona", color: "#c9a84c" },
   ];
 
   return (
     <section className="relative min-h-screen flex overflow-hidden bg-[#1a1a1a]">
+      {/* Animated background pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `radial-gradient(circle at 30% 50%, rgba(201, 168, 76, 0.3) 0%, transparent 50%),
+                            radial-gradient(circle at 70% 80%, rgba(184, 115, 90, 0.2) 0%, transparent 50%),
+                            radial-gradient(circle at 50% 20%, rgba(42, 107, 122, 0.2) 0%, transparent 50%)`,
+        }} />
+      </div>
+
       {/* Left: Content */}
       <div className="relative z-10 w-full lg:w-1/2 flex items-center px-8 md:px-16 py-24">
         <div className="max-w-xl">
@@ -32,21 +41,21 @@ export default function Hero() {
               mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <span className="w-1.5 h-1.5 rounded-full bg-[#b8954e] animate-pulse" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#c9a84c] animate-pulse" />
             Julian 的西班牙之旅 · 2026 年 10 月
           </div>
 
-          {/* Headline */}
+          {/* Headline with gradient */}
           <h1
-            className={`text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-3 transition-all duration-700 delay-200 ${
+            className={`text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-3 transition-all duration-700 delay-200 ${
               mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
             style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
           >
-            西班牙
+            <span className="gradient-text">西班牙</span>
           </h1>
           <p
-            className={`text-3xl md:text-4xl font-light text-[#b8954e] mb-8 transition-all duration-700 delay-300 ${
+            className={`text-3xl md:text-4xl font-light text-[#c9a84c] mb-8 transition-all duration-700 delay-300 ${
               mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
             style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
@@ -54,6 +63,7 @@ export default function Hero() {
             十一日巡禮
           </p>
 
+          {/* Rich description */}
           <p
             className={`text-base md:text-lg text-white/50 leading-relaxed mb-10 max-w-md transition-all duration-700 delay-400 ${
               mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
@@ -62,7 +72,7 @@ export default function Hero() {
             從馬德里啟程，穿越安達魯西亞的陽光與摩爾遺跡，最終抵達高第的巴塞隆納。五座城市，一段史詩。
           </p>
 
-          {/* City list */}
+          {/* City list with colored dots */}
           <div
             className={`flex flex-wrap gap-3 mb-12 transition-all duration-700 delay-500 ${
               mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
@@ -73,7 +83,7 @@ export default function Hero() {
                 key={city.name}
                 className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/70 text-sm hover:bg-white/10 hover:border-white/20 transition-all cursor-default"
               >
-                <span className="text-[#b8954e] mr-1.5">·</span>
+                <span className="mr-1.5 inline-block w-2 h-2 rounded-full" style={{ backgroundColor: city.color }} />
                 {city.name}
                 <span className="text-white/30 ml-1.5 text-xs">{city.label}</span>
               </span>
@@ -99,10 +109,30 @@ export default function Hero() {
               路線地圖
             </a>
           </div>
+
+          {/* Stats */}
+          <div
+            className={`flex gap-8 mt-12 transition-all duration-700 delay-700 ${
+              mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            }`}
+          >
+            <div>
+              <div className="text-2xl font-bold text-[#c9a84c]">11</div>
+              <div className="text-xs text-white/40">天數</div>
+            </div>
+            <div>
+              <div className="text-2xl font-bold text-[#b8735a]">5</div>
+              <div className="text-xs text-white/40">城市</div>
+            </div>
+            <div>
+              <div className="text-2xl font-bold text-[#2a6b7a]">15+</div>
+              <div className="text-xs text-white/40">景點</div>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Right: Image */}
+      {/* Right: Image with parallax */}
       <div className="hidden lg:block lg:w-1/2 relative">
         <img
           src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=1920&q=85"
@@ -112,6 +142,13 @@ export default function Hero() {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a] via-transparent to-transparent" />
         <div className="absolute inset-0 film-grain" />
+        
+        {/* Floating badge */}
+        <div className="absolute bottom-12 right-12 glass rounded-2xl p-4 animate-float">
+          <div className="text-xs text-white/60 mb-1">下一站</div>
+          <div className="text-lg font-bold text-white">Alhambra</div>
+          <div className="text-xs text-[#c9a84c]">Granada, Spain</div>
+        </div>
       </div>
 
       {/* Mobile image (background) */}
