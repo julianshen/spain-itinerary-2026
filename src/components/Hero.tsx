@@ -65,9 +65,10 @@ export default function Hero() {
 
           {/* Rich description */}
           <p
-            className={`text-base md:text-lg text-white/80 leading-relaxed mb-10 max-w-md transition-all duration-700 delay-400 ${
+            className={`text-base md:text-lg text-white leading-relaxed mb-10 max-w-md transition-all duration-700 delay-400 ${
               mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
+            style={{ textShadow: "0 1px 4px rgba(0,0,0,0.5)" }}
           >
             從馬德里啟程，穿越安達魯西亞的陽光與摩爾遺跡，最終抵達高第的巴塞隆納。五座城市，一段史詩。
           </p>
@@ -81,7 +82,7 @@ export default function Hero() {
             {cities.map((city) => (
               <span
                 key={city.name}
-                className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/70 text-sm hover:bg-white/10 hover:border-white/20 transition-all cursor-default"
+                className="px-4 py-2 rounded-full bg-white/10 border border-white/15 text-white/90 text-sm hover:bg-white/15 hover:border-white/25 transition-all cursor-default"
               >
                 <span className="mr-1.5 inline-block w-2 h-2 rounded-full" style={{ backgroundColor: city.color }} />
                 {city.name}
