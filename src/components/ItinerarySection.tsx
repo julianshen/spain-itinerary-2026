@@ -172,6 +172,27 @@ function DayCard({ day, index }: { day: DayPlan; index: number }) {
                     )}
                   </div>
                   <p className="text-sm text-[#6b6b6b] leading-relaxed">{h.description}</p>
+                  {/* Blog-style expanded description for key attractions */}
+                  {h.title.includes('聖家堂') && (
+                    <p className="text-sm text-[#5a5a5a] leading-relaxed mt-2 italic border-l-2 border-[#c9a84c] pl-3">
+                      高第說：「直線屬於人類，曲線屬於上帝。」聖家堂就是這句話的終極詮釋。陽光透過彩繪玻璃灑落，把整個空間染成金黃、碧藍與翠綠。二〇二六年，它終於要完工了——而你將見證這個歷史時刻。
+                    </p>
+                  )}
+                  {h.title.includes('Alhambra') && (
+                    <p className="text-sm text-[#5a5a5a] leading-relaxed mt-2 italic border-l-2 border-[#c9a84c] pl-3">
+                      「世上沒有比阿罕布拉更悲傷的廢墟了。」華盛頓·歐文這樣寫道。納斯利宮的阿拉伯式雕花精緻到令人窒息，Generalife 花園的流水聲讓時間靜止。當夕陽把阿罕布拉染成金紅色，你會明白為什麼這裡被稱為「天堂的倒影」。
+                    </p>
+                  )}
+                  {h.title.includes('普拉多') && (
+                    <p className="text-sm text-[#5a5a5a] leading-relaxed mt-2 italic border-l-2 border-[#c9a84c] pl-3">
+                      這座兩百年歷史的美術館，收藏了從哥雅到委拉斯奎茲的曠世鉅作。站在《裸體的瑪哈》前，你會感受到哥雅筆下那種直視人性的勇氣；而《宮女》則是委拉斯奎茲對視覺與權力的終極詰問。
+                    </p>
+                  )}
+                  {h.title.includes('清真寺') && (
+                    <p className="text-sm text-[#5a5a5a] leading-relaxed mt-2 italic border-l-2 border-[#c9a84c] pl-3">
+                      八百五十六根雙色拱柱撐起一片紅白相間的森林。兩種信仰、兩種文明，在這裡和平共存了五百年。這是世界上最獨特的宗教建築，沒有之一。
+                    </p>
+                  )}
                   {h.tip && (
                     <p className="text-xs text-[#b8954e]/70 mt-2 flex items-center gap-1">
                       <svg className="w-3 h-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">

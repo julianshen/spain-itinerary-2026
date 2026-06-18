@@ -108,7 +108,7 @@ const PLANS: PlanConfig[] = [
         caption: "塞維亞 · 安達魯西亞的靈魂",
       },
       {
-        image: "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=1920&q=85",
+        image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=1920&q=85",
         alt: "Barcelona 巴塞隆納",
         caption: "巴塞隆納 · 高第的未竟之夢",
       },
@@ -162,7 +162,7 @@ const PLANS: PlanConfig[] = [
         caption: "格拉納達 · 摩爾王朝的最後詩篇",
       },
       {
-        image: "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=1920&q=85",
+        image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=1920&q=85",
         alt: "Barcelona 巴塞隆納",
         caption: "巴塞隆納 · 高第的未竟之夢",
       },
@@ -216,7 +216,7 @@ const PLANS: PlanConfig[] = [
         caption: "格拉納達 · 摩爾王朝的最後詩篇",
       },
       {
-        image: "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=1920&q=85",
+        image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=1920&q=85",
         alt: "Barcelona 巴塞隆納",
         caption: "巴塞隆納 · 高第的未竟之夢",
       },
@@ -264,12 +264,12 @@ const PLANS: PlanConfig[] = [
         caption: "格拉納達 · 摩爾王朝的最後詩篇",
       },
       {
-        image: "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=1920&q=85",
+        image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=1920&q=85",
         alt: "Málaga 馬拉加",
         caption: "馬拉加 · 太陽海岸的藝術之城",
       },
       {
-        image: "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=1920&q=85",
+        image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=1920&q=85",
         alt: "Barcelona 巴塞隆納",
         caption: "巴塞隆納 · 高第的未竟之夢",
       },
