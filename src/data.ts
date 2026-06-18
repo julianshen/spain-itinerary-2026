@@ -104,7 +104,7 @@ export const DAYS: DayPlan[] = [
     emoji: "flight",
     highlights: [
       { icon: "flight", time: "10:00→11:40", title: "Granada 飛巴塞隆納", description: "Vueling 直飛 BCN，飛行僅 1h40m，輕鬆接上下午行程", duration: "1h40m", price: "€25-50", tip: "Vueling 官網早買有優惠", link: "https://www.vueling.com/" },
-      { icon: "landmark", time: "14:00-17:00", title: "聖家堂 Sagrada Familia", description: "高第的畢生傑作，也是世界唯一尚未完工就被列為世界遺產的建築。光影透過彩繪玻璃灑落，宛如走進森林迷宮！預計 2026 年完工！", duration: "3h", tip: "門票 €26-40，一定要預約！建議選 Passion 塔登頂", link: "https://sagradafamilia.org/en/tickets", image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=800&q=80" },
+      { icon: "landmark", time: "14:00-17:00", title: "聖家堂 Sagrada Familia", description: "高第的畢生傑作，也是世界唯一尚未完工就被列為世界遺產的建築。光影透過彩繪玻璃灑落，宛如走進森林迷宮！預計 2026 年完工！", duration: "3h", tip: "門票 €26-40，一定要預約！建議選 Passion 塔登頂", link: "https://sagradafamilia.org/en/tickets", image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=800&q=80" },
     ],
     transport: { mode: "✈️ 飛機", from: "Granada GRX", to: "巴塞隆納 BCN", duration: "1h40m", price: "€25-50", details: "Vueling 直飛，每日多班。飛行時間短，建議訂中午前航班，下午還能跑行程。" },
   },
@@ -276,7 +276,7 @@ export const DAYS_RONDA: DayPlan[] = [
     emoji: "flight",
     highlights: [
       { icon: "flight", time: "10:00→11:40", title: "Granada 飛巴塞隆納", description: "Vueling 直飛 BCN，飛行僅 1h40m，輕鬆接上下午行程", duration: "1h40m", price: "€25-50", tip: "Vueling 官網早買有優惠", link: "https://www.vueling.com/" },
-      { icon: "landmark", time: "14:00-17:00", title: "聖家堂 Sagrada Familia", description: "高第的畢生傑作，也是世界唯一尚未完工就被列為世界遺產的建築。光影透過彩繪玻璃灑落，宛如走進森林迷宮！預計 2026 年完工！", duration: "3h", tip: "門票 €26-40，一定要預約！建議選 Passion 塔登頂", link: "https://sagradafamilia.org/en/tickets", image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=800&q=80" },
+      { icon: "landmark", time: "14:00-17:00", title: "聖家堂 Sagrada Familia", description: "高第的畢生傑作，也是世界唯一尚未完工就被列為世界遺產的建築。光影透過彩繪玻璃灑落，宛如走進森林迷宮！預計 2026 年完工！", duration: "3h", tip: "門票 €26-40，一定要預約！建議選 Passion 塔登頂", link: "https://sagradafamilia.org/en/tickets", image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=800&q=80" },
     ],
     transport: { mode: "✈️ 飛機", from: "Granada GRX", to: "巴塞隆納 BCN", duration: "1h40m", price: "€25-50", details: "Vueling 直飛，每日多班。飛行時間短，建議訂中午前航班，下午還能跑行程。" },
   },
@@ -424,9 +424,9 @@ export const DAYS_REVERSE: DayPlan[] = [
     emoji: "train",
     highlights: [
       { icon: "train", time: "09:00→11:30", title: "AVE 到巴塞隆納", description: "馬德里到巴塞隆納高鐵直達，約 2.5h", duration: "2h30m", price: "€40-70" },
-      { icon: "hotel", time: "12:00", title: "入住巴塞隆納飯店", description: "建議住在 Eixample 擴展區（高第建築都在這）或哥德區附近", image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=800&q=80" },
+      { icon: "hotel", time: "12:00", title: "入住巴塞隆納飯店", description: "建議住在 Eixample 擴展區（高第建築都在這）或哥德區附近", image: "https://images.unsplash.com/photo-1507619579562-f2e10da1ec86?w=800&q=80" },
       { icon: "food", time: "13:00-14:30", title: "La Boqueria 市場午餐", description: "巴塞隆納最著名市場，新鮮海鮮、果汁、Tapas", image: "https://images.unsplash.com/photo-1614635454419-36aa631da264?w=800&q=80" },
-      { icon: "landmark", time: "15:00-17:00", title: "聖家堂 Sagrada Familia", description: "高第的畢生傑作，也是世界唯一尚未完工就被列為世界遺產的建築。光影透過彩繪玻璃灑落，宛如走進森林迷宮！預計 2026 年完工！", duration: "3h", tip: "門票 €26-40，一定要預約！建議選 Passion 塔登頂", link: "https://sagradafamilia.org/en/tickets", image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=800&q=80" },
+      { icon: "landmark", time: "15:00-17:00", title: "聖家堂 Sagrada Familia", description: "高第的畢生傑作，也是世界唯一尚未完工就被列為世界遺產的建築。光影透過彩繪玻璃灑落，宛如走進森林迷宮！預計 2026 年完工！", duration: "3h", tip: "門票 €26-40，一定要預約！建議選 Passion 塔登頂", link: "https://sagradafamilia.org/en/tickets", image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=800&q=80" },
     ],
     transport: { mode: "🚄 AVE", from: "馬德里 Atocha", to: "巴塞隆納 Sants", duration: "2h30m", price: "€40-70", details: "Renfe AVE 直達。建議 09:00 出發，11:30 到，下午開始高第之旅。" },
   },
@@ -519,7 +519,7 @@ export const HOTELS_REVERSE: Hotel[] = [
     priceRange: "$100-250 / 晚",
     description: "建議住在 Eixample 擴展區（高第建築都在這）或哥德區附近。",
     highlights: ["📍 Eixample（高第路線，精品飯店多）", "📍 哥德區（近蘭布拉大道）", "🌟 Catalonia Cathedral（位置極佳）", "🌟 Hotel España（設計旅店，$150+）"],
-    image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1507619579562-f2e10da1ec86?w=800&q=80",
     bookingLinks: [
       { name: "📘 Catalonia Cathedral 查價", url: "https://www.booking.com/hotel/es/catalonia-catedral.html" },
     ],
@@ -533,7 +533,7 @@ export const ATTRACTIONS_REVERSE: Attraction[] = [
   { name: "普拉多美術館", city: "Madrid", emoji: "art", description: "世界最頂尖的藝術博物館之一，收藏西班牙黃金時代巨作", tips: ["門票 €15，18:00-20:00 免費", "預留至少 2-3 小時", "必看哥雅《裸體的瑪哈》"], image: "https://images.unsplash.com/photo-1651902519299-9eaf6548b364?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://www.museodelprado.es/" },
   { name: "馬德里皇宮", city: "Madrid", emoji: "crown", description: "歐洲第三大皇宮，奢華程度令人咋舌", tips: ["門票 €12，建議預約", "包含兵器廣場和藥局", "旁邊就是阿穆德納教堂"], image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=800&q=80", timeNeeded: "1.5-2h", ticketLink: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid" },
   { name: "伯納烏球場", city: "Madrid", emoji: "soccer", description: "皇家馬德里主場，足球迷的聖地", tips: ["門票 €25-40", "包含獎盃室和球員通道", "比賽日可能不開放參觀"], image: "https://images.unsplash.com/photo-1522778034537-20a2486be803?w=800&q=80", timeNeeded: "2h", ticketLink: "https://www.realmadrid.com/en/visit-the-bernabeu" },
-  { name: "聖家堂", city: "BCN", emoji: "church", description: "高第畢生傑作，2026 年終於要完工！", tips: ["門票 €26-40，預約", "選 Passion 塔登頂", "下午光影最美"], image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://sagradafamilia.org/en/tickets" },
+  { name: "聖家堂", city: "BCN", emoji: "church", description: "高第畢生傑作，2026 年終於要完工！", tips: ["門票 €26-40，預約", "選 Passion 塔登頂", "下午光影最美"], image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://sagradafamilia.org/en/tickets" },
   { name: "巴特略之家", city: "BCN", emoji: "🏡", description: "高第海洋主題建築，沒有直線的童話之家", tips: ["門票 €35-45", "AR 導覽超酷", "夜間燈光秀可考慮"], image: "https://images.unsplash.com/photo-1579282240050-352db0a14c21?w=800&q=80", timeNeeded: "1.5h", ticketLink: "https://www.casabatllo.es/en/" },
 ];
 
@@ -612,7 +612,7 @@ export const HOTELS: Hotel[] = [
     priceRange: "$100-250 / 晚",
     description: "建議住在 Eixample 擴展區（高第建築都在這）或哥德區附近。",
     highlights: ["📍 Eixample（高第路線，精品飯店多）", "📍 哥德區（近蘭布拉大道）", "🌟 Catalonia Cathedral（位置極佳）", "🌟 Hotel España（設計旅店，$150+）"],
-    image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1507619579562-f2e10da1ec86?w=800&q=80",
     bookingLinks: [
       { name: "📘 Catalonia Cathedral 查價", url: "https://www.booking.com/hotel/es/catalonia-catedral.html" },
     ],
@@ -686,7 +686,7 @@ export const HOTELS_RONDA: Hotel[] = [
     priceRange: "$100-250 / 晚",
     description: "建議住在 Eixample 擴展區（高第建築都在這）或哥德區附近。",
     highlights: ["📍 Eixample（高第路線，精品飯店多）", "📍 哥德區（近蘭布拉大道）", "🌟 Catalonia Cathedral（位置極佳）", "🌟 Hotel España（設計旅店，$150+）"],
-    image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1507619579562-f2e10da1ec86?w=800&q=80",
     bookingLinks: [
       { name: "📘 Catalonia Cathedral 查價", url: "https://www.booking.com/hotel/es/catalonia-catedral.html" },
     ],
@@ -700,7 +700,7 @@ export const ATTRACTIONS: Attraction[] = [
   { name: "Córdoba 清真寺大教堂", city: "Córdoba", emoji: "mosque", description: "世界遺產，伊斯蘭+基督教融合的建築奇蹟", tips: ["門票 €13", "早上光線最好", "856 根雙色拱柱是必看"], image: "https://images.unsplash.com/photo-1632904080322-e71e16a5987f?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://mezquita-catedraldecordoba.es/" },
   { name: "塞維亞王宮 Alcázar", city: "Sevilla", emoji: "castle", description: "歐洲最古老皇家宮殿，《權力遊戲》拍攝地", tips: ["門票 €13.5，務必預約", "後花園超美", "GOT 迷必去多恩花園場景"], image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=800&q=80", timeNeeded: "2.5h", ticketLink: "https://www.alcazarsevilla.org/en/" },
   { name: "阿罕布拉宮 Alhambra", city: "Granada", emoji: "landmark", description: "西班牙最偉大的伊斯蘭建築，摩爾人的最後榮光", tips: ["⚠️ 提前 2 個月預約！", "門票 €19.09", "Nasrid 宮殿有時段限制"], image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80", timeNeeded: "4h+", ticketLink: "https://tickets.alhambra-patronato.es/en/" },
-  { name: "聖家堂", city: "BCN", emoji: "church", description: "高第畢生傑作，2026 年終於要完工！", tips: ["門票 €26-40，預約", "選 Passion 塔登頂", "下午光影最美"], image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://sagradafamilia.org/en/tickets" },
+  { name: "聖家堂", city: "BCN", emoji: "church", description: "高第畢生傑作，2026 年終於要完工！", tips: ["門票 €26-40，預約", "選 Passion 塔登頂", "下午光影最美"], image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://sagradafamilia.org/en/tickets" },
   { name: "巴特略之家", city: "BCN", emoji: "🏡", description: "高第海洋主題建築，沒有直線的童話之家", tips: ["門票 €35-45", "AR 導覽超酷", "夜間燈光秀可考慮"], image: "https://images.unsplash.com/photo-1579282240050-352db0a14c21?w=800&q=80", timeNeeded: "1.5h", ticketLink: "https://www.casabatllo.es/en/" },
 ];
 
@@ -713,7 +713,7 @@ export const ATTRACTIONS_RONDA: Attraction[] = [
   { name: "Ronda 鬥牛場", city: "Ronda", emoji: "bull", description: "西班牙最古老鬥牛場（1785 年），鬥牛士朝聖地", tips: ["門票 €8.5，含博物館", "環形建築本身就很美", "週日可能有免費時段"], image: "https://images.unsplash.com/photo-1564399580075-5dfe19c205f3?w=800&q=80", timeNeeded: "1.5h", ticketLink: "https://www.rmcr.org/" },
   { name: "塞維亞王宮 Alcázar", city: "Sevilla", emoji: "castle", description: "歐洲最古老皇家宮殿，《權力遊戲》拍攝地", tips: ["門票 €13.5，務必預約", "後花園超美", "GOT 迷必去多恩花園場景"], image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=800&q=80", timeNeeded: "2.5h", ticketLink: "https://www.alcazarsevilla.org/en/" },
   { name: "阿罕布拉宮 Alhambra", city: "Granada", emoji: "landmark", description: "西班牙最偉大的伊斯蘭建築，摩爾人的最後榮光", tips: ["⚠️ 提前 2 個月預約！", "門票 €19.09", "Nasrid 宮殿有時段限制"], image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80", timeNeeded: "4h+", ticketLink: "https://tickets.alhambra-patronato.es/en/" },
-  { name: "聖家堂", city: "BCN", emoji: "church", description: "高第畢生傑作，2026 年終於要完工！", tips: ["門票 €26-40，預約", "選 Passion 塔登頂", "下午光影最美"], image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://sagradafamilia.org/en/tickets" },
+  { name: "聖家堂", city: "BCN", emoji: "church", description: "高第畢生傑作，2026 年終於要完工！", tips: ["門票 €26-40，預約", "選 Passion 塔登頂", "下午光影最美"], image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://sagradafamilia.org/en/tickets" },
   { name: "巴特略之家", city: "BCN", emoji: "🏡", description: "高第海洋主題建築，沒有直線的童話之家", tips: ["門票 €35-45", "AR 導覽超酷", "夜間燈光秀可考慮"], image: "https://images.unsplash.com/photo-1579282240050-352db0a14c21?w=800&q=80", timeNeeded: "1.5h", ticketLink: "https://www.casabatllo.es/en/" },
 ];
 
@@ -857,9 +857,9 @@ export const DAYS_MALAGA: DayPlan[] = [
     emoji: "train",
     highlights: [
       { icon: "train", time: "09:00→14:30", title: "Málaga → BCN AVE", description: "Málaga 到巴塞隆納高鐵直達，約 5.5h。沿途經過 Córdoba、Madrid，可欣賞安達魯西亞到加泰隆尼亞的風景變化", duration: "5h30m", price: "€50-90" },
-      { icon: "hotel", time: "15:00", title: "入住巴塞隆納飯店", description: "建議住在 Eixample 擴展區（高第建築都在這）或哥德區附近", image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=800&q=80" },
+      { icon: "hotel", time: "15:00", title: "入住巴塞隆納飯店", description: "建議住在 Eixample 擴展區（高第建築都在這）或哥德區附近", image: "https://images.unsplash.com/photo-1507619579562-f2e10da1ec86?w=800&q=80" },
       { icon: "food", time: "16:00-17:30", title: "Passeig de Gràcia 散步", description: "巴塞隆納最時尚大道，先踩點巴特略之家和米拉之家外觀，為明天做準備" },
-      { icon: "night", time: "18:00-20:00", title: "蘭布拉大道夜景", description: "巴塞隆納最熱鬧街道，街頭藝人、咖啡廳、夜生活", image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=800&q=80" },
+      { icon: "night", time: "18:00-20:00", title: "蘭布拉大道夜景", description: "巴塞隆納最熱鬧街道，街頭藝人、咖啡廳、夜生活", image: "https://images.unsplash.com/photo-1516481402338-0443817e04c5?w=800&q=80" },
     ],
     transport: { mode: "🚄 AVE", from: "Málaga María Zambrano", to: "巴塞隆納 Sants", duration: "5h30m", price: "€50-90", details: "Renfe AVE 直達，每日多班。建議訂 09:00 班次，14:30 到，下午開始探索。" },
   },
@@ -872,7 +872,7 @@ export const DAYS_MALAGA: DayPlan[] = [
     highlights: [
       { icon: "house", time: "09:30-11:00", title: "巴特略之家 Casa Batlló", description: "高第的海洋主題傑作，外牆像彩色龍鱗，內部沒有直線！沉浸式導覽用 AR 超酷", duration: "1.5h", tip: "門票 €35-45，官網有夜間燈光秀", link: "https://www.casabatllo.es/en/", image: "https://images.unsplash.com/photo-1579282240050-352db0a14c21?w=800&q=80" },
       { icon: "building", time: "11:30-13:00", title: "米拉之家 Casa Milà", description: "高第最後的民用建築，波浪型石造外牆、煙囪屋頂像星際大戰的場景。屋頂必去！", duration: "1.5h", tip: "門票 €25，屋頂看夕陽特別美", image: "https://images.unsplash.com/photo-1568921097010-b59ee67056df?w=800&q=80" },
-      { icon: "landmark", time: "14:00-17:00", title: "聖家堂 Sagrada Familia", description: "高第的畢生傑作，也是世界唯一尚未完工就被列為世界遺產的建築。光影透過彩繪玻璃灑落，宛如走進森林迷宮！預計 2026 年完工！", duration: "3h", tip: "門票 €26-40，一定要預約！建議選 Passion 塔登頂", link: "https://sagradafamilia.org/en/tickets", image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=800&q=80" },
+      { icon: "landmark", time: "14:00-17:00", title: "聖家堂 Sagrada Familia", description: "高第的畢生傑作，也是世界唯一尚未完工就被列為世界遺產的建築。光影透過彩繪玻璃灑落，宛如走進森林迷宮！預計 2026 年完工！", duration: "3h", tip: "門票 €26-40，一定要預約！建議選 Passion 塔登頂", link: "https://sagradafamilia.org/en/tickets", image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=800&q=80" },
     ],
   },
   {
@@ -885,8 +885,8 @@ export const DAYS_MALAGA: DayPlan[] = [
       { icon: "park", time: "09:00-11:00", title: "奎爾公園 Park Güell", description: "高第打造的童話花園社區，彩色馬賽克蜥蜴、波浪長椅、世界最長的曲線長椅", duration: "2h", tip: "紀念碑區域門票 €10，可線上預約", image: "https://images.unsplash.com/photo-1630219694734-fe47ab76b15e?w=800&q=80" },
       { icon: "city", time: "12:00-14:00", title: "哥德區 Barri Gòtic", description: "巴塞最古老的街區，狹窄的中世紀小巷、隱藏廣場。找到聖伊莉莎白廣場和主教橋" },
       { icon: "fish", time: "14:00-15:30", title: "博蓋利亞市場午餐", description: "歐洲最大市場之一，鮮豔的水果攤、伊比利火腿、現榨果汁、海鮮⋯⋯五感全開！", image: "https://images.unsplash.com/photo-1614635454419-36aa631da264?w=800&q=80" },
-      { icon: "landmark", time: "16:00-17:00", title: "巴塞隆納主教座堂", description: "哥德區核心，13世紀哥德式建築，屋頂觀景台", image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=800&q=80" },
-      { icon: "beach", time: "17:30-19:00", title: "巴塞海灘 Barceloneta", description: "地中海陽光、沙灘、海鮮 Paella，旅程尾聲放空一下", image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=800&q=80" },
+      { icon: "landmark", time: "16:00-17:00", title: "巴塞隆納主教座堂", description: "哥德區核心，13世紀哥德式建築，屋頂觀景台", image: "https://images.unsplash.com/photo-1688397160949-239083d9bc61?w=800&q=80" },
+      { icon: "beach", time: "17:30-19:00", title: "巴塞海灘 Barceloneta", description: "地中海陽光、沙灘、海鮮 Paella，旅程尾聲放空一下", image: "https://images.unsplash.com/photo-1573413534184-6aa47a50d3ec?w=800&q=80" },
     ],
   },
   {
@@ -898,9 +898,9 @@ export const DAYS_MALAGA: DayPlan[] = [
     highlights: [
       { icon: "shopping", time: "09:00-11:00", title: "蘭布拉大道 La Rambla", description: "巴塞隆納最著名的林蔭大道，街頭藝人、花店、咖啡座，走到底就是哥倫布紀念碑和海港" },
       { icon: "food", time: "11:00-13:00", title: "El Born 區午餐", description: "巴塞隆納最潮街區，設計師店、創意料理、藝術畫廊" },
-      { icon: "landmark", time: "14:00-15:30", title: "巴塞隆納音樂宮", description: "現代主義音樂廳，彩色玻璃天窗，世界遺產", image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=800&q=80" },
-      { icon: "sunset", time: "16:00-17:30", title: "Bunkers del Carmel", description: "巴塞隆納最佳觀景台，360度城市全景，夕陽絕美", image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=800&q=80" },
-      { icon: "food", time: "晚上", title: "告別晚餐", description: "Carrer de Blai 步行街，Pinchos 酒吧巡禮", image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=800&q=80" },
+      { icon: "landmark", time: "14:00-15:30", title: "巴塞隆納音樂宮", description: "現代主義音樂廳，彩色玻璃天窗，世界遺產", image: "https://images.unsplash.com/photo-1567934452596-4d1a296c439e?w=800&q=80" },
+      { icon: "sunset", time: "16:00-17:30", title: "Bunkers del Carmel", description: "巴塞隆納最佳觀景台，360度城市全景，夕陽絕美", image: "https://images.unsplash.com/photo-1563344019-cefeb9b19784?w=800&q=80" },
+      { icon: "food", time: "晚上", title: "告別晚餐", description: "Carrer de Blai 步行街，Pinchos 酒吧巡禮", image: "https://images.unsplash.com/photo-1565599837630-15af1496cd6e?w=800&q=80" },
     ],
   },
   {
@@ -968,7 +968,7 @@ export const HOTELS_MALAGA: Hotel[] = [
     priceRange: "$100-250 / 晚",
     description: "建議住在 Eixample 擴展區（高第建築都在這）或哥德區附近。",
     highlights: ["📍 Eixample（高第路線，精品飯店多）", "📍 哥德區（近蘭布拉大道）", "🌟 Catalonia Cathedral（位置極佳）", "🌟 Hotel España（設計旅店，$150+）"],
-    image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1507619579562-f2e10da1ec86?w=800&q=80",
     bookingLinks: [
       { name: "📘 Catalonia Cathedral 查價", url: "https://www.booking.com/hotel/es/catalonia-catedral.html" },
     ],
@@ -984,7 +984,7 @@ export const ATTRACTIONS_MALAGA: Attraction[] = [
     { name: "Málaga 羅馬劇場", city: "Málaga", emoji: "landmark", description: "西元 1 世紀古羅馬遺跡，免費參觀", tips: ["免費", "旁邊就是 Alcazaba 城堡", "可買聯票"], image: "https://images.unsplash.com/photo-1615839130907-2f68ca162d44?w=800&q=80", timeNeeded: "1h", ticketLink: "" },
   { name: "Puente Nuevo 新橋", city: "Ronda", emoji: "bridge", description: "Ronda 地標，98 公尺高橫跨 El Tajo 峽谷", tips: ["免費", "橋身中間藏有舊監獄展覽館", "從谷底仰望最壯觀"], image: "https://images.unsplash.com/photo-1599623560574-39d485900c95?w=800&q=80", timeNeeded: "1-2h", ticketLink: "" },
   { name: "Ronda 鬥牛場", city: "Ronda", emoji: "bull", description: "西班牙最古老鬥牛場（1785 年）", tips: ["門票 €8.5，含博物館", "環形建築本身就很美", "週日可能有免費時段"], image: "https://images.unsplash.com/photo-1564399580075-5dfe19c205f3?w=800&q=80", timeNeeded: "1.5h", ticketLink: "https://www.rmcr.org/" },
-  { name: "聖家堂", city: "BCN", emoji: "church", description: "高第畢生傑作，2026 年終於要完工！", tips: ["門票 €26-40，預約", "選 Passion 塔登頂", "下午光影最美"], image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://sagradafamilia.org/en/tickets" },
+  { name: "聖家堂", city: "BCN", emoji: "church", description: "高第畢生傑作，2026 年終於要完工！", tips: ["門票 €26-40，預約", "選 Passion 塔登頂", "下午光影最美"], image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://sagradafamilia.org/en/tickets" },
   { name: "巴特略之家", city: "BCN", emoji: "🏡", description: "高第海洋主題建築，沒有直線的童話之家", tips: ["門票 €35-45", "AR 導覽超酷", "夜間燈光秀可考慮"], image: "https://images.unsplash.com/photo-1579282240050-352db0a14c21?w=800&q=80", timeNeeded: "1.5h", ticketLink: "https://www.casabatllo.es/en/" },
 ];
 
