@@ -317,6 +317,249 @@ export const DAYS_RONDA: DayPlan[] = [
   },
 ];
 
+// ========== 方案三：反向路線（先到 Sevilla 往回玩）==========
+
+export const DAYS_REVERSE: DayPlan[] = [
+  {
+    day: 1,
+    date: "10/22（四）",
+    title: "出發！台北 → 巴塞隆納 → Sevilla",
+    subtitle: "直飛安達魯西亞，不走回頭路",
+    emoji: "🛫",
+    highlights: [
+      { icon: "🛫", time: "00:30", title: "台北出發", description: "搭乘阿聯酋航空 EK387，飛往杜拜轉機", duration: "5h", image: "https://images.unsplash.com/photo-1580674285054-bed31e145f59?w=800&q=80" },
+      { icon: "☕", time: "05:15→08:15", title: "杜拜轉機", description: "杜拜機場 3 小時轉機，逛 Duty Free 或休息", duration: "3h" },
+      { icon: "🛬", time: "13:25", title: "抵達巴塞隆納", description: "到 BCN，直接轉國內航班或高鐵南下", duration: "~1h" },
+      { icon: "✈️", time: "15:30→17:00", title: "BCN → Sevilla", description: "Vueling 直飛 Sevilla，約 1.5h，傍晚抵達佛朗明哥之都", duration: "1h30m", price: "€25-50", link: "https://www.vueling.com/" },
+      { icon: "🌆", time: "18:00", title: "Sevilla 夜間散步", description: "Check-in 後沿瓜達幾維河散步，看黃金塔夜景，Triana 區吃 Tapas", image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=800&q=80" },
+    ],
+    transport: { mode: "✈️ 飛機", from: "台北 TPE", to: "Sevilla SVQ", duration: "~20h", price: "€500-800", details: "阿聯酋航空飛 BCN（經杜拜），轉 Vueling 飛 Sevilla。或選擇 Iberia 直飛 MAD 再轉國內線到 SVQ。" },
+  },
+  {
+    day: 2,
+    date: "10/23（五）",
+    title: "Sevilla — 佛朗明哥與皇城",
+    subtitle: "Alcázar、大教堂、西班牙廣場",
+    emoji: "💃",
+    highlights: [
+      { icon: "🏰", time: "09:00-11:30", title: "塞維亞王宮 Alcázar", description: "歐洲最古老的皇家宮殿之一，也是《權力遊戲》多恩王國花園的拍攝地！摩爾式建築+哥德式風格，後花園絕美", duration: "2.5h", tip: "門票 €13.5，務必提前官網預約！排隊很恐怖", link: "https://www.alcazarsevilla.org/en/", image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=800&q=80" },
+      { icon: "⛪", time: "12:00-14:00", title: "Sevilla 大教堂 + 吉拉達塔", description: "世界最大的哥德式教堂，哥倫布的靈柩在此。旁邊的吉拉達塔是摩爾時期宣禮塔改建的鐘樓", duration: "1.5h", tip: "門票 €12，包含登塔", image: "https://images.unsplash.com/photo-1534106659956-d02ca15d30fb?w=800&q=80" },
+      { icon: "🌆", time: "15:00-17:00", title: "西班牙廣場", description: "1929 年博覽會所建，半圓形廣場上有 58 座瓷磚長椅，代表西班牙各省。下午光影打在瓷磚上超美！一定要划船", duration: "2h", tip: "免費，傍晚夕陽時最美", image: "https://images.unsplash.com/photo-1559386081-325882507af7?w=800&q=80" },
+      { icon: "💃", time: "晚上", title: "佛朗明哥秀", description: "在 Triana 區或 Santa Cruz 區看一場真正的佛朗明哥表演，感動到起雞皮疙瘩！" },
+    ],
+  },
+  {
+    day: 3,
+    date: "10/24（六）",
+    title: "Sevilla → Granada",
+    subtitle: "AVE 前進阿罕布拉宮腳下",
+    emoji: "🏰",
+    highlights: [
+      { icon: "🚄", time: "10:00→12:30", title: "AVE 到 Granada", description: "Sevilla 到 Granada 高鐵直達，約 2.5h", duration: "2h30m", price: "€25-45" },
+      { icon: "🏨", time: "13:00", title: "入住 Parador de Granada", description: "位於 Alhambra 宮殿內的傳奇飯店，前身是 15 世紀修道院，陽台就能看到阿罕布拉花園", image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80" },
+      { icon: "🏘️", time: "14:00-16:00", title: "Albaicín 阿爾拜辛區", description: "UNESCO 世界遺產的摩爾人舊城區，蜿蜒的白色小巷、磁磚庭院，像走入一千零一夜的世界" },
+      { icon: "🌅", time: "16:30-17:30", title: "聖尼古拉斯瞭望台", description: "遠眺 Alhambra 的最佳點！夕陽時分，阿罕布拉宮在內華達山脈前閃耀金紅色光芒" },
+    ],
+    transport: { mode: "🚄 AVE", from: "Sevilla Santa Justa", to: "Granada", duration: "2h30m", price: "€25-45", details: "Renfe AVE 直達 Granada 車站。建議 10:00 出發，12:30 到，下午開始探索。" },
+  },
+  {
+    day: 4,
+    date: "10/25（日）",
+    title: "Granada — Alhambra 全日",
+    subtitle: "此生必去的宮殿奇蹟",
+    emoji: "🏛️",
+    highlights: [
+      { icon: "🏛️", time: "09:00-13:00", title: "阿罕布拉宮 Alhambra", description: "西班牙的瑰寶、摩爾人的最後城堡！包含納斯利宮（超精緻阿拉伯雕刻）、Generalife 夏宮花園、卡洛斯五世宮殿。每走一步都是驚嘆！", duration: "4h+", tip: "⚠️ 一定要 2 個月前預約！門票 €19.09，Nasrid Palaces 有時段限制，不能遲到！", link: "https://tickets.alhambra-patronato.es/en/", image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80" },
+      { icon: "🍤", time: "13:00-15:00", title: "Granada Tapas 文化", description: "Granada 是全西班牙唯一點酒就送 Tapas 的城市！Calle Navas 上每家 bar 都有驚喜，吃一圈就飽了！" },
+      { icon: "⛪", time: "15:30-17:00", title: "Granada 大教堂 + 皇家禮拜堂", description: "伊莎貝拉一世女王與費迪南德國王安葬於此。禮拜堂內有他們的石棺和珍貴的中世紀藝術品" },
+    ],
+  },
+  {
+    day: 5,
+    date: "10/26（一）",
+    title: "Granada → Córdoba",
+    subtitle: "北上！重返摩爾人帝國的心臟",
+    emoji: "🚄",
+    highlights: [
+      { icon: "🚄", time: "09:00→11:30", title: "AVE 到 Córdoba", description: "Granada 到 Córdoba 高鐵直達，約 2.5h", duration: "2h30m", price: "€25-45" },
+      { icon: "🕌", time: "12:00-15:00", title: "Córdoba 大清真寺", description: "世界文化遺產，摩爾人興建的大清真寺內有 856 根雙色拱柱，後來天主教徒在裡面蓋了一座教堂，形成伊斯蘭+基督教的獨特融合", duration: "2-3h", tip: "門票 €13，建議上午去光線最好", link: "https://mezquita-catedraldecordoba.es/", image: "https://images.unsplash.com/photo-1632904080322-e71e16a5987f?w=800&q=80" },
+      { icon: "🌸", time: "15:30-16:30", title: "百花巷 + 羅馬橋", description: "著名的藍白瓷磚小巷（Calleja de las Flores），以及西元 1 世紀建的羅馬橋" },
+      { icon: "🌉", time: "17:00-18:30", title: "羅馬橋夕陽", description: "古羅馬橋橫跨瓜達幾維河，遠眺清真寺全景，夕陽時分金光灑落最美" },
+    ],
+    transport: { mode: "🚄 AVE", from: "Granada", to: "Córdoba", duration: "2h30m", price: "€25-45", details: "Renfe AVE 直達。建議 09:00 出發，11:30 到，下午開始探索。" },
+  },
+  {
+    day: 6,
+    date: "10/27（二）",
+    title: "Córdoba → 馬德里",
+    subtitle: "北上首都，藝術與王權",
+    emoji: "👑",
+    highlights: [
+      { icon: "🚄", time: "09:00→10:45", title: "AVE 到馬德里", description: "Córdoba 到馬德里高鐵直達，約 1h45m", duration: "1h45m", price: "€30-50" },
+      { icon: "🎨", time: "11:00-14:00", title: "普拉多美術館", description: "西班牙最重要的美術館，收藏哥雅、委拉斯奎茲、葛雷柯等大師鉅作。必看：哥雅《裸體的瑪哈》、委拉斯奎茲《宮女》", duration: "3h", tip: "門票 €15，下午 6-8 點免費入場但排隊很長", link: "https://www.museodelprado.es/", image: "https://images.unsplash.com/photo-1651902519299-9eaf6548b364?w=800&q=80" },
+      { icon: "🌿", time: "14:00-15:00", title: "麗池公園", description: "馬德里的城市綠洲。在人工湖划船、看水晶宮（Palacio de Cristal）", image: "https://images.unsplash.com/photo-1645203494470-1507ae7f1a40?w=800&q=80" },
+      { icon: "👑", time: "15:30-17:30", title: "馬德里皇宮", description: "歐洲第三大皇宮，僅次於凡爾賽宮和美景宮。奢華的內部裝潢、壁畫、兵器廣場", duration: "2h", tip: "門票 €12，建議提前官網預約", link: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid", image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=800&q=80" },
+      { icon: "🍫", time: "晚上", title: "San Ginés 吃 Churros", description: "開業於 1894 年的老字號，招牌是 Churros con Chocolate 巧克力油條，24 小時營業！" },
+    ],
+    transport: { mode: "🚄 AVE", from: "Córdoba", to: "馬德里 Atocha", duration: "1h45m", price: "€30-50", details: "Renfe AVE 直達。建議 09:00 出發，10:45 到，開始馬德里藝術之旅。" },
+  },
+  {
+    day: 7,
+    date: "10/28（三）",
+    title: "馬德里 — 經典巡禮",
+    subtitle: "格爾尼卡、La Latina、伯納烏",
+    emoji: "🏛️",
+    highlights: [
+      { icon: "🎭", time: "09:30-11:30", title: "索菲亞王后藝術中心", description: "現代藝術美術館，鎮館之寶——畢卡索《格爾尼卡》！這幅反戰巨作長 7.8 公尺，親眼看到非常震撼", duration: "2h", tip: "門票 €12，週一、週三至週六 19:00-21:00 免費，週日 13:30-19:00 免費", link: "https://www.museoreinasofia.es/en", image: "https://images.unsplash.com/photo-1564565899675-a159063d17be?w=800&q=80" },
+      { icon: "🏘️", time: "12:00-14:00", title: "La Latina 區午餐", description: "馬德里最古老的街區，蜿蜒的小巷裡藏著無數 Tapas 酒吧。推薦吃 Callos（燉牛肚）或 Tortilla Española" },
+      { icon: "⚽", time: "15:00-17:00", title: "聖地亞哥·伯納烏球場", description: "皇家馬德里主場！參觀球場、更衣室、獎盃室、球員通道，球迷必去聖地！", duration: "2h", tip: "門票 €25-40，官網預約可選導覽", link: "https://www.realmadrid.com/en/visit-the-bernabeu", image: "https://images.unsplash.com/photo-1522778034537-20a2486be803?w=800&q=80" },
+      { icon: "🌅", time: "17:30-19:00", title: "德波神廟夕陽", description: "從埃及搬來的神廟，馬德里最浪漫的夕陽景點。免費入場，夕陽時分整個神廟和天空超美" },
+    ],
+  },
+  {
+    day: 8,
+    date: "10/29（四）",
+    title: "馬德里 → 巴塞隆納",
+    subtitle: "AVE 直達高第之城",
+    emoji: "🚄",
+    highlights: [
+      { icon: "🚄", time: "09:00→11:30", title: "AVE 到巴塞隆納", description: "馬德里到巴塞隆納高鐵直達，約 2.5h", duration: "2h30m", price: "€40-70" },
+      { icon: "🏨", time: "12:00", title: "入住巴塞隆納飯店", description: "建議住在 Eixample 擴展區（高第建築都在這）或哥德區附近", image: "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800&q=80" },
+      { icon: "🍽️", time: "13:00-14:30", title: "La Boqueria 市場午餐", description: "巴塞隆納最著名市場，新鮮海鮮、果汁、Tapas", image: "https://images.unsplash.com/photo-1614635454419-36aa631da264?w=800&q=80" },
+      { icon: "🏛️", time: "15:00-17:00", title: "聖家堂 Sagrada Familia", description: "高第的畢生傑作，也是世界唯一尚未完工就被列為世界遺產的建築。光影透過彩繪玻璃灑落，宛如走進森林迷宮！預計 2026 年完工！", duration: "3h", tip: "門票 €26-40，一定要預約！建議選 Passion 塔登頂", link: "https://sagradafamilia.org/en/tickets", image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=800&q=80" },
+    ],
+    transport: { mode: "🚄 AVE", from: "馬德里 Atocha", to: "巴塞隆納 Sants", duration: "2h30m", price: "€40-70", details: "Renfe AVE 直達。建議 09:00 出發，11:30 到，下午開始高第之旅。" },
+  },
+  {
+    day: 9,
+    date: "10/30（五）",
+    title: "巴塞隆納 — 高第建築巡禮",
+    subtitle: "巴特略之家、米拉之家、奎爾公園",
+    emoji: "🎨",
+    highlights: [
+      { icon: "🏡", time: "09:30-11:00", title: "巴特略之家 Casa Batlló", description: "高第的海洋主題傑作，外牆像彩色龍鱗，內部沒有直線！沉浸式導覽用 AR 超酷", duration: "1.5h", tip: "門票 €35-45，官網有夜間燈光秀", link: "https://www.casabatllo.es/en/", image: "https://images.unsplash.com/photo-1579282240050-352db0a14c21?w=800&q=80" },
+      { icon: "🏠", time: "11:30-13:00", title: "米拉之家 Casa Milà", description: "高第最後的民用建築，波浪型石造外牆、煙囪屋頂像星際大戰的場景。屋頂必去！", duration: "1.5h", tip: "門票 €25，屋頂看夕陽特別美", image: "https://images.unsplash.com/photo-1568921097010-b59ee67056df?w=800&q=80" },
+      { icon: "🌳", time: "15:00-17:00", title: "奎爾公園 Park Güell", description: "高第打造的童話花園社區，彩色馬賽克蜥蜴、波浪長椅、世界最長的曲線長椅", duration: "2h", tip: "紀念碑區域門票 €10，可線上預約", image: "https://images.unsplash.com/photo-1630219694734-fe47ab76b15e?w=800&q=80" },
+    ],
+  },
+  {
+    day: 10,
+    date: "10/31（六）",
+    title: "巴塞隆納 — 漫步日",
+    subtitle: "哥德區、蘭布拉大道、博蓋利亞市場",
+    emoji: "🏘️",
+    highlights: [
+      { icon: "🏘️", time: "09:00-11:00", title: "哥德區 Barri Gòtic", description: "巴塞最古老的街區，狹窄的中世紀小巷、隱藏廣場。找到聖伊莉莎白廣場和主教橋" },
+      { icon: "🛍️", time: "11:00-13:00", title: "蘭布拉大道 La Rambla", description: "巴塞隆納最著名的林蔭大道，街頭藝人、花店、咖啡座，走到底就是哥倫布紀念碑和海港" },
+      { icon: "🐟", time: "11:30-13:00", title: "博蓋利亞市場", description: "歐洲最大市場之一，鮮豔的水果攤、伊比利火腿、現榨果汁、海鮮⋯⋯五感全開！", image: "https://images.unsplash.com/photo-1614635454419-36aa631da264?w=800&q=80" },
+      { icon: "🌊", time: "15:00-17:00", title: "巴塞海灘 Barceloneta", description: "地中海陽光、沙灘、海鮮 Paella，旅程尾聲放空一下" },
+    ],
+  },
+  {
+    day: 11,
+    date: "11/1（日）",
+    title: "回程 ✈️ 台灣",
+    subtitle: "帶著滿滿回憶回家",
+    emoji: "🛫",
+    highlights: [
+      { icon: "🛫", title: "巴塞隆納 → 杜拜 → 台北", description: "搭阿聯酋航空回程，結束 11 天的西班牙大冒險！🇪🇸 期待下次再來～", image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80" },
+    ],
+  },
+];
+
+export const HOTELS_REVERSE: Hotel[] = [
+  {
+    name: "Sevilla 飯店推薦",
+    city: "Sevilla（10/22-23）",
+    nights: 2,
+    stars: 0,
+    priceRange: "$80-200 / 晚",
+    description: "建議住在 Santa Cruz 區（舊城區）或 Triana 區，靠近 Alcázar 和大教堂。",
+    highlights: ["📍 Santa Cruz（近 Alcázar，最方便）", "📍 Triana（對岸，佛朗明哥氣氛）", "🌟 Hotel Casa 1800（9.1分，古典莊園風）", "🌟 Hotel Alhambra Palace 系列"],
+    image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=800&q=80",
+    bookingLinks: [
+      { name: "📘 Hotel Casa 1800 查價", url: "https://www.booking.com/hotel/es/casa-1800-granada.html" },
+    ],
+  },
+  {
+    name: "Parador de Granada",
+    city: "Granada（10/24-25）",
+    nights: 2,
+    stars: 4,
+    priceRange: "€268-400 / 晚",
+    description: "位於 Alhambra 宮殿內，前身是 15 世紀修道院。住在世界遺產裡是什麼感覺？只有 40 間房，極度搶手！",
+    highlights: ["在 Alhambra 裡面！陽台看宮殿花園", "餐廳露台有 Alhambra 全景", "僅 40 間房，極致寧靜", "古典 Andalusian 裝潢風格"],
+    image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80",
+    bookingLinks: [
+      { name: "🏛️ 官網 Paradores.es", url: "https://paradores.es/en/parador-de-granada" },
+      { name: "📘 Booking.com", url: "https://www.booking.com/hotel/es/parador-de-granada.html" },
+      { name: "🧳 Trip.com", url: "https://www.trip.com/hotels/granada-hotel-detail-2564852/parador-de-granada/" },
+    ],
+    note: "⚠️ 極度熱門，建議提前 3 個月以上訂房！",
+  },
+  {
+    name: "馬德里飯店推薦",
+    city: "Madrid（10/26-27）",
+    nights: 2,
+    stars: 0,
+    priceRange: "$80-200 / 晚",
+    description: "建議住在太陽門廣場或 Gran Vía 附近，去哪都用走的。推薦兩間：",
+    highlights: ["📍 區域：Sol / Gran Vía 最方便", "🌟 Room Mate Leo（現代設計，€80+）", "🌟 Barceló Carmen Granada（有泳池，$100+）", "離 Atocha 車站搭地鐵 10 分鐘"],
+    image: "https://images.unsplash.com/photo-1543783207-ec64e4d95325?w=800&q=80",
+    bookingLinks: [
+      { name: "📘 Room Mate Leo 查價", url: "https://www.booking.com/hotel/es/room-mate-leo.html" },
+      { name: "📘 Barceló Carmen 查價", url: "https://www.booking.com/hotel/es/barcelo-carmen-granada.html" },
+    ],
+  },
+  {
+    name: "巴塞隆納飯店推薦",
+    city: "BCN（10/28-31）",
+    nights: 4,
+    stars: 0,
+    priceRange: "$100-250 / 晚",
+    description: "建議住在 Eixample 擴展區（高第建築都在這）或哥德區附近。",
+    highlights: ["📍 Eixample（高第路線，精品飯店多）", "📍 哥德區（近蘭布拉大道）", "🌟 Catalonia Cathedral（位置極佳）", "🌟 Hotel España（設計旅店，$150+）"],
+    image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=800&q=80",
+    bookingLinks: [
+      { name: "📘 Catalonia Cathedral 查價", url: "https://www.booking.com/hotel/es/catalonia-catedral.html" },
+    ],
+  },
+];
+
+export const ATTRACTIONS_REVERSE: Attraction[] = [
+  { name: "塞維亞王宮 Alcázar", city: "Sevilla", emoji: "🏰", description: "歐洲最古老皇家宮殿，《權力遊戲》拍攝地", tips: ["門票 €13.5，務必預約", "後花園超美", "GOT 迷必去多恩花園場景"], image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=800&q=80", timeNeeded: "2.5h", ticketLink: "https://www.alcazarsevilla.org/en/" },
+  { name: "阿罕布拉宮 Alhambra", city: "Granada", emoji: "🏛️", description: "西班牙最偉大的伊斯蘭建築，摩爾人的最後榮光", tips: ["⚠️ 提前 2 個月預約！", "門票 €19.09", "Nasrid 宮殿有時段限制"], image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=800&q=80", timeNeeded: "4h+", ticketLink: "https://tickets.alhambra-patronato.es/en/" },
+  { name: "Córdoba 清真寺大教堂", city: "Córdoba", emoji: "🕌", description: "世界遺產，伊斯蘭+基督教融合的建築奇蹟", tips: ["門票 €13", "早上光線最好", "856 根雙色拱柱是必看"], image: "https://images.unsplash.com/photo-1632904080322-e71e16a5987f?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://mezquita-catedraldecordoba.es/" },
+  { name: "普拉多美術館", city: "Madrid", emoji: "🎨", description: "世界最頂尖的藝術博物館之一，收藏西班牙黃金時代巨作", tips: ["門票 €15，18:00-20:00 免費", "預留至少 2-3 小時", "必看哥雅《裸體的瑪哈》"], image: "https://images.unsplash.com/photo-1651902519299-9eaf6548b364?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://www.museodelprado.es/" },
+  { name: "馬德里皇宮", city: "Madrid", emoji: "👑", description: "歐洲第三大皇宮，奢華程度令人咋舌", tips: ["門票 €12，建議預約", "包含兵器廣場和藥局", "旁邊就是阿穆德納教堂"], image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=800&q=80", timeNeeded: "1.5-2h", ticketLink: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid" },
+  { name: "伯納烏球場", city: "Madrid", emoji: "⚽", description: "皇家馬德里主場，足球迷的聖地", tips: ["門票 €25-40", "包含獎盃室和球員通道", "比賽日可能不開放參觀"], image: "https://images.unsplash.com/photo-1522778034537-20a2486be803?w=800&q=80", timeNeeded: "2h", ticketLink: "https://www.realmadrid.com/en/visit-the-bernabeu" },
+  { name: "聖家堂", city: "BCN", emoji: "⛪", description: "高第畢生傑作，2026 年終於要完工！", tips: ["門票 €26-40，預約", "選 Passion 塔登頂", "下午光影最美"], image: "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?w=800&q=80", timeNeeded: "2-3h", ticketLink: "https://sagradafamilia.org/en/tickets" },
+  { name: "巴特略之家", city: "BCN", emoji: "🏡", description: "高第海洋主題建築，沒有直線的童話之家", tips: ["門票 €35-45", "AR 導覽超酷", "夜間燈光秀可考慮"], image: "https://images.unsplash.com/photo-1579282240050-352db0a14c21?w=800&q=80", timeNeeded: "1.5h", ticketLink: "https://www.casabatllo.es/en/" },
+];
+
+export const CITY_VIDEOS_REVERSE: CityVideo[] = [
+  { city: "塞維亞 Sevilla", embedId: "GDCeuQFs0v0", title: "Sevilla Travel Guide - Complete Tour" },
+  { city: "格拉納達 Granada & Alhambra", embedId: "fL2Mno5ll9k", title: "Granada Spain Travel Guide" },
+  { city: "馬德里 Madrid", embedId: "l1qH6XLC-2I", title: "馬德里旅遊｜西班牙馬德里必去景點" },
+  { city: "巴塞隆納 Barcelona", embedId: "wMfVjW7ldUc", title: "Barcelona Travel Guide - Best Things to Do" },
+];
+
+export const ROUTE_COORDS_REVERSE: [number, number][] = [
+  [37.3891, -5.9845], // Sevilla
+  [37.1773, -3.5986], // Granada
+  [37.8882, -4.7794], // Córdoba
+  [40.4168, -3.7038], // Madrid
+  [41.3874, 2.1686],  // Barcelona
+];
+
+export const CITY_INFO_REVERSE = [
+  { name: "塞維亞", coords: [37.3891, -5.9845] as [number, number], emoji: "💃", desc: "停留 2 天" },
+  { name: "格拉納達", coords: [37.1773, -3.5986] as [number, number], emoji: "🏰", desc: "停留 2 天" },
+  { name: "哥多華", coords: [37.8882, -4.7794] as [number, number], emoji: "🕌", desc: "過路半天" },
+  { name: "馬德里", coords: [40.4168, -3.7038] as [number, number], emoji: "👑", desc: "停留 2 天" },
+  { name: "巴塞隆納", coords: [41.3874, 2.1686] as [number, number], emoji: "🎨", desc: "停留 4 天" },
+];
+
 export const HOTELS: Hotel[] = [
   {
     name: "Parador de Granada",

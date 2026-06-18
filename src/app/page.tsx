@@ -12,6 +12,11 @@ import {
   ATTRACTIONS_RONDA,
   CITY_VIDEOS_RONDA,
   CITY_INFO_RONDA,
+  DAYS_REVERSE,
+  HOTELS_REVERSE,
+  ATTRACTIONS_REVERSE,
+  CITY_VIDEOS_REVERSE,
+  CITY_INFO_REVERSE,
 } from "../data";
 import Hero from "@/components/Hero";
 import ItinerarySection from "@/components/ItinerarySection";
@@ -167,6 +172,59 @@ const PLANS: PlanConfig[] = [
       "Ronda 鬥牛場 + 酒莊品酒預約",
     ],
     footerText: "西班牙 13 天行程規劃 · 2026 年 10 月 22 日 → 11 月 3 日",
+  },
+  {
+    key: "reverse",
+    label: "方案三：反向路線",
+    days: DAYS_REVERSE,
+    hotels: HOTELS_REVERSE,
+    attractions: ATTRACTIONS_REVERSE,
+    videos: CITY_VIDEOS_REVERSE,
+    cityInfo: CITY_INFO_REVERSE,
+    itineraryTitle: "十一日，五座城市",
+    itinerarySubtitle: "先抵 Sevilla 再往北玩，最後在巴塞隆納收尾",
+    transportSummary: [
+      "TPE → BCN 18h55m",
+      "BCN → Sevilla 1h30m",
+      "Sevilla → Granada 2h30m",
+      "Granada → Córdoba 2h30m",
+      "Córdoba → Madrid 1h45m",
+      "Madrid → BCN 2h30m",
+    ],
+    attractionsTitle: "必去景點",
+    attractionsSubtitle: "從佛朗明哥到高第，反向體驗西班牙",
+    hotelsTitle: "住宿精選",
+    hotelsSubtitle: "每間都是仔細挑選，點連結直接查價預訂",
+    mapTitle: "路線地圖",
+    mapSubtitle: "從南到北，反向穿越西班牙",
+    videosTitle: "出發前先看",
+    videosSubtitle: "用影片預習四大城市的精華",
+    dividers: [
+      {
+        image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=1920&q=85",
+        alt: "Sevilla 塞維亞",
+        caption: "塞維亞 · 安達魯西亞的靈魂",
+      },
+      {
+        image: "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=1920&q=85",
+        alt: "Alhambra 格拉納達",
+        caption: "格拉納達 · 摩爾王朝的最後詩篇",
+      },
+      {
+        image: "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=1920&q=85",
+        alt: "Barcelona 巴塞隆納",
+        caption: "巴塞隆納 · 高第的未竟之夢",
+      },
+    ],
+    checklist: [
+      "Alhambra 門票 — 提前 2 個月預約！",
+      "聖家堂門票 — 提前 2-3 週",
+      "AVE 高鐵早鳥票 — 可省 50%",
+      "Sevilla Alcázar 門票 — 排隊很長",
+      "普拉多美術館 / 皇宮門票",
+      "全部飯店訂房 — 尤其 Parador！",
+    ],
+    footerText: "西班牙 11 天行程規劃 · 2026 年 10 月 22 日 → 11 月 1 日",
   },
 ];
 
