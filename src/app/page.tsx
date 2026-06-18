@@ -121,7 +121,7 @@ const PLANS: PlanConfig[] = [
     attractions: ATTRACTIONS_RONDA,
     videos: CITY_VIDEOS_RONDA,
     cityInfo: CITY_INFO_RONDA,
-    itineraryTitle: "十三日，六座城市",
+    itineraryTitle: "十一日，六座城市",
     itinerarySubtitle: "馬德里 → 安達魯西亞 → 龍達峽谷 → 巴塞隆納，深入西班牙靈魂",
     transportSummary: [
       "TPE → BCN 18h55m",

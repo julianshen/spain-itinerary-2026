@@ -312,7 +312,7 @@ export const DAYS_RONDA: DayPlan[] = [
     subtitle: "帶著滿滿回憶回家",
     emoji: "🛫",
     highlights: [
-      { icon: "🛫", title: "巴塞隆納 → 杜拜 → 台北", description: "搭阿聯酋航空回程，結束 13 天的西班牙大冒險！🇪🇸 期待下次再來～", image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80" },
+      { icon: "🛫", title: "巴塞隆納 → 杜拜 → 台北", description: "搭阿聯酋航空回程，結束 11 天的西班牙大冒險！🇪🇸 期待下次再來～", image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80" },
     ],
   },
 ];
