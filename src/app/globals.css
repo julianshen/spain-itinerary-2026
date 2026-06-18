@@ -409,11 +409,11 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  height: 3px;
+  height: 4px;
   background: linear-gradient(90deg, var(--color-gold), var(--color-terracotta), var(--color-sea));
-  z-index: 100;
+  z-index: 9999;
   transition: width 0.1s linear;
-  box-shadow: 0 0 8px rgba(201, 168, 76, 0.5);
+  box-shadow: 0 0 12px rgba(201, 168, 76, 0.6), 0 1px 3px rgba(0,0,0,0.3);
 }
 
 /* === Image caption style === */

@@ -65,7 +65,7 @@ export default function Hero() {
 
           {/* Rich description */}
           <p
-            className={`text-base md:text-lg text-white/70 leading-relaxed mb-10 max-w-md transition-all duration-700 delay-400 ${
+            className={`text-base md:text-lg text-white/80 leading-relaxed mb-10 max-w-md transition-all duration-700 delay-400 ${
               mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
@@ -167,9 +167,9 @@ export default function Hero() {
           mounted ? "opacity-100" : "opacity-0"
         }`}
       >
-        <div className="flex flex-col items-center gap-2">
-          <span className="text-white/30 text-xs tracking-[0.3em] uppercase">Scroll</span>
-          <svg className="w-4 h-4 text-white/30 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div className="flex flex-col items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
+          <span className="text-white/50 text-xs tracking-[0.3em] uppercase">Scroll</span>
+          <svg className="w-4 h-4 text-white/50 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>
         </div>
