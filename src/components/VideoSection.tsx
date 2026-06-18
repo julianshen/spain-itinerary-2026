@@ -15,6 +15,15 @@ export default function VideoSection({
   subtitle = "用影片預習四大城市的精華",
 }: VideoSectionProps) {
   const [activeId, setActiveId] = useState<string | null>(null);
+  const [thumbErrors, setThumbErrors] = useState<Record<string, boolean>>({});
+
+  const getThumbUrl = (embedId: string) => {
+    if (thumbErrors[embedId]) {
+      // Fallback: hqdefault (480x360) always available
+      return `https://img.youtube.com/vi/${embedId}/hqdefault.jpg`;
+    }
+    return `https://img.youtube.com/vi/${embedId}/maxresdefault.jpg`;
+  };
 
   return (
     <section id="videos" className="py-20 md:py-28 px-5 md:px-8">
@@ -45,10 +54,13 @@ export default function VideoSection({
                 ) : (
                   <>
                     <img
-                      src={`https://img.youtube.com/vi/${video.embedId}/maxresdefault.jpg`}
+                      src={getThumbUrl(video.embedId)}
                       alt={video.title}
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                       loading="lazy"
+                      onError={() => {
+                        setThumbErrors(prev => ({ ...prev, [video.embedId]: true }));
+                      }}
                     />
                     <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
                       <button
