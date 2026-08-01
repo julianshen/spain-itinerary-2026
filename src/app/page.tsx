@@ -115,7 +115,7 @@ const PLANS: PlanConfig[] = [
       "聖家堂 — 約提前兩個月留意售票",
       "Madrid → Granada 直達列車",
       "普拉多美術館＋馬德里皇宮",
-      "三個住宿基地 — 尤其 Parador Granada",
+      "三個住宿基地 — 優先選可免費取消房價",
     ],
     footerText: "西班牙少換宿精選行程 · 2026 年 10 月 22 日 → 11 月 1 日",
   },
