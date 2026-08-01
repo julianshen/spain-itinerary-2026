@@ -2,11 +2,6 @@
 
 import { useState, useEffect } from "react";
 import {
-  DAYS,
-  HOTELS,
-  ATTRACTIONS,
-  CITY_VIDEOS,
-  CITY_INFO,
   DAYS_RONDA,
   HOTELS_RONDA,
   ATTRACTIONS_RONDA,
@@ -23,6 +18,7 @@ import {
   CITY_VIDEOS_MALAGA,
   CITY_INFO_MALAGA,
 } from "../data";
+import { DAYS, HOTELS, ATTRACTIONS, CITY_VIDEOS, CITY_INFO } from "../curated-data";
 import Hero from "@/components/Hero";
 import ItinerarySection from "@/components/ItinerarySection";
 import AttractionsSection from "@/components/AttractionsSection";
@@ -74,28 +70,26 @@ const MOBILE_LABELS = ["① 經典路線", "② Ronda 深度", "③ 反向路線
 const PLANS: PlanConfig[] = [
   {
     key: "classic",
-    label: "方案一：經典路線",
+    label: "少換宿精選路線",
     days: DAYS,
     hotels: HOTELS,
     attractions: ATTRACTIONS,
     videos: CITY_VIDEOS,
     cityInfo: CITY_INFO,
-    itineraryTitle: "十一日，五座城市",
-    itinerarySubtitle: "從馬德里一路南下安達魯西亞，再回到巴塞隆納走完高第之路",
+    itineraryTitle: "十一日，三個住宿基地",
+    itinerarySubtitle: "Madrid 3晚 → Granada 2晚 → Barcelona 5晚，只換兩次住宿",
     transportSummary: [
       "TPE → BCN 18h55m",
-      "BCN → Madrid 2h30m",
-      "Madrid → Córdoba 1h45m",
-      "Córdoba → Sevilla 45m",
-      "Sevilla → Granada 2h30m",
-      "GRX → BCN 1h40m",
+      "BCN → Madrid 約 2h40m–3h20m",
+      "Madrid → Granada 約 3h30m",
+      "GRX → BCN 飛行約 1h30m",
     ],
     attractionsTitle: "必去景點",
-    attractionsSubtitle: "從馬德里皇宮到聖家堂，每一個都是此生必訪",
+    attractionsSubtitle: "減少城市數量，把時間留給真正值得深入的地方",
     hotelsTitle: "住宿精選",
-    hotelsSubtitle: "每間都是仔細挑選，點連結直接查價預訂",
+    hotelsSubtitle: "三間飯店、兩次換宿，每個基地至少連住兩晚",
     mapTitle: "路線地圖",
-    mapSubtitle: "從馬德里一路向南，再到巴塞隆納",
+    mapSubtitle: "Madrid → Granada → Barcelona，最精簡的核心路線",
     videosTitle: "出發前先看",
     videosSubtitle: "用影片預習四大城市的精華",
     dividers: [
@@ -116,14 +110,14 @@ const PLANS: PlanConfig[] = [
       },
     ],
     checklist: [
-      "Alhambra 門票 — 提前 2 個月預約！",
-      "聖家堂門票 — 提前 2-3 週",
-      "AVE 高鐵早鳥票 — 可省 50%",
-      "Sevilla Alcázar 門票 — 排隊很長",
-      "普拉多美術館 / 皇宮門票",
-      "全部飯店訂房 — 尤其 Parador！",
+      "Alhambra＋Nasrid Palaces — 最優先預約",
+      "Granada → Barcelona 國內線",
+      "聖家堂 — 約提前兩個月留意售票",
+      "Madrid → Granada 直達列車",
+      "普拉多美術館＋馬德里皇宮",
+      "三個住宿基地 — 尤其 Parador Granada",
     ],
-    footerText: "西班牙 11 天行程規劃 · 2026 年 10 月 22 日 → 11 月 1 日",
+    footerText: "西班牙少換宿精選行程 · 2026 年 10 月 22 日 → 11 月 1 日",
   },
   {
     key: "ronda",
@@ -398,48 +392,6 @@ export default function Home() {
         {/* Hero */}
         <section id="hero">
           <Hero />
-        </section>
-
-        {/* Plan Switcher */}
-        <section className="py-6 md:py-8 bg-[#faf6ee] border-b border-[#e5e5e5]">
-          <div className="max-w-5xl mx-auto px-4 md:px-8">
-            <div className="flex flex-col items-center gap-3 md:gap-4">
-              <span className="text-[10px] md:text-xs font-semibold text-[#b8954e] uppercase tracking-[0.2em]">選擇行程方案</span>
-              {/* Mobile: 2x2 grid */}
-              <div className="md:hidden grid grid-cols-2 gap-2.5 w-full max-w-sm">
-                {PLANS.map((p, i) => (
-                  <button
-                    key={p.key}
-                    onClick={() => setActivePlan(i)}
-                    className={`px-3 py-3.5 rounded-xl text-sm font-semibold transition-all text-center ${
-                      activePlan === i
-                        ? "bg-[#1a1a1a] text-white shadow-lg shadow-[#1a1a1a]/20"
-                        : "bg-white text-[#5a5a5a] border border-[#e5e5e5] active:bg-[#f8f7f5]"
-                    }`}
-                  >
-                    {MOBILE_LABELS[i]}
-                  </button>
-                ))}
-              </div>
-              {/* Desktop: full tab bar */}
-              <div className="hidden md:flex bg-white rounded-xl p-1.5 shadow-sm border border-[#e5e5e5] gap-1">
-                {PLANS.map((p, i) => (
-                  <button
-                    key={p.key}
-                    onClick={() => setActivePlan(i)}
-                    className={`px-4 py-2.5 rounded-lg text-sm font-medium transition-all whitespace-nowrap ${
-                      activePlan === i
-                        ? "bg-[#1a1a1a] text-white shadow-md"
-                        : "text-[#8a8a8a] hover:bg-[#f8f7f5]"
-                    }`}
-                  >
-                    {p.label}
-                  </button>
-                ))}
-              </div>
-              <p className="text-xs text-[#9a9a9a] text-center max-w-md">{plan.itinerarySubtitle}</p>
-            </div>
-          </div>
         </section>
 
         {/* Itinerary */}
