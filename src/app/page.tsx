@@ -25,12 +25,14 @@ import AttractionsSection from "@/components/AttractionsSection";
 import HotelsSection from "@/components/HotelsSection";
 import VideoSection from "@/components/VideoSection";
 import FullBleedDivider from "@/components/FullBleedDivider";
+import BookingSection from "@/components/BookingSection";
 import dynamic from "next/dynamic";
 
 const MapSection = dynamic(() => import("@/components/MapSection"), { ssr: false });
 
 const NAV_ITEMS = [
   { id: "itinerary", label: "行程" },
+  { id: "bookings", label: "預約" },
   { id: "attractions", label: "景點" },
   { id: "hotels", label: "住宿" },
   { id: "map", label: "地圖" },
@@ -404,6 +406,8 @@ export default function Home() {
           subtitle={plan.itinerarySubtitle}
           transportSummary={plan.transportSummary}
         />
+
+        {plan.key === "classic" && <BookingSection />}
 
         {/* Full-bleed divider 1 */}
         <FullBleedDivider

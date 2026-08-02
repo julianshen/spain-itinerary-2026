@@ -7,12 +7,12 @@ export const DAYS: DayPlan[] = [
     { icon: "hotel", time: "晚上", title: "入住馬德里", description: "抵達後只安排飯店入住與附近晚餐，視體力短暫散步。" },
   ], transport: { mode: "✈️＋🚄", from: "台北 TPE", to: "馬德里", duration: "全日移動", details: "BCN 入境後轉乘傍晚高速列車；不要購買 15:00 班次。" } },
   { day: 2, date: "10/23（五）", title: "馬德里 — 藝術與舊城", subtitle: "普拉多、麗池公園、城市核心", emoji: "art", highlights: [
-    { icon: "art", time: "09:30–12:30", title: "普拉多美術館", description: "集中欣賞委拉斯奎茲、哥雅與葛雷柯代表作。", duration: "3h", tip: "建議預約上午時段", link: "https://www.museodelprado.es/" },
+    { icon: "art", time: "10:00–13:00", title: "普拉多美術館", description: "集中欣賞委拉斯奎茲、哥雅與葛雷柯代表作。", duration: "3h", tip: "預約 10:00 開館首批時段", link: "https://www.museodelprado.es/" },
     { icon: "leaf", time: "12:30–15:00", title: "麗池公園＋午餐", description: "慢走人工湖與林蔭大道，保留完整午餐時間。" },
     { icon: "city", time: "傍晚", title: "Sol → Plaza Mayor", description: "沿太陽門、馬約爾廣場與 Mercado de San Miguel 漫步，晚上到 San Ginés 吃 Churros。" },
   ] },
   { day: 3, date: "10/24（六）", title: "馬德里 — 王室與足球彈性日", subtitle: "與10/25依正式開球日互換", emoji: "crown", highlights: [
-    { icon: "crown", time: "09:30–12:00", title: "馬德里皇宮", description: "參觀皇家廳室，順遊 Almudena Cathedral。", duration: "2.5h", tip: "提前預約入場時段", link: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid" },
+    { icon: "crown", time: "10:00–12:30", title: "馬德里皇宮", description: "參觀皇家廳室，順遊 Almudena Cathedral。", duration: "2.5h", tip: "預約 10:00 首批時段，09:45 抵達", link: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid" },
     { icon: "city", time: "12:30–14:30", title: "La Latina 午餐", description: "在老城小巷享用 Tapas，避免跨城趕場。" },
     { icon: "theater", time: "15:30–17:30", title: "Reina Sofía 或 Bernabéu Tour", description: "若今天沒有球賽，藝術愛好者看《格爾尼卡》；足球迷可參觀 Bernabéu。" },
     { icon: "sunset", time: "傍晚", title: "德波神廟", description: "以城市夕陽為馬德里行程收尾。" },
@@ -39,7 +39,7 @@ export const DAYS: DayPlan[] = [
     { icon: "city", time: "15:00–18:30", title: "Albaicín＋San Nicolás", description: "搭車上坡後步行下行，日落前抵達觀景台。" },
   ], transport: { mode: "🚄 Avant", from: "Sevilla Santa Justa", to: "Granada", duration: "約 2h30m", details: "建議選上午直達班次；正式時刻開賣後再鎖定。" } },
   { day: 8, date: "10/29（四）", title: "格拉納達 — Alhambra 全日", subtitle: "全程最優先預約", emoji: "landmark", highlights: [
-    { icon: "landmark", time: "08:30–13:30", title: "Alhambra 宮殿群", description: "Nasrid Palaces、Alcazaba、Generalife 與 Carlos V Palace。", duration: "4–5h", tip: "Nasrid 依票面時刻準時進場，攜帶購票證件", link: "https://tickets.alhambra-patronato.es/en/" },
+    { icon: "landmark", time: "09:00–14:00", title: "Alhambra 宮殿群", description: "Nasrid Palaces、Alcazaba、Generalife 與 Carlos V Palace。", duration: "4–5h", tip: "建議 Nasrid 10:00；09:40 前到入口，攜帶購票護照正本", link: "https://tickets.alhambra-patronato.es/en/producto/alhambra-general/" },
     { icon: "food", time: "14:00–15:30", title: "午餐與休息", description: "上午步行量大，下午刻意放慢。" },
     { icon: "church", time: "16:00–18:00", title: "大教堂＋皇家禮拜堂", description: "若體力不足可取消，不影響主行程。" },
   ] },

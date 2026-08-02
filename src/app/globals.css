@@ -56,6 +56,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.booking-th {
+  padding: 16px 18px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.booking-td {
+  padding: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #f1f1f1; }
