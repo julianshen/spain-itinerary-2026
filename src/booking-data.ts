@@ -1,5 +1,5 @@
 export type BookingCategory = "景點" | "交通" | "活動／服務" | "住宿";
-export type BookingPriority = "最優先" | "建議預約" | "等候開賣" | "不用預約";
+export type BookingPriority = "已預訂" | "最優先" | "建議預約" | "等候開賣" | "不用預約";
 
 export interface BookingItem {
   date: string;
@@ -72,12 +72,12 @@ export const BOOKING_ITEMS: BookingItem[] = [
     date: "10/22–26",
     itinerary: "Madrid 住宿基地",
     category: "住宿",
-    item: "Madrid Atocha 飯店・4 晚",
-    saleStart: "訂房窗口已開放",
-    action: "現在先訂可免費取消方案",
-    slot: "10/22 入住・10/26 退房",
-    priority: "最優先",
-    note: "球賽週末可能推高房價；等開球日確認後再比較不可退款價。",
+    item: "Piso elegante Atocha 2H/2B by Berlany España",
+    saleStart: "已完成預訂：2 位成人、1 間公寓、4 晚",
+    action: "抵達前 24 小時留意手機上的自助入住連結",
+    slot: "10/22 15:00 後入住・10/26 11:00 前退房",
+    priority: "已預訂",
+    note: "地址：Calle de Atocha 94, 28012 Madrid。使用門碼自助入住，不需下載 App；門碼不要放在公開頁面。",
     url: "#hotels",
     linkLabel: "查看飯店建議",
   },

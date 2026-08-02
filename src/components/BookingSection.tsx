@@ -1,6 +1,7 @@
 import { BOOKING_ITEMS, BOOKING_SOURCES, BookingPriority } from "../booking-data";
 
 const priorityStyles: Record<BookingPriority, string> = {
+  "已預訂": "bg-[#edf8f1] text-[#28794e] border-[#abd4bb]",
   "最優先": "bg-[#fff1ed] text-[#a64b36] border-[#f2c5ba]",
   "建議預約": "bg-[#faf6ee] text-[#8a6e3a] border-[#e8d7ad]",
   "等候開賣": "bg-[#eef5f7] text-[#2a6b7a] border-[#bdd8de]",
@@ -21,8 +22,9 @@ export default function BookingSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-7">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 mb-7">
           {([
+            ["已預訂", "資料已確認，出發前再檢查入住通知"],
             ["最優先", "先處理 Alhambra、跨城交通與可取消住宿"],
             ["建議預約", "主行程確定後即鎖定"],
             ["等候開賣", "先設提醒，不買轉售票"],
