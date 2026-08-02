@@ -15,6 +15,7 @@ export default function Hero() {
 
   const cities = [
     { name: "馬德里", label: "Madrid", color: "#c9a84c" },
+    { name: "塞維亞", label: "Sevilla", color: "#2a6b7a" },
     { name: "格拉納達", label: "Granada", color: "#3a7a5a" },
     { name: "巴塞隆納", label: "Barcelona", color: "#c9a84c" },
   ];
@@ -68,7 +69,7 @@ export default function Hero() {
             }`}
             style={{ textShadow: "0 1px 4px rgba(0,0,0,0.5)" }}
           >
-            三座最值得停留的城市，只換兩次住宿。從馬德里的藝術、格拉納達的摩爾宮殿，到高第的巴塞隆納，旅程更深、更從容。
+            從馬德里的藝術與足球，到塞維亞的王宮、格拉納達的摩爾宮殿，最後以聖家堂收尾。四座城市，每站至少連住兩晚。
           </p>
 
           {/* City list with colored dots */}
@@ -120,11 +121,11 @@ export default function Hero() {
               <div className="text-xs text-white/60">天數</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-[#b8735a] drop-shadow-sm">3</div>
+              <div className="text-2xl font-bold text-[#b8735a] drop-shadow-sm">4</div>
               <div className="text-xs text-white/60">城市</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-[#2a6b7a] drop-shadow-sm">2</div>
+              <div className="text-2xl font-bold text-[#2a6b7a] drop-shadow-sm">3</div>
               <div className="text-xs text-white/60">次換宿</div>
             </div>
           </div>
