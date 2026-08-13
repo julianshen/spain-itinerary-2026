@@ -113,7 +113,7 @@ const PLANS: PlanConfig[] = [
       },
     ],
     checklist: [
-      "Alhambra＋Nasrid Palaces — 最優先預約",
+      "Alhambra General＋Nasrid Palaces — 已預訂 10/29 09:00",
       "Atlético vs Deportivo — 登記官方到貨通知",
       "Granada → Barcelona 國內線",
       "聖家堂＋Passion Tower — 已預訂 10/31 09:00／09:15",

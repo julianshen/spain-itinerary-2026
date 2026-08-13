@@ -39,8 +39,9 @@ export const DAYS: DayPlan[] = [
     { icon: "city", time: "15:00–18:30", title: "Albaicín＋San Nicolás", description: "搭車上坡後步行下行，日落前抵達觀景台。" },
   ], transport: { mode: "🚄 Avant", from: "Sevilla Santa Justa", to: "Granada", duration: "約 2h30m", details: "建議選上午直達班次；正式時刻開賣後再鎖定。" } },
   { day: 8, date: "10/29（四）", title: "格拉納達 — Alhambra 全日", subtitle: "全程最優先預約", emoji: "landmark", highlights: [
-    { icon: "landmark", time: "09:00–14:00", title: "Alhambra 宮殿群", description: "Nasrid Palaces、Alcazaba、Generalife 與 Carlos V Palace。", duration: "4–5h", tip: "建議 Nasrid 10:00；09:40 前到入口，攜帶購票護照正本", link: "https://tickets.alhambra-patronato.es/en/producto/alhambra-general/" },
-    { icon: "food", time: "14:00–15:30", title: "午餐與休息", description: "上午步行量大，下午刻意放慢。" },
+    { icon: "train", time: "07:45", title: "從 Room Mate Leo 出發", description: "搭計程車或市區公車前往 Alhambra，目標 08:15–08:25 抵達園區。" },
+    { icon: "landmark", time: "09:00 Nasrid 入場", title: "Alhambra 宮殿群（已預訂）", description: "Alhambra General Visit，包含 Nasrid Palaces、Alcazaba、Partal 與 Generalife；園區其他區域自 08:30 起參觀。", duration: "4–5h", price: "€22.27", tip: "08:40 前到 Nasrid 入口；攜帶購票所用護照正本", link: "https://tickets.alhambra-patronato.es/en/producto/alhambra-general/" },
+    { icon: "food", time: "13:30–15:00", title: "午餐與休息", description: "上午步行量大，下午刻意放慢。" },
     { icon: "church", time: "16:00–18:00", title: "大教堂＋皇家禮拜堂", description: "若體力不足可取消，不影響主行程。" },
   ] },
   { day: 9, date: "10/30（五）", title: "格拉納達 → 巴塞隆納", subtitle: "直飛，抵達後不綁定門票", emoji: "flight", highlights: [
@@ -71,7 +72,7 @@ export const ATTRACTIONS: Attraction[] = [
   { name: "馬德里皇宮", city: "Madrid", emoji: "crown", description: "王室歷史與宏偉廳室。", tips: ["預約時段", "與Almudena Cathedral同遊", "約2–2.5小時"], image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=1000&q=80", timeNeeded: "2.5h", ticketLink: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid" },
   { name: "Atlético vs Deportivo", city: "Madrid", emoji: "soccer", description: "10/24或10/25的西甲主場賽，是本行程的足球重點。", tips: ["日期與開球時間待定", "先登記官方到貨通知", "兩天行程保持可互換"], image: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=1000&q=80", timeNeeded: "半日", ticketLink: "https://www.atleticodemadrid.com/abonos" },
   { name: "Real Alcázar", city: "Sevilla", emoji: "castle", description: "塞維亞最重要的宮殿與花園。", tips: ["預約09:30", "十月為冬季時段", "預留2.5小時"], image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=1000&q=80", timeNeeded: "2.5h", ticketLink: "https://alcazarsevilla.org/prepara-la-visita/" },
-  { name: "Alhambra", city: "Granada", emoji: "landmark", description: "本次旅程最重要的摩爾建築與花園。", tips: ["最優先購票", "Nasrid依票面時間進場", "攜帶購票證件"], image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=1000&q=80", timeNeeded: "4–5h", ticketLink: "https://tickets.alhambra-patronato.es/en/" },
+  { name: "Alhambra", city: "Granada", emoji: "landmark", description: "本次旅程最重要的摩爾建築與花園；Alhambra General Visit 已完成預訂。", tips: ["10/29 Nasrid 09:00", "08:40 前到 Nasrid 入口", "攜帶護照正本", "票價＋手續費 €22.27"], image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=1000&q=80", timeNeeded: "4–5h", ticketLink: "https://tickets.alhambra-patronato.es/en/" },
   { name: "聖家堂", city: "Barcelona", emoji: "church", description: "高第最具代表性的建築；General 門票、Audioguide 與 Passion Tower 已完成預訂。", tips: ["10/31 09:00 入場", "09:15 Passion Tower", "08:30 前抵達安檢", "票價 €36"], image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=1000&q=80", timeNeeded: "2–2.5h", ticketLink: "https://sagradafamilia.org/en/tickets" },
 ];
 
