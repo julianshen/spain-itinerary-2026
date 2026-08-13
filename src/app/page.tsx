@@ -120,7 +120,7 @@ const PLANS: PlanConfig[] = [
       "Madrid → Sevilla／Sevilla → Granada 車票",
       "Sevilla Alcázar＋大教堂＋佛朗明哥",
       "普拉多美術館＋馬德里皇宮",
-      "Madrid Atocha 公寓＋Granada Room Mate Leo — 已預訂",
+      "Madrid Atocha＋Sevilla Rey Alfonso X＋Granada Room Mate Leo — 已預訂",
     ],
     footerText: "西班牙少換宿精選行程 · 2026 年 10 月 22 日 → 11 月 1 日",
   },
