@@ -50,9 +50,9 @@ export const DAYS: DayPlan[] = [
     { icon: "city", time: "傍晚", title: "哥德區或 Passeig de Gràcia", description: "依實際落地時間自由選擇，不預購定時票。" },
   ], transport: { mode: "✈️ Vueling", from: "Granada GRX", to: "Barcelona BCN", duration: "約 1h30m", details: "優先上午直飛並加購托運行李；不要用Basic票價估算總成本。" } },
   { day: 10, date: "10/31（六）", title: "巴塞隆納 — 聖家堂主日程", subtitle: "唯一不可取代的 Barcelona 重點", emoji: "landmark", highlights: [
-    { icon: "landmark", time: "建議 09:30–12:00", title: "Sagrada Família", description: "以聖家堂為全天第一優先，登塔依當日開放情況。", duration: "2–2.5h", tip: "官方通常約提前兩個月開放門票", link: "https://sagradafamilia.org/en/tickets" },
-    { icon: "building", time: "下午", title: "Sant Pau 或城市自由活動", description: "可選 Sant Pau、哥德區或海邊，不再塞三個高第收費景點。" },
-    { icon: "soccer", time: "10/31 或 11/1・候補", title: "Barcelona vs Alavés", description: "若最後排10/31且時間不與聖家堂衝突才考慮；11/1場次因回程不安排。", link: "https://www.fcbarcelona.com/en/futbol/primer-equipo/calendario" },
+    { icon: "city", time: "09:30–13:00", title: "哥德區或 Passeig de Gràcia", description: "上午安排不需預約的城市散步與午餐，避免另一張定時票影響聖家堂。" },
+    { icon: "landmark", time: "16:00 入場・16:15 登塔", title: "Sagrada Família（已預訂）", description: "參觀 Basilica，接著登 Passion Tower；15:30 前抵達並完成安檢。", duration: "2–2.5h", tip: "票券限指定時段；折扣票須攜帶身分證明，塔樓可能因天候關閉", link: "https://sagradafamilia.org/en/tickets" },
+    { icon: "soccer", time: "10/31 晚間・候補", title: "Barcelona vs Alavés", description: "只有正式賽程排在聖家堂行程結束後才考慮；若排11/1則因回程不安排。", link: "https://www.fcbarcelona.com/en/futbol/primer-equipo/calendario" },
   ] },
   { day: 11, date: "11/1（日）", title: "巴塞隆納 → 台北", subtitle: "從同一基地從容返程", emoji: "plane", highlights: [
     { icon: "plane", title: "前往 BCN 機場", description: "依航班時間提早出發，結束四座城市、三次換宿的西班牙之旅。" },
@@ -72,7 +72,7 @@ export const ATTRACTIONS: Attraction[] = [
   { name: "Atlético vs Deportivo", city: "Madrid", emoji: "soccer", description: "10/24或10/25的西甲主場賽，是本行程的足球重點。", tips: ["日期與開球時間待定", "先登記官方到貨通知", "兩天行程保持可互換"], image: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=1000&q=80", timeNeeded: "半日", ticketLink: "https://www.atleticodemadrid.com/abonos" },
   { name: "Real Alcázar", city: "Sevilla", emoji: "castle", description: "塞維亞最重要的宮殿與花園。", tips: ["預約09:30", "十月為冬季時段", "預留2.5小時"], image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=1000&q=80", timeNeeded: "2.5h", ticketLink: "https://alcazarsevilla.org/prepara-la-visita/" },
   { name: "Alhambra", city: "Granada", emoji: "landmark", description: "本次旅程最重要的摩爾建築與花園。", tips: ["最優先購票", "Nasrid依票面時間進場", "攜帶購票證件"], image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=1000&q=80", timeNeeded: "4–5h", ticketLink: "https://tickets.alhambra-patronato.es/en/" },
-  { name: "聖家堂", city: "Barcelona", emoji: "church", description: "高第最具代表性的建築。", tips: ["約提前兩個月留意售票", "選上午時段", "登塔視開放狀況"], image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=1000&q=80", timeNeeded: "2–2.5h", ticketLink: "https://sagradafamilia.org/en/tickets" },
+  { name: "聖家堂", city: "Barcelona", emoji: "church", description: "高第最具代表性的建築；Basilica 與 Passion Tower 已完成預訂。", tips: ["10/31 16:00 入場", "16:15 Passion Tower", "15:30 前抵達安檢", "折扣票攜帶身分證明"], image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=1000&q=80", timeNeeded: "2–2.5h", ticketLink: "https://sagradafamilia.org/en/tickets" },
 ];
 
 export const CITY_VIDEOS: CityVideo[] = [

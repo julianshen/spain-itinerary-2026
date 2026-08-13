@@ -116,7 +116,7 @@ const PLANS: PlanConfig[] = [
       "Alhambra＋Nasrid Palaces — 最優先預約",
       "Atlético vs Deportivo — 登記官方到貨通知",
       "Granada → Barcelona 國內線",
-      "聖家堂 — 約提前兩個月留意售票",
+      "聖家堂＋Passion Tower — 已預訂 10/31 16:00／16:15",
       "Madrid → Sevilla／Sevilla → Granada 車票",
       "Sevilla Alcázar＋大教堂＋佛朗明哥",
       "普拉多美術館＋馬德里皇宮",
