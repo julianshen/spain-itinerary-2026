@@ -36,10 +36,10 @@ export const DAYS: DayPlan[] = [
   ] },
   { day: 7, date: "10/28（三）", title: "塞維亞 → 格拉納達", subtitle: "上午移動，午後進入摩爾老城", emoji: "train", highlights: [
     { icon: "hotel", time: "搭車前", title: "Hotel Rey Alfonso X 退房", description: "依最終車次提早辦理退房，飯店規定最晚 12:00 前。" },
-    { icon: "train", time: "建議 08:30–10:00 出發", title: "Sevilla Santa Justa → Granada", description: "鎖定上午直達 Avant，避免為 07:14 首班車過早起床；正式班次以售票頁為準。", duration: "約 2h30m", link: "https://www.renfe.com/es/es/experiencias/rutas/sevilla-granada" },
+    { icon: "train", time: "09:55–12:35", title: "Sevilla Santa Justa → Granada（已訂票）", description: "Renfe Avant 08295，二等車廂。12:35 抵達後先到 Room Mate Leo 寄放行李並午餐。", duration: "2h40m", tip: "月台尚未公布；出發當日提早約 30 分鐘抵達車站，PNR 與完整座位資料僅保留在私人票券中", link: "https://www.renfe.com/es/es/experiencias/rutas/sevilla-granada" },
     { icon: "hotel", time: "15:00 起", title: "入住 Room Mate Leo（已預訂）", description: "Deluxe room，2 位成人、2 晚，含早餐；位於 Campo Verde 1 的 Centro 核心區。", tip: "10/21 前可免費取消；10/30 12:00 前退房" },
     { icon: "city", time: "15:30–18:30", title: "Albaicín＋San Nicolás", description: "寄放行李並午餐後再出發；搭車上坡、步行下行，日落前抵達觀景台。" },
-  ], transport: { mode: "🚄 Avant", from: "Sevilla Santa Justa", to: "Granada", duration: "約 2h30m", details: "優先選 08:30–10:00 左右的上午直達班次，不必追 07:14 首班車。" } },
+  ], transport: { mode: "🚄 Renfe Avant 08295・已訂票", from: "Sevilla Santa Justa 09:55", to: "Granada 12:35", duration: "2h40m", details: "二等車廂；提早約 30 分鐘抵達，月台以當日車站看板為準。" } },
   { day: 8, date: "10/29（四）", title: "格拉納達 — Alhambra 全日", subtitle: "全程最優先預約", emoji: "landmark", highlights: [
     { icon: "train", time: "07:45", title: "從 Room Mate Leo 出發", description: "搭計程車或市區公車前往 Alhambra，目標 08:15–08:25 抵達園區。" },
     { icon: "landmark", time: "09:00 Nasrid 入場", title: "Alhambra 宮殿群（已預訂）", description: "Alhambra General Visit，包含 Nasrid Palaces、Alcazaba、Partal 與 Generalife；園區其他區域自 08:30 起參觀。", duration: "4–5h", price: "€22.27", tip: "08:40 前到 Nasrid 入口；攜帶購票所用護照正本", link: "https://tickets.alhambra-patronato.es/en/producto/alhambra-general/" },
