@@ -24,10 +24,10 @@ export const DAYS: DayPlan[] = [
     { icon: "train", time: "睡前確認", title: "隔日交通保留彈性", description: "若比賽排週日晚場，10/26 選中午左右前往 Sevilla 的班次。" },
   ] },
   { day: 5, date: "10/26（一）", title: "馬德里 → 塞維亞", subtitle: "高速列車南下，下午輕鬆探索", emoji: "train", highlights: [
-    { icon: "train", time: "建議 10:00–13:00 出發", title: "Madrid Atocha → Sevilla Santa Justa", description: "鎖定中午前後的直達 AVE／iryo；常態行車約2小時40分，最終班次以售票頁為準。", duration: "約 2h40m", link: "https://www.renfe.com/" },
+    { icon: "train", time: "10:00–12:40", title: "Madrid Puerta de Atocha → Sevilla Santa Justa（已訂票）", description: "Renfe AVE 02100，Choice-Comfort。抵達 Sevilla 後先前往飯店寄放行李，再於 16:00 後正式入住。", duration: "2h40m", tip: "月台尚未公布；提早約 30 分鐘抵達車站，PNR 與完整座位資料僅保留在私人票券中", link: "https://www.renfe.com/" },
     { icon: "hotel", time: "16:00 起", title: "入住 Hotel Rey Alfonso X（已預訂）", description: "實際入住為 2 位成人；訂單目前誤列 1 位兒童與加床，需請飯店更正。位於 Santa Cruz 核心區。", tip: "Room Only；10/25 前免費取消，10/28 12:00 前退房" },
     { icon: "cityscape", time: "傍晚", title: "Santa Cruz＋河畔", description: "走到黃金塔與 Triana，晚餐品嘗 Sevilla Tapas。" },
-  ], transport: { mode: "🚄 AVE／iryo", from: "Madrid Atocha", to: "Sevilla Santa Justa", duration: "約 2h40m", details: "球賽若排10/25晚場，優先選10/26中午班次。" } },
+  ], transport: { mode: "🚄 Renfe AVE 02100・已訂票", from: "Madrid Puerta de Atocha 10:00", to: "Sevilla Santa Justa 12:40", duration: "2h40m", details: "Choice-Comfort；提早約 30 分鐘抵達，月台以當日車站看板為準。" } },
   { day: 6, date: "10/27（二）", title: "塞維亞 — 王宮、教堂與佛朗明哥", subtitle: "完整的一天留給安達魯西亞首府", emoji: "dance", highlights: [
     { icon: "castle", time: "09:30–12:00", title: "Real Alcázar", description: "十月採冬季時段，預約09:30首批入場。", duration: "2.5h", link: "https://alcazarsevilla.org/prepara-la-visita/" },
     { icon: "church", time: "14:00–16:00", title: "Sevilla Cathedral＋Giralda", description: "午餐後參觀大教堂與登塔。", duration: "2h" },
