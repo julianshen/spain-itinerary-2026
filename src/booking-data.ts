@@ -1,5 +1,5 @@
 export type BookingCategory = "景點" | "交通" | "活動／服務" | "住宿";
-export type BookingPriority = "已預訂" | "確認中" | "最優先" | "建議預約" | "等候開賣" | "不用預約";
+export type BookingPriority = "已預訂" | "最優先" | "建議預約" | "等候開賣" | "不用預約";
 
 export interface BookingItem {
   date: string;
@@ -125,11 +125,11 @@ export const BOOKING_ITEMS: BookingItem[] = [
     itinerary: "Sevilla 完整觀光日",
     category: "景點",
     item: "Sevilla Cathedral＋Giralda",
-    saleStart: "已付款待確認：2 位成人・實付 NT$1,322",
-    action: "等待平台確認與出票；確認前不要重複購買",
+    saleStart: "已完成訂票：2 位成人・實付 NT$1,322",
+    action: "訂單已確認；出發前下載並離線保存憑證",
     slot: "14:30 入場",
-    priority: "確認中",
-    note: "付款已完成但訂單尚在確認中；收到憑證後才算完成出票。教堂宗教活動可能調整開放時間。",
+    priority: "已預訂",
+    note: "14:30 指定時段入場；憑證條碼與訂單編號僅保留在私人裝置。教堂宗教活動可能調整開放時間。",
     url: "https://catedraldesevilla.entradasdemuseos.com/",
     linkLabel: "大教堂官方票務",
   },

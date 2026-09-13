@@ -30,7 +30,7 @@ export const DAYS: DayPlan[] = [
   ], transport: { mode: "🚄 Renfe AVE 02100・已訂票", from: "Madrid Puerta de Atocha 10:00", to: "Sevilla Santa Justa 12:40", duration: "2h40m", details: "Choice-Comfort；提早約 30 分鐘抵達，月台以當日車站看板為準。" } },
   { day: 6, date: "10/27（二）", title: "塞維亞 — 王宮、教堂與佛朗明哥", subtitle: "完整的一天留給安達魯西亞首府", emoji: "dance", highlights: [
     { icon: "castle", time: "09:30–12:00", title: "Real Alcázar（已訂票）", description: "2 位成人，實付 NT$1,542；十月採冬季時段，09:30 首批入場。", duration: "2.5h", tip: "訂單已確認；出發前離線保存憑證", link: "https://alcazarsevilla.org/prepara-la-visita/" },
-    { icon: "church", time: "14:30–16:00", title: "Sevilla Cathedral＋Giralda（確認中）", description: "2 位成人，實付 NT$1,322；付款已完成，仍需等待平台確認與出票。", duration: "約 1.5h", tip: "收到憑證前不要重複購買" },
+    { icon: "church", time: "14:30–16:00", title: "Sevilla Cathedral＋Giralda（已訂票）", description: "2 位成人，實付 NT$1,322；午餐後參觀大教堂並登上希拉達塔。", duration: "約 1.5h", tip: "訂單已確認；出發前離線保存憑證" },
     { icon: "cityscape", time: "16:30–17:45", title: "Plaza de España", description: "傍晚光線較柔和；停留約 60–75 分鐘，保留晚間體力。" },
     { icon: "dance", time: "建議 19:00–20:00 開演", title: "佛朗明哥表演", description: "優先選 Santa Cruz 附近的正規場館，避免晚場與跨河移動影響隔日行程。" },
   ] },
