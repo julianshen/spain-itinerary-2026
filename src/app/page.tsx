@@ -119,7 +119,7 @@ const PLANS: PlanConfig[] = [
       "聖家堂＋Passion Tower — 已預訂 10/31 09:00／09:15",
       "Madrid → Sevilla／Sevilla → Granada 車票",
       "Sevilla Alcázar＋大教堂＋佛朗明哥",
-      "普拉多美術館＋馬德里皇宮",
+      "普拉多美術館＋馬德里皇宮／皇家收藏館 — 已預訂 10/23 10:00／15:30",
       "四個住宿基地 — Madrid／Sevilla／Granada／Barcelona 全部已預訂",
     ],
     footerText: "西班牙少換宿精選行程 · 2026 年 10 月 22 日 → 11 月 1 日",

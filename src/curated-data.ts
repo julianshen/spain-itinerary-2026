@@ -6,15 +6,15 @@ export const DAYS: DayPlan[] = [
     { icon: "train", time: "17:25 之後", title: "前往馬德里", description: "選擇傍晚直達 Madrid Puerta de Atocha 的高速列車，避免原規劃 15:00 班次的轉乘風險。", duration: "約 2h40m–3h20m", link: "https://www.renfe.com/" },
     { icon: "hotel", time: "15:00 後", title: "入住 Atocha 公寓（已預訂）", description: "Piso elegante Atocha 2H/2B by Berlany España，Calle de Atocha 94。自助入住連結會於抵達前 24 小時傳至手機。", tip: "10/26 11:00 前退房；門鎖密碼請勿放在公開頁面" },
   ], transport: { mode: "✈️＋🚄", from: "台北 TPE", to: "馬德里", duration: "全日移動", details: "BCN 入境後轉乘傍晚高速列車；不要購買 15:00 班次。" } },
-  { day: 2, date: "10/23（五）", title: "馬德里 — 藝術與舊城", subtitle: "普拉多、麗池公園、城市核心", emoji: "art", highlights: [
+  { day: 2, date: "10/23（五）", title: "馬德里 — 普拉多與皇宮", subtitle: "兩項已訂重點集中同日，週末保留給足球", emoji: "art", highlights: [
     { icon: "art", time: "10:00–13:00", title: "普拉多美術館（已訂票）", description: "2 位成人，實付 NT$1,322；集中欣賞委拉斯奎茲、哥雅與葛雷柯代表作。", duration: "3h", tip: "10:00 指定時段入場；出發前離線保存憑證", link: "https://www.museodelprado.es/" },
-    { icon: "food", time: "13:00–14:30", title: "普拉多周邊午餐", description: "完整看完普拉多後再用餐，避免與美術館時段重疊。" },
-    { icon: "leaf", time: "14:30–16:00", title: "麗池公園", description: "午後慢走人工湖與林蔭大道，累了可縮短停留。" },
+    { icon: "food", time: "13:00–14:15", title: "普拉多周邊午餐", description: "用餐後搭計程車或大眾運輸前往皇宮，14:15 左右離開餐廳較安心。" },
+    { icon: "crown", time: "15:30 入場", title: "馬德里皇宮（已訂票）", description: "Palace＋Gallery Visit，2 位成人；先參觀皇宮本體，預留約 1.5–2 小時。", duration: "約 2h", price: "€52.54（含語音導覽與手續費）", tip: "15:15 前抵達安檢；皇家收藏館票可在皇宮參觀日起 7 天內另行使用，不必於票面 16:30 前看完兩處", link: "https://tickets.patrimonionacional.es/en/tickets/palacio-real-de-madrid" },
     { icon: "city", time: "傍晚", title: "Sol → Plaza Mayor", description: "沿太陽門、馬約爾廣場與 Mercado de San Miguel 漫步，晚上到 San Ginés 吃 Churros。" },
   ] },
   { day: 3, date: "10/24（六）", title: "馬德里 — 王室與足球彈性日", subtitle: "與10/25依正式開球日互換", emoji: "crown", highlights: [
-    { icon: "crown", time: "10:00–12:30", title: "馬德里皇宮", description: "參觀皇家廳室，順遊 Almudena Cathedral。", duration: "2.5h", tip: "預約 10:00 首批時段，09:45 抵達", link: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid" },
-    { icon: "city", time: "12:30–14:30", title: "La Latina 午餐", description: "在老城小巷享用 Tapas，避免跨城趕場。" },
+    { icon: "leaf", time: "非比賽上午", title: "麗池公園", description: "移至週末非比賽時段，慢走人工湖與林蔭大道；確定開球時間後再安排日期。" },
+    { icon: "city", time: "午餐", title: "La Latina 午餐", description: "在老城小巷享用 Tapas，避免跨城趕場。" },
     { icon: "theater", time: "15:30–17:30", title: "Reina Sofía 或 Bernabéu Tour", description: "若今天沒有球賽，藝術愛好者看《格爾尼卡》；足球迷可參觀 Bernabéu。" },
     { icon: "sunset", time: "傍晚", title: "德波神廟", description: "以城市夕陽為馬德里行程收尾。" },
   ] },
@@ -72,7 +72,7 @@ export const HOTELS: Hotel[] = [
 
 export const ATTRACTIONS: Attraction[] = [
   { name: "普拉多美術館（已訂票）", city: "Madrid", emoji: "art", description: "西班牙古典藝術核心收藏；10/23 10:00 門票已確認。", tips: ["2 位成人・NT$1,322", "預留3小時", "出發前離線保存憑證"], image: "https://images.unsplash.com/photo-1651902519299-9eaf6548b364?w=1000&q=80", timeNeeded: "3h", ticketLink: "https://www.museodelprado.es/" },
-  { name: "馬德里皇宮", city: "Madrid", emoji: "crown", description: "王室歷史與宏偉廳室。", tips: ["預約時段", "與Almudena Cathedral同遊", "約2–2.5小時"], image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=1000&q=80", timeNeeded: "2.5h", ticketLink: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid" },
+  { name: "馬德里皇宮＋皇家收藏館（已訂票）", city: "Madrid", emoji: "crown", description: "10/23 15:30 入場；組合票包含皇宮與皇家收藏館。", tips: ["2 位成人", "皇宮預留約1.5–2小時", "收藏館可於皇宮參觀日起7天內另行使用", "總額€52.54（含語音導覽與手續費）"], image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=1000&q=80", timeNeeded: "皇宮約2h；收藏館另排", ticketLink: "https://tickets.patrimonionacional.es/en/tickets/palacio-real-de-madrid" },
   { name: "Atlético vs Deportivo（已購票）", city: "Madrid", emoji: "soccer", description: "西甲第10輪主場賽，門票已完成購買；賽事預定於10/24或10/25舉行。", tips: ["日期與開球時間仍待官方確認", "Lateral Oeste Grada Alta・€50", "10/24與10/25行程保持可互換", "完整票券資訊不要放在公開網站"], image: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=1000&q=80", timeNeeded: "半日", ticketLink: "https://en.atleticodemadrid.com/tickets/" },
   { name: "Real Alcázar（已訂票）", city: "Sevilla", emoji: "castle", description: "塞維亞最重要的宮殿與花園；10/27 09:30 門票已確認。", tips: ["2 位成人・NT$1,542", "十月為冬季時段", "預留2.5小時"], image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=1000&q=80", timeNeeded: "2.5h", ticketLink: "https://alcazarsevilla.org/prepara-la-visita/" },
   { name: "Alhambra", city: "Granada", emoji: "landmark", description: "本次旅程最重要的摩爾建築與花園；Alhambra General Visit 已完成預訂。", tips: ["10/29 Nasrid 09:00", "08:40 前到 Nasrid 入口", "攜帶護照正本", "票價＋手續費 €22.27"], image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=1000&q=80", timeNeeded: "4–5h", ticketLink: "https://tickets.alhambra-patronato.es/en/" },
