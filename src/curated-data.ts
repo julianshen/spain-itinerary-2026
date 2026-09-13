@@ -7,7 +7,7 @@ export const DAYS: DayPlan[] = [
     { icon: "hotel", time: "15:00 後", title: "入住 Atocha 公寓（已預訂）", description: "Piso elegante Atocha 2H/2B by Berlany España，Calle de Atocha 94。自助入住連結會於抵達前 24 小時傳至手機。", tip: "10/26 11:00 前退房；門鎖密碼請勿放在公開頁面" },
   ], transport: { mode: "✈️＋🚄", from: "台北 TPE", to: "馬德里", duration: "全日移動", details: "BCN 入境後轉乘傍晚高速列車；不要購買 15:00 班次。" } },
   { day: 2, date: "10/23（五）", title: "馬德里 — 藝術與舊城", subtitle: "普拉多、麗池公園、城市核心", emoji: "art", highlights: [
-    { icon: "art", time: "10:00–13:00", title: "普拉多美術館", description: "集中欣賞委拉斯奎茲、哥雅與葛雷柯代表作。", duration: "3h", tip: "預約 10:00 開館首批時段", link: "https://www.museodelprado.es/" },
+    { icon: "art", time: "10:00–13:00", title: "普拉多美術館（已訂票）", description: "2 位成人，實付 NT$1,322；集中欣賞委拉斯奎茲、哥雅與葛雷柯代表作。", duration: "3h", tip: "10:00 指定時段入場；出發前離線保存憑證", link: "https://www.museodelprado.es/" },
     { icon: "food", time: "13:00–14:30", title: "普拉多周邊午餐", description: "完整看完普拉多後再用餐，避免與美術館時段重疊。" },
     { icon: "leaf", time: "14:30–16:00", title: "麗池公園", description: "午後慢走人工湖與林蔭大道，累了可縮短停留。" },
     { icon: "city", time: "傍晚", title: "Sol → Plaza Mayor", description: "沿太陽門、馬約爾廣場與 Mercado de San Miguel 漫步，晚上到 San Ginés 吃 Churros。" },
@@ -29,8 +29,8 @@ export const DAYS: DayPlan[] = [
     { icon: "cityscape", time: "傍晚", title: "Santa Cruz＋河畔", description: "走到黃金塔與 Triana，晚餐品嘗 Sevilla Tapas。" },
   ], transport: { mode: "🚄 Renfe AVE 02100・已訂票", from: "Madrid Puerta de Atocha 10:00", to: "Sevilla Santa Justa 12:40", duration: "2h40m", details: "Choice-Comfort；提早約 30 分鐘抵達，月台以當日車站看板為準。" } },
   { day: 6, date: "10/27（二）", title: "塞維亞 — 王宮、教堂與佛朗明哥", subtitle: "完整的一天留給安達魯西亞首府", emoji: "dance", highlights: [
-    { icon: "castle", time: "09:30–12:00", title: "Real Alcázar", description: "十月採冬季時段，預約09:30首批入場。", duration: "2.5h", link: "https://alcazarsevilla.org/prepara-la-visita/" },
-    { icon: "church", time: "14:00–16:00", title: "Sevilla Cathedral＋Giralda", description: "午餐後參觀大教堂與登塔。", duration: "2h" },
+    { icon: "castle", time: "09:30–12:00", title: "Real Alcázar（已訂票）", description: "2 位成人，實付 NT$1,542；十月採冬季時段，09:30 首批入場。", duration: "2.5h", tip: "訂單已確認；出發前離線保存憑證", link: "https://alcazarsevilla.org/prepara-la-visita/" },
+    { icon: "church", time: "14:30–16:00", title: "Sevilla Cathedral＋Giralda（確認中）", description: "2 位成人，實付 NT$1,322；付款已完成，仍需等待平台確認與出票。", duration: "約 1.5h", tip: "收到憑證前不要重複購買" },
     { icon: "cityscape", time: "16:30–17:45", title: "Plaza de España", description: "傍晚光線較柔和；停留約 60–75 分鐘，保留晚間體力。" },
     { icon: "dance", time: "建議 19:00–20:00 開演", title: "佛朗明哥表演", description: "優先選 Santa Cruz 附近的正規場館，避免晚場與跨河移動影響隔日行程。" },
   ] },
@@ -71,10 +71,10 @@ export const HOTELS: Hotel[] = [
 ];
 
 export const ATTRACTIONS: Attraction[] = [
-  { name: "普拉多美術館", city: "Madrid", emoji: "art", description: "西班牙古典藝術核心收藏。", tips: ["預留3小時", "提前選定必看作品", "建議上午入場"], image: "https://images.unsplash.com/photo-1651902519299-9eaf6548b364?w=1000&q=80", timeNeeded: "3h", ticketLink: "https://www.museodelprado.es/" },
+  { name: "普拉多美術館（已訂票）", city: "Madrid", emoji: "art", description: "西班牙古典藝術核心收藏；10/23 10:00 門票已確認。", tips: ["2 位成人・NT$1,322", "預留3小時", "出發前離線保存憑證"], image: "https://images.unsplash.com/photo-1651902519299-9eaf6548b364?w=1000&q=80", timeNeeded: "3h", ticketLink: "https://www.museodelprado.es/" },
   { name: "馬德里皇宮", city: "Madrid", emoji: "crown", description: "王室歷史與宏偉廳室。", tips: ["預約時段", "與Almudena Cathedral同遊", "約2–2.5小時"], image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=1000&q=80", timeNeeded: "2.5h", ticketLink: "https://www.patrimonionacional.es/en/visita/palacio-real-de-madrid" },
   { name: "Atlético vs Deportivo（已購票）", city: "Madrid", emoji: "soccer", description: "西甲第10輪主場賽，門票已完成購買；賽事預定於10/24或10/25舉行。", tips: ["日期與開球時間仍待官方確認", "Lateral Oeste Grada Alta・€50", "10/24與10/25行程保持可互換", "完整票券資訊不要放在公開網站"], image: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=1000&q=80", timeNeeded: "半日", ticketLink: "https://en.atleticodemadrid.com/tickets/" },
-  { name: "Real Alcázar", city: "Sevilla", emoji: "castle", description: "塞維亞最重要的宮殿與花園。", tips: ["預約09:30", "十月為冬季時段", "預留2.5小時"], image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=1000&q=80", timeNeeded: "2.5h", ticketLink: "https://alcazarsevilla.org/prepara-la-visita/" },
+  { name: "Real Alcázar（已訂票）", city: "Sevilla", emoji: "castle", description: "塞維亞最重要的宮殿與花園；10/27 09:30 門票已確認。", tips: ["2 位成人・NT$1,542", "十月為冬季時段", "預留2.5小時"], image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=1000&q=80", timeNeeded: "2.5h", ticketLink: "https://alcazarsevilla.org/prepara-la-visita/" },
   { name: "Alhambra", city: "Granada", emoji: "landmark", description: "本次旅程最重要的摩爾建築與花園；Alhambra General Visit 已完成預訂。", tips: ["10/29 Nasrid 09:00", "08:40 前到 Nasrid 入口", "攜帶護照正本", "票價＋手續費 €22.27"], image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=1000&q=80", timeNeeded: "4–5h", ticketLink: "https://tickets.alhambra-patronato.es/en/" },
   { name: "聖家堂", city: "Barcelona", emoji: "church", description: "高第最具代表性的建築；General 門票、Audioguide 與 Passion Tower 已完成預訂。", tips: ["10/31 09:00 入場", "09:15 Passion Tower", "08:30 前抵達安檢", "票價 €36"], image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=1000&q=80", timeNeeded: "2–2.5h", ticketLink: "https://sagradafamilia.org/en/tickets" },
 ];

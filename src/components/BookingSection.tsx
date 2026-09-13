@@ -2,6 +2,7 @@ import { BOOKING_ITEMS, BOOKING_SOURCES, BookingPriority } from "../booking-data
 
 const priorityStyles: Record<BookingPriority, string> = {
   "已預訂": "bg-[#edf8f1] text-[#28794e] border-[#abd4bb]",
+  "確認中": "bg-[#fff6e5] text-[#9a6700] border-[#e9c978]",
   "最優先": "bg-[#fff1ed] text-[#a64b36] border-[#f2c5ba]",
   "建議預約": "bg-[#faf6ee] text-[#8a6e3a] border-[#e8d7ad]",
   "等候開賣": "bg-[#eef5f7] text-[#2a6b7a] border-[#bdd8de]",
@@ -18,13 +19,14 @@ export default function BookingSection() {
             預約與購票時間表
           </h2>
           <p className="text-[#6b6b6b] mt-4 leading-relaxed">
-            依照少換宿精選路線排序。開賣規則與「何時該買」分開標示；日期以西班牙當地時間為準，最後核對於 2026 年 8 月 2 日。
+            依照少換宿精選路線排序。開賣規則與「何時該買」分開標示；日期以西班牙當地時間為準，最後核對於 2026 年 9 月 13 日。
           </p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 mb-7">
+        <div className="grid grid-cols-2 lg:grid-cols-6 gap-3 mb-7">
           {([
             ["已預訂", "資料已確認，出發前再檢查入住通知"],
+            ["確認中", "已付款，等待平台確認與出票"],
             ["最優先", "先處理 Alhambra、跨城交通與可取消住宿"],
             ["建議預約", "主行程確定後即鎖定"],
             ["等候開賣", "先設提醒，不買轉售票"],
