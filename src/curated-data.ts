@@ -12,16 +12,17 @@ export const DAYS: DayPlan[] = [
     { icon: "crown", time: "15:30 入場", title: "馬德里皇宮（已訂票）", description: "Palace＋Gallery Visit，2 位成人；先參觀皇宮本體，預留約 1.5–2 小時。", duration: "約 2h", price: "€52.54（含語音導覽與手續費）", tip: "15:15 前抵達安檢；皇家收藏館票可在皇宮參觀日起 7 天內另行使用，不必於票面 16:30 前看完兩處", link: "https://tickets.patrimonionacional.es/en/tickets/palacio-real-de-madrid" },
     { icon: "city", time: "傍晚", title: "Sol → Plaza Mayor", description: "沿太陽門、馬約爾廣場與 Mercado de San Miguel 漫步，晚上到 San Ginés 吃 Churros。" },
   ] },
-  { day: 3, date: "10/24（六）", title: "馬德里 — 王室與足球彈性日", subtitle: "與10/25依正式開球日互換", emoji: "crown", highlights: [
-    { icon: "leaf", time: "非比賽上午", title: "麗池公園", description: "移至週末非比賽時段，慢走人工湖與林蔭大道；確定開球時間後再安排日期。" },
-    { icon: "city", time: "午餐", title: "La Latina 午餐", description: "在老城小巷享用 Tapas，避免跨城趕場。" },
-    { icon: "theater", time: "15:30–17:30", title: "Reina Sofía 或 Bernabéu Tour", description: "若今天沒有球賽，藝術愛好者看《格爾尼卡》；足球迷可參觀 Bernabéu。" },
-    { icon: "sunset", time: "傍晚", title: "德波神廟", description: "以城市夕陽為馬德里行程收尾。" },
+  { day: 3, date: "10/24（六）", title: "馬德里 — Atlético 主場賽", subtitle: "21:00 Atlético Madrid vs RC Deportivo", emoji: "soccer", highlights: [
+    { icon: "leaf", time: "10:00–12:00", title: "麗池公園", description: "慢走人工湖與林蔭大道，上午安排輕鬆活動，為晚間球賽保留體力。" },
+    { icon: "city", time: "12:30–14:30", title: "La Latina 午餐", description: "在老城小巷享用 Tapas；餐後返回住宿休息，不再安排需要預約的大型景點。" },
+    { icon: "train", time: "18:15–18:30 出發", title: "前往 Riyadh Air Metropolitano", description: "從市中心預留約 60–75 分鐘交通與轉乘時間，目標 19:00–19:30 抵達球場。", tip: "出門前再次確認票券、入口規定與大眾運輸狀況" },
+    { icon: "soccer", time: "21:00 開球・已確認", title: "Atlético Madrid vs RC Deportivo（已購票）", description: "西甲第10輪，Riyadh Air Metropolitano 主場。座位區為 Lateral Oeste Grada Alta，票價 €50。", price: "€50", tip: "官方日期與時間已確認；票券編號與完整座位資料僅保留在私人票券中", link: "https://www.atleticodemadrid.com/" },
   ] },
-  { day: 4, date: "10/25（日）", title: "馬德里 — Atlético 主場候選日", subtitle: "Atlético Madrid vs RC Deportivo", emoji: "soccer", highlights: [
-    { icon: "soccer", time: "10/24 或 10/25・待官方確認", title: "Atlético Madrid vs RC Deportivo（已購票）", description: "西甲第10輪，Riyadh Air Metropolitano 主場。門票已購買；座位區為 Lateral Oeste Grada Alta，票價 €50。確切比賽日及開球時間仍未公布。", price: "€50", tip: "10/24–25 行程繼續保持可互換；票券編號與完整座位資料僅保留在私人票券中", link: "https://en.atleticodemadrid.com/tickets/" },
-    { icon: "city", time: "非比賽時段", title: "Bernabéu Tour 或 Madrid 自由活動", description: "Real Madrid 本週末作客 Barcelona，Bernabéu 沒有男子一隊主場賽。" },
-    { icon: "train", time: "睡前確認", title: "隔日交通保留彈性", description: "若比賽排週日晚場，10/26 選中午左右前往 Sevilla 的班次。" },
+  { day: 4, date: "10/25（日）", title: "馬德里 — 自由探索日", subtitle: "球賽翌日放慢步調，隔天早班車南下", emoji: "city", highlights: [
+    { icon: "city", time: "上午晚些時候", title: "Bernabéu Tour 或自由活動", description: "球賽晚歸後不排早場門票；Real Madrid 本週末作客 Barcelona，球場沒有男子一隊主場賽。" },
+    { icon: "theater", time: "下午・二選一", title: "Reina Sofía 或皇家收藏館", description: "藝術愛好者可看《格爾尼卡》；也可使用皇宮組合票參觀皇家收藏館。不要兩處都排，保留休息時間。" },
+    { icon: "sunset", time: "傍晚", title: "德波神廟", description: "視體力前往欣賞夕陽；若前一晚太晚，直接回住宿休息。" },
+    { icon: "train", time: "睡前", title: "整理行李與確認車票", description: "10/26 已訂 10:00 AVE 前往 Sevilla，建議 09:30 前抵達 Atocha。" },
   ] },
   { day: 5, date: "10/26（一）", title: "馬德里 → 塞維亞", subtitle: "高速列車南下，下午輕鬆探索", emoji: "train", highlights: [
     { icon: "train", time: "10:00–12:40", title: "Madrid Puerta de Atocha → Sevilla Santa Justa（已訂票）", description: "Renfe AVE 02100，Choice-Comfort。抵達 Sevilla 後先前往飯店寄放行李，再於 16:00 後正式入住。", duration: "2h40m", tip: "月台尚未公布；提早約 30 分鐘抵達車站，PNR 與完整座位資料僅保留在私人票券中", link: "https://www.renfe.com/" },
@@ -73,7 +74,7 @@ export const HOTELS: Hotel[] = [
 export const ATTRACTIONS: Attraction[] = [
   { name: "普拉多美術館（已訂票）", city: "Madrid", emoji: "art", description: "西班牙古典藝術核心收藏；10/23 10:00 門票已確認。", tips: ["2 位成人・NT$1,322", "預留3小時", "出發前離線保存憑證"], image: "https://images.unsplash.com/photo-1651902519299-9eaf6548b364?w=1000&q=80", timeNeeded: "3h", ticketLink: "https://www.museodelprado.es/" },
   { name: "馬德里皇宮＋皇家收藏館（已訂票）", city: "Madrid", emoji: "crown", description: "10/23 15:30 入場；組合票包含皇宮與皇家收藏館。", tips: ["2 位成人", "皇宮預留約1.5–2小時", "收藏館可於皇宮參觀日起7天內另行使用", "總額€52.54（含語音導覽與手續費）"], image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=1000&q=80", timeNeeded: "皇宮約2h；收藏館另排", ticketLink: "https://tickets.patrimonionacional.es/en/tickets/palacio-real-de-madrid" },
-  { name: "Atlético vs Deportivo（已購票）", city: "Madrid", emoji: "soccer", description: "西甲第10輪主場賽，門票已完成購買；賽事預定於10/24或10/25舉行。", tips: ["日期與開球時間仍待官方確認", "Lateral Oeste Grada Alta・€50", "10/24與10/25行程保持可互換", "完整票券資訊不要放在公開網站"], image: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=1000&q=80", timeNeeded: "半日", ticketLink: "https://en.atleticodemadrid.com/tickets/" },
+  { name: "Atlético vs Deportivo（已購票）", city: "Madrid", emoji: "soccer", description: "西甲第10輪主場賽；官方已確認 10/24（六）21:00 開球。", tips: ["Riyadh Air Metropolitano", "19:00–19:30 抵達球場", "Lateral Oeste Grada Alta・€50", "完整票券資訊不要放在公開網站"], image: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=1000&q=80", timeNeeded: "晚間", ticketLink: "https://www.atleticodemadrid.com/" },
   { name: "Real Alcázar（已訂票）", city: "Sevilla", emoji: "castle", description: "塞維亞最重要的宮殿與花園；10/27 09:30 門票已確認。", tips: ["2 位成人・NT$1,542", "十月為冬季時段", "預留2.5小時"], image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=1000&q=80", timeNeeded: "2.5h", ticketLink: "https://alcazarsevilla.org/prepara-la-visita/" },
   { name: "Alhambra", city: "Granada", emoji: "landmark", description: "本次旅程最重要的摩爾建築與花園；Alhambra General Visit 已完成預訂。", tips: ["10/29 Nasrid 09:00", "08:40 前到 Nasrid 入口", "攜帶護照正本", "票價＋手續費 €22.27"], image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=1000&q=80", timeNeeded: "4–5h", ticketLink: "https://tickets.alhambra-patronato.es/en/" },
   { name: "聖家堂", city: "Barcelona", emoji: "church", description: "高第最具代表性的建築；General 門票、Audioguide 與 Passion Tower 已完成預訂。", tips: ["10/31 09:00 入場", "09:15 Passion Tower", "08:30 前抵達安檢", "票價 €36"], image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=1000&q=80", timeNeeded: "2–2.5h", ticketLink: "https://sagradafamilia.org/en/tickets" },
