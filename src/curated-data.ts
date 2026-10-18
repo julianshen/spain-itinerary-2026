@@ -3,9 +3,9 @@ import { Attraction, CityVideo, DayPlan, Hotel } from "./types";
 export const DAYS: DayPlan[] = [
   { day: 1, date: "10/22（四）", title: "台北 → 巴塞隆納 → 馬德里", subtitle: "抵達日只移動，不追景點", emoji: "plane", highlights: [
     { icon: "plane", time: "13:25", title: "抵達巴塞隆納", description: "入境、領行李後前往 Barcelona Sants；長途航班後保留充足緩衝。", duration: "約 2.5–3h" },
-    { icon: "train", time: "17:25 之後", title: "前往馬德里", description: "選擇傍晚直達 Madrid Puerta de Atocha 的高速列車，避免原規劃 15:00 班次的轉乘風險。", duration: "約 2h40m–3h20m", link: "https://www.renfe.com/" },
-    { icon: "hotel", time: "15:00 後", title: "入住 Atocha 公寓（已預訂）", description: "Piso elegante Atocha 2H/2B by Berlany España，Calle de Atocha 94。自助入住連結會於抵達前 24 小時傳至手機。", tip: "10/26 11:00 前退房；門鎖密碼請勿放在公開頁面" },
-  ], transport: { mode: "✈️＋🚄", from: "台北 TPE", to: "馬德里", duration: "全日移動", details: "BCN 入境後轉乘傍晚高速列車；不要購買 15:00 班次。" } },
+    { icon: "train", time: "18:25–21:27", title: "AVE 03180 前往馬德里（已訂票）", description: "Barcelona Sants → Madrid Puerta de Atocha-Almudena Grandes；2 位成人，Choice-Comfort 一等座，總額 €170 已付款。", duration: "3h02m", tip: "18:00 前抵達 Sants；完整票券與座位資料僅保留在私人裝置", link: "https://www.renfe.com/" },
+    { icon: "hotel", time: "21:27 抵達後", title: "入住 Atocha 公寓（已預訂）", description: "Piso elegante Atocha 2H/2B by Berlany España，Calle de Atocha 94。自助入住連結會於抵達前 24 小時傳至手機。", tip: "10/26 11:00 前退房；門鎖密碼請勿放在公開頁面" },
+  ], transport: { mode: "✈️＋🚄", from: "台北 TPE", to: "馬德里", duration: "全日移動", details: "已訂 18:25 AVE 03180，21:27 抵達 Madrid Atocha；航班與火車分開訂購，預留入境及兩件大行李的轉乘時間。" } },
   { day: 2, date: "10/23（五）", title: "馬德里 — 普拉多與皇宮", subtitle: "兩項已訂重點集中同日，週末保留給足球", emoji: "art", highlights: [
     { icon: "art", time: "10:00–13:00", title: "普拉多美術館（已訂票）", description: "2 位成人，實付 NT$1,322；集中欣賞委拉斯奎茲、哥雅與葛雷柯代表作。", duration: "3h", tip: "10:00 指定時段入場；出發前離線保存憑證", link: "https://www.museodelprado.es/" },
     { icon: "food", time: "13:00–14:15", title: "普拉多周邊午餐", description: "用餐後搭計程車或大眾運輸前往皇宮，14:15 左右離開餐廳較安心。" },
@@ -18,7 +18,7 @@ export const DAYS: DayPlan[] = [
     { icon: "train", time: "18:15–18:30 出發", title: "前往 Riyadh Air Metropolitano", description: "從市中心預留約 60–75 分鐘交通與轉乘時間，目標 19:00–19:30 抵達球場。", tip: "出門前再次確認票券、入口規定與大眾運輸狀況" },
     { icon: "soccer", time: "21:00 開球・已確認", title: "Atlético Madrid vs RC Deportivo（已購票）", description: "西甲第10輪，Riyadh Air Metropolitano 主場。座位區為 Lateral Oeste Grada Alta，票價 €50。", price: "€50", tip: "官方日期與時間已確認；票券編號與完整座位資料僅保留在私人票券中", link: "https://www.atleticodemadrid.com/" },
   ] },
-  { day: 4, date: "10/25（日）", title: "馬德里 — 自由探索日", subtitle: "球賽翌日放慢步調，隔天早班車南下", emoji: "city", highlights: [
+  { day: 4, date: "10/25（日）", title: "馬德里 — 自由探索日", subtitle: "今日西班牙結束夏令時間，03:00 撥回 02:00；比台灣慢 7 小時", emoji: "city", highlights: [
     { icon: "city", time: "上午晚些時候", title: "Bernabéu Tour 或自由活動", description: "球賽晚歸後不排早場門票；Real Madrid 本週末作客 Barcelona，球場沒有男子一隊主場賽。" },
     { icon: "theater", time: "下午・二選一", title: "Reina Sofía 或皇家收藏館", description: "藝術愛好者可看《格爾尼卡》；也可使用皇宮組合票參觀皇家收藏館。不要兩處都排，保留休息時間。" },
     { icon: "sunset", time: "傍晚", title: "德波神廟", description: "視體力前往欣賞夕陽；若前一晚太晚，直接回住宿休息。" },
@@ -26,19 +26,19 @@ export const DAYS: DayPlan[] = [
   ] },
   { day: 5, date: "10/26（一）", title: "馬德里 → 塞維亞", subtitle: "高速列車南下，下午輕鬆探索", emoji: "train", highlights: [
     { icon: "train", time: "10:00–12:40", title: "Madrid Puerta de Atocha → Sevilla Santa Justa（已訂票）", description: "Renfe AVE 02100，Choice-Comfort。抵達 Sevilla 後先前往飯店寄放行李，再於 16:00 後正式入住。", duration: "2h40m", tip: "月台尚未公布；提早約 30 分鐘抵達車站，PNR 與完整座位資料僅保留在私人票券中", link: "https://www.renfe.com/" },
-    { icon: "hotel", time: "16:00 起", title: "入住 Hotel Rey Alfonso X（已預訂）", description: "實際入住為 2 位成人；訂單目前誤列 1 位兒童與加床，需請飯店更正。位於 Santa Cruz 核心區。", tip: "Room Only；10/25 前免費取消，10/28 12:00 前退房" },
+    { icon: "hotel", time: "16:00 起", title: "入住 Hotel Rey Alfonso X（已預訂）", description: "2 位成人入住，位於 Santa Cruz 核心區。房價描述含兒童／加床字樣，尚不能據此判定入住人數有誤。", tip: "Room Only；免費取消至 10/25 12:00（當地），之後收全額；10/28 12:00 前退房" },
     { icon: "cityscape", time: "傍晚", title: "Santa Cruz＋河畔", description: "走到黃金塔與 Triana，晚餐品嘗 Sevilla Tapas。" },
   ], transport: { mode: "🚄 Renfe AVE 02100・已訂票", from: "Madrid Puerta de Atocha 10:00", to: "Sevilla Santa Justa 12:40", duration: "2h40m", details: "Choice-Comfort；提早約 30 分鐘抵達，月台以當日車站看板為準。" } },
   { day: 6, date: "10/27（二）", title: "塞維亞 — 王宮、教堂與佛朗明哥", subtitle: "完整的一天留給安達魯西亞首府", emoji: "dance", highlights: [
-    { icon: "castle", time: "09:30–12:00", title: "Real Alcázar（已訂票）", description: "2 位成人，實付 NT$1,542；十月採冬季時段，09:30 首批入場。", duration: "2.5h", tip: "訂單已確認；出發前離線保存憑證", link: "https://alcazarsevilla.org/prepara-la-visita/" },
-    { icon: "church", time: "14:30–16:00", title: "Sevilla Cathedral＋Giralda（已訂票）", description: "2 位成人，實付 NT$1,322；午餐後參觀大教堂並登上希拉達塔。", duration: "約 1.5h", tip: "訂單已確認；出發前離線保存憑證" },
+    { icon: "castle", time: "09:30–12:00", title: "Real Alcázar（已訂票）", description: "2 位成人，實付 NT$1,542；09:30 指定時段入場；票面資料更正仍待 Klook／供應商回覆。", duration: "2.5h", tip: "訂單已確認；出發前離線保存憑證", link: "https://alcazarsevilla.org/prepara-la-visita/" },
+    { icon: "church", time: "14:30–16:00", title: "Sevilla Cathedral＋Giralda（已訂票）", description: "2 位成人，實付 NT$1,322；14:30 須先進 Giralda，再參觀大教堂，不可重複入場。票面資料更正仍待回覆。", duration: "約 1.5h", tip: "訂單已確認；出發前離線保存憑證" },
     { icon: "cityscape", time: "16:30–17:45", title: "Plaza de España", description: "傍晚光線較柔和；停留約 60–75 分鐘，保留晚間體力。" },
-    { icon: "dance", time: "建議 19:00–20:00 開演", title: "佛朗明哥表演", description: "優先選 Santa Cruz 附近的正規場館，避免晚場與跨河移動影響隔日行程。" },
+    { icon: "dance", time: "建議 19:00–20:00 開演・尚未預訂", title: "佛朗明哥表演", description: "優先選 Santa Cruz 附近的正規場館，避免晚場與跨河移動影響隔日行程。" },
   ] },
   { day: 7, date: "10/28（三）", title: "塞維亞 → 格拉納達", subtitle: "上午移動，午後進入摩爾老城", emoji: "train", highlights: [
     { icon: "hotel", time: "搭車前", title: "Hotel Rey Alfonso X 退房", description: "依最終車次提早辦理退房，飯店規定最晚 12:00 前。" },
     { icon: "train", time: "09:55–12:35", title: "Sevilla Santa Justa → Granada（已訂票）", description: "Renfe Avant 08295，二等車廂。12:35 抵達後先到 Room Mate Leo 寄放行李並午餐。", duration: "2h40m", tip: "月台尚未公布；出發當日提早約 30 分鐘抵達車站，PNR 與完整座位資料僅保留在私人票券中", link: "https://www.renfe.com/es/es/experiencias/rutas/sevilla-granada" },
-    { icon: "hotel", time: "15:00 起", title: "入住 Room Mate Leo（已預訂）", description: "Deluxe room，2 位成人、2 晚，含早餐；位於 Campo Verde 1 的 Centro 核心區。", tip: "10/21 前可免費取消；10/30 12:00 前退房" },
+    { icon: "hotel", time: "15:00 起", title: "入住 Room Mate Leo（已預訂）", description: "Deluxe room，2 位成人、2 晚，含早餐；位於 Campo Verde 1 的 Centro 核心區。", tip: "免費取消至 10/21 12:00（當地），之後收全額；10/30 須提早退房搭機" },
     { icon: "city", time: "15:30–18:30", title: "Albaicín＋San Nicolás", description: "寄放行李並午餐後再出發；搭車上坡、步行下行，日落前抵達觀景台。" },
   ], transport: { mode: "🚄 Renfe Avant 08295・已訂票", from: "Sevilla Santa Justa 09:55", to: "Granada 12:35", duration: "2h40m", details: "二等車廂；提早約 30 分鐘抵達，月台以當日車站看板為準。" } },
   { day: 8, date: "10/29（四）", title: "格拉納達 — Alhambra 全日", subtitle: "全程最優先預約", emoji: "landmark", highlights: [
@@ -48,34 +48,42 @@ export const DAYS: DayPlan[] = [
     { icon: "church", time: "16:00–18:00", title: "大教堂＋皇家禮拜堂", description: "若體力不足可取消，不影響主行程。" },
   ] },
   { day: 9, date: "10/30（五）", title: "格拉納達 → 巴塞隆納", subtitle: "直飛，抵達後不綁定門票", emoji: "flight", highlights: [
-    { icon: "hotel", time: "約 06:45–06:55", title: "Room Mate Leo 退房並前往機場", description: "前一晚先完成行李整理與車輛安排；早餐可能尚未開始，請提前詢問飯店能否提供外帶早餐。" },
-    { icon: "flight", time: "09:05–10:30", title: "Vueling VY1105 GRX → BCN（已訂票）", description: "Granada 直飛 Barcelona；最晚約 07:35 抵達 GRX，並依票價方案確認托運行李額度。", duration: "1h25m", tip: "訂位代碼、登機證與座位資料僅保留在私人裝置", link: "https://www.vueling.com/en/flights-from-granada-to-barcelona" },
-    { icon: "hotel", time: "15:00 起", title: "入住 NH Collection Gran Hotel Calderón（已預訂）", description: "五星飯店，位於 Rambla de Catalunya 26；Eixample 核心地點方便前往聖家堂與市中心。", tip: "11/1 12:00 前退房；房型、價格與取消條款待完整確認單補充" },
+    { icon: "hotel", time: "約 06:15–06:25", title: "Room Mate Leo 退房並前往機場", description: "前一晚先完成行李整理與車輛安排；早餐可能尚未開始，請提前詢問飯店能否提供外帶早餐。" },
+    { icon: "flight", time: "09:05–10:30", title: "Vueling VY1105 GRX → BCN（已訂票）", description: "Granada 直飛 Barcelona；建議 07:05 抵達 GRX（起飛前 2 小時）；每人已含 25kg 托運及 10kg 登機箱，另有隨身小包。", duration: "1h25m", tip: "訂位代碼、登機證與座位資料僅保留在私人裝置", link: "https://www.vueling.com/en/flights-from-granada-to-barcelona" },
+    { icon: "hotel", time: "15:00 起", title: "入住 NH Collection Gran Hotel Calderón（已預訂）", description: "五星飯店，位於 Rambla de Catalunya 26；Eixample 核心地點方便前往聖家堂與市中心。", tip: "2 位成人 Premium 景觀房，不含早餐；11/1 12:00 前退房，雙床要求須視當日房況" },
     { icon: "city", time: "傍晚", title: "哥德區或 Passeig de Gràcia", description: "依實際落地時間自由選擇，不預購定時票。" },
-  ], transport: { mode: "✈️ Vueling VY1105・已訂票", from: "Granada GRX 09:05", to: "Barcelona BCN 10:30", duration: "1h25m", details: "約 06:45–06:55 從飯店搭車前往機場；前一晚確認托運行李與外帶早餐。" } },
+  ], transport: { mode: "✈️ Vueling VY1105・已訂票", from: "Granada GRX 09:05", to: "Barcelona BCN 10:30", duration: "1h25m", details: "約 06:15–06:25 從飯店搭車前往機場；前一晚確認托運行李與外帶早餐。" } },
   { day: 10, date: "10/31（六）", title: "巴塞隆納 — 聖家堂主日程", subtitle: "唯一不可取代的 Barcelona 重點", emoji: "landmark", highlights: [
     { icon: "landmark", time: "09:00 入場・09:15 登塔", title: "Sagrada Família（已預訂）", description: "General 門票含 Audioguide；參觀 Basilica，接著登 Passion Tower。08:30 前抵達並完成安檢。", duration: "2–2.5h", price: "€36", tip: "票券限指定時段；塔樓可能因天候關閉", link: "https://sagradafamilia.org/en/tickets" },
     { icon: "city", time: "12:00 後", title: "午餐＋哥德區或 Passeig de Gràcia", description: "聖家堂結束後安排不需預約的城市散步，午後保持彈性。" },
     { icon: "soccer", time: "10/31 下午／晚間・候補", title: "Barcelona vs Alavés", description: "正式賽程若排在聖家堂行程結束後才考慮；若排11/1則因回程不安排。", link: "https://www.fcbarcelona.com/en/futbol/primer-equipo/calendario" },
   ] },
-  { day: 11, date: "11/1（日）", title: "巴塞隆納 → 台北", subtitle: "從同一基地從容返程", emoji: "plane", highlights: [
+  { day: 11, date: "11/1（日）", title: "巴塞隆納 → 杜拜", subtitle: "西班牙行程結束；杜拜停留後於 11/3 回台", emoji: "plane", highlights: [
     { icon: "hotel", time: "12:00 前", title: "NH Collection Gran Hotel Calderón 退房", description: "依回程航班時間寄放行李或直接前往機場。" },
-    { icon: "plane", title: "前往 BCN 機場", description: "依航班時間提早出發，結束四座城市、三次換宿的西班牙之旅。" },
+    { icon: "plane", time: "17:10 前抵達機場", title: "EK188 BCN → DXB（已訂票）", description: "20:40 從 Barcelona T1 起飛，11/2 06:30 抵達杜拜 T3；時間皆為各機場當地時間。", tip: "辦理登機時領取 Dubai Connect 住宿憑證" },
+  ] },
+  { day: 12, date: "11/2（一）", title: "杜拜轉機停留", subtitle: "Dubai Connect 已預訂；航班時間為杜拜當地時間（UTC+4）", emoji: "hotel", highlights: [
+    { icon: "plane", time: "06:30", title: "抵達 DXB T3", description: "EK188 抵達後依 Dubai Connect 憑證與機場指示辦理住宿及接送。", tip: "住宿憑證、簽證及護照保留在私人裝置，隨身攜帶護照正本" },
+    { icon: "hotel", time: "白天", title: "Dubai Connect 休息", description: "住宿已預訂；市區活動視實際接送、休息與回機場時間安排，不預設額外門票或購物行程。" },
+    { icon: "plane", time: "深夜", title: "準備返回機場", description: "回台航班是 11/3 凌晨，目標 11/3 00:40 前抵達 DXB T3；不要誤認為 11/3 晚間出發。" },
+  ] },
+  { day: 13, date: "11/3（二）", title: "杜拜 → 台北", subtitle: "EK366 回台；以下時間為各機場當地時間", emoji: "plane", highlights: [
+    { icon: "plane", time: "03:40–15:35", title: "EK366 DXB T3 → TPE（已訂票）", description: "03:40 從杜拜起飛，15:35 抵達台北；00:40 前抵達杜拜機場辦理報到。", tip: "提早確認登機門與行李規定，隨身攜帶護照正本" },
   ] },
 ];
 
 export const HOTELS: Hotel[] = [
   { name: "Piso elegante Atocha 2H/2B by Berlany España", city: "Madrid（10/22–26）", nights: 4, stars: 0, priceRange: "✓ 已預訂", description: "Calle de Atocha 94, 28012 Madrid。2 位成人入住 1 間公寓，連住 4 晚；鄰近 Atocha，方便抵達日與南下 Sevilla。", highlights: ["入住｜10/22（四）15:00 後", "退房｜10/26（一）11:00 前", "方式｜門碼自助入住，不需下載 App", "提醒｜抵達前 24 小時會收到手機入住連結"], image: "https://images.unsplash.com/photo-1543783207-ec64e4d95325?w=1000&q=80", bookingLinks: [{ name: "Google Maps 查看地址", url: "https://www.google.com/maps/search/?api=1&query=Calle+de+Atocha+94%2C+28012+Madrid" }], note: "已確認住宿。請將入住連結與門鎖密碼保留在私人訊息中，不要放到公開網站。" },
-  { name: "Hotel Rey Alfonso X IMG Hoteles", city: "Sevilla（10/26–28）", nights: 2, stars: 0, priceRange: "✓ 已預訂・€457.60", description: "Ximénez de Enciso 35, 41004 Sevilla。實際入住為 2 位成人、連住 2 晚；訂單目前誤列兒童及加床，需請飯店更正。位於 Santa Cruz 核心區。", highlights: ["入住｜10/26（一）16:00 起", "退房｜10/28（三）12:00 前", "實際人數｜2 位成人・沒有兒童", "待更正｜訂單誤列 1 位兒童與加床", "方案｜Autumn Promotion・Room Only・Wi-Fi", "付款｜飯店現場付款，信用卡僅作擔保", "取消｜10/25 前免費取消"], image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=1000&q=80", bookingLinks: [{ name: "Hotel Rey Alfonso X 官網", url: "https://www.hotelreyalfonsox.es/en/" }, { name: "Google Maps 查看地址", url: "https://www.google.com/maps/search/?api=1&query=Hotel+Rey+Alfonso+X%2C+Ximenez+de+Enciso+35%2C+41004+Sevilla" }], note: "已確認住宿，總價 €457.60。請向飯店更正入住人數與加床，並確認價格及取消條款不變。" },
-  { name: "Hotel Room Mate Leo", city: "Granada（10/28–30）", nights: 2, stars: 0, priceRange: "✓ 已預訂・€391.88", description: "Campo Verde 1, 18001 Granada。Deluxe room，2 位成人入住 1 間客房、連住 2 晚；Centro 地點方便用餐，Alhambra 日搭公車或計程車上山。", highlights: ["入住｜10/28（三）15:00 起", "退房｜10/30 約 06:45–06:55 提早退房", "房型｜Deluxe room・Special Web Rate Semi Flexible", "餐食｜含自助早餐；10/30 請詢問外帶早餐", "付款｜信用卡 100% 預付", "取消｜10/21 前免費取消"], image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=1000&q=80", bookingLinks: [{ name: "Room Mate Leo 官網", url: "https://room-matehotels.com/en/leo/" }, { name: "Google Maps 查看地址", url: "https://www.google.com/maps/search/?api=1&query=Hotel+Room+Mate+Leo%2C+Campo+Verde+1%2C+18001+Granada" }], note: "已確認住宿，總價 €391.88。10/30 為早班機，建議前一晚預約計程車並詢問外帶早餐；訂房代碼與旅客聯絡資料不放在公開網站。" },
-  { name: "NH Collection Barcelona Gran Hotel Calderón", city: "Barcelona（10/30–11/1）", nights: 2, stars: 5, priceRange: "✓ 已預訂", description: "Rambla de Catalunya 26, Eixample, 08007 Barcelona。五星飯店，連住 2 晚；位於 Eixample 核心區，方便前往聖家堂、Passeig de Gràcia 與市中心。", highlights: ["入住｜10/30（五）15:00 起", "退房｜11/1（日）12:00 前", "等級｜五星飯店", "房型／入住人數｜截圖未顯示", "價格／取消條款｜待完整確認單補充"], image: "https://images.unsplash.com/photo-1507619579562-f2e10da1ec86?w=1000&q=80", bookingLinks: [{ name: "NH Collection 官網", url: "https://www.nh-collection.com/en/hotel/nh-collection-barcelona-gran-hotel-calderon" }, { name: "Google Maps 查看地址", url: "https://www.google.com/maps/search/?api=1&query=NH+Collection+Barcelona+Gran+Hotel+Calderon%2C+Rambla+de+Catalunya+26%2C+Barcelona" }], note: "已確認住宿日期與地址。訂房編號及旅客聯絡資料不放在公開網站。" },
+  { name: "Hotel Rey Alfonso X IMG Hoteles", city: "Sevilla（10/26–28）", nights: 2, stars: 0, priceRange: "✓ 已預訂・€457.60", description: "Ximénez de Enciso 35, 41004 Sevilla。2 位成人、連住 2 晚；房價描述中的兒童與加床字樣尚待釐清，並非已確認的人數錯誤。位於 Santa Cruz 核心區。", highlights: ["入住｜10/26（一）16:00 起", "退房｜10/28（三）12:00 前", "實際人數｜2 位成人・沒有兒童", "方案｜Autumn Promotion・Room Only・Wi-Fi", "付款｜飯店現場付款，信用卡僅作擔保", "取消｜10/25 12:00 當地時間前免費，之後全額"], image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=1000&q=80", bookingLinks: [{ name: "Hotel Rey Alfonso X 官網", url: "https://www.hotelreyalfonsox.es/en/" }, { name: "Google Maps 查看地址", url: "https://www.google.com/maps/search/?api=1&query=Hotel+Rey+Alfonso+X%2C+Ximenez+de+Enciso+35%2C+41004+Sevilla" }], note: "已確認住宿，總價 €457.60。房價含兒童／加床的描述是否適用，可向飯店確認；不要據此自行取消重訂。" },
+  { name: "Hotel Room Mate Leo", city: "Granada（10/28–30）", nights: 2, stars: 0, priceRange: "✓ 已預訂・€391.88", description: "Campo Verde 1, 18001 Granada。Deluxe room，2 位成人入住 1 間客房、連住 2 晚；Centro 地點方便用餐，Alhambra 日搭公車或計程車上山。", highlights: ["入住｜10/28（三）15:00 起", "退房｜10/30 約 06:15–06:25 提早退房", "房型｜Deluxe room・Special Web Rate Semi Flexible", "餐食｜含自助早餐；10/30 請詢問外帶早餐", "付款｜入住前 7 日內預付，尚未核實扣款", "取消｜10/21 12:00 當地時間前免費，之後全額"], image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=1000&q=80", bookingLinks: [{ name: "Room Mate Leo 官網", url: "https://room-matehotels.com/en/leo/" }, { name: "Google Maps 查看地址", url: "https://www.google.com/maps/search/?api=1&query=Hotel+Room+Mate+Leo%2C+Campo+Verde+1%2C+18001+Granada" }], note: "已確認住宿，總價 €391.88。10/30 為早班機，建議前一晚預約計程車並詢問外帶早餐；訂房代碼與旅客聯絡資料不放在公開網站。" },
+  { name: "NH Collection Barcelona Gran Hotel Calderón", city: "Barcelona（10/30–11/1）", nights: 2, stars: 5, priceRange: "✓ 已預訂", description: "Rambla de Catalunya 26, Eixample, 08007 Barcelona。五星飯店，連住 2 晚；位於 Eixample 核心區，方便前往聖家堂、Passeig de Gràcia 與市中心。", highlights: ["入住｜10/30（五）15:00 起", "退房｜11/1（日）12:00 前", "等級｜五星飯店", "房型｜Premium 景觀雙人／雙床房・2 位成人", "餐食｜不含早餐；加購 €28／人／日", "總額｜€661.40（含城市稅 €52.80），現場付款", "取消｜10/27 23:59 CET 前免費，之後 €608.60"], image: "https://images.unsplash.com/photo-1507619579562-f2e10da1ec86?w=1000&q=80", bookingLinks: [{ name: "NH Collection 官網", url: "https://www.nh-collection.com/en/hotel/nh-collection-barcelona-gran-hotel-calderon" }, { name: "Google Maps 查看地址", url: "https://www.google.com/maps/search/?api=1&query=NH+Collection+Barcelona+Gran+Hotel+Calderon%2C+Rambla+de+Catalunya+26%2C+Barcelona" }], note: "雙床要求已獲飯店回覆，但仍視入住當日房況；訂房編號及旅客聯絡資料不放在公開網站。" },
 ];
 
 export const ATTRACTIONS: Attraction[] = [
   { name: "普拉多美術館（已訂票）", city: "Madrid", emoji: "art", description: "西班牙古典藝術核心收藏；10/23 10:00 門票已確認。", tips: ["2 位成人・NT$1,322", "預留3小時", "出發前離線保存憑證"], image: "https://images.unsplash.com/photo-1651902519299-9eaf6548b364?w=1000&q=80", timeNeeded: "3h", ticketLink: "https://www.museodelprado.es/" },
   { name: "馬德里皇宮＋皇家收藏館（已訂票）", city: "Madrid", emoji: "crown", description: "10/23 15:30 入場；組合票包含皇宮與皇家收藏館。", tips: ["2 位成人", "皇宮預留約1.5–2小時", "收藏館可於皇宮參觀日起7天內另行使用", "總額€52.54（含語音導覽與手續費）"], image: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=1000&q=80", timeNeeded: "皇宮約2h；收藏館另排", ticketLink: "https://tickets.patrimonionacional.es/en/tickets/palacio-real-de-madrid" },
   { name: "Atlético vs Deportivo（已購票）", city: "Madrid", emoji: "soccer", description: "西甲第10輪主場賽；官方已確認 10/24（六）21:00 開球。", tips: ["Riyadh Air Metropolitano", "19:00–19:30 抵達球場", "Lateral Oeste Grada Alta・€50", "完整票券資訊不要放在公開網站"], image: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=1000&q=80", timeNeeded: "晚間", ticketLink: "https://www.atleticodemadrid.com/" },
-  { name: "Real Alcázar（已訂票）", city: "Sevilla", emoji: "castle", description: "塞維亞最重要的宮殿與花園；10/27 09:30 門票已確認。", tips: ["2 位成人・NT$1,542", "十月為冬季時段", "預留2.5小時"], image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=1000&q=80", timeNeeded: "2.5h", ticketLink: "https://alcazarsevilla.org/prepara-la-visita/" },
+  { name: "Real Alcázar（已訂票）", city: "Sevilla", emoji: "castle", description: "塞維亞最重要的宮殿與花園；10/27 09:30 門票已確認。", tips: ["2 位成人・NT$1,542", "票面資料更正待回覆", "預留2.5小時"], image: "https://images.unsplash.com/photo-1551189014-fe516aed0e9e?w=1000&q=80", timeNeeded: "2.5h", ticketLink: "https://alcazarsevilla.org/prepara-la-visita/" },
   { name: "Alhambra", city: "Granada", emoji: "landmark", description: "本次旅程最重要的摩爾建築與花園；Alhambra General Visit 已完成預訂。", tips: ["10/29 Nasrid 09:00", "08:40 前到 Nasrid 入口", "攜帶護照正本", "票價＋手續費 €22.27"], image: "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=1000&q=80", timeNeeded: "4–5h", ticketLink: "https://tickets.alhambra-patronato.es/en/" },
   { name: "聖家堂", city: "Barcelona", emoji: "church", description: "高第最具代表性的建築；General 門票、Audioguide 與 Passion Tower 已完成預訂。", tips: ["10/31 09:00 入場", "09:15 Passion Tower", "08:30 前抵達安檢", "票價 €36"], image: "https://images.unsplash.com/photo-1656597787628-62741d181641?w=1000&q=80", timeNeeded: "2–2.5h", ticketLink: "https://sagradafamilia.org/en/tickets" },
 ];
